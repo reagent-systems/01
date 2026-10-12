@@ -33,12 +33,12 @@ queue is the next short steps.
 - **Scope guard:** No state machine, no payouts, no I/O, no database.
 - **Status:** ready
 
-### 3. Terraform for staging
-- **Promise:** `terraform validate` and `terraform plan` pass for `infra/terraform` with Cloud Run `api`, `orchestrator`, `agents`, Cloud SQL Postgres 16 on private IP, Cloud Storage, Pub/Sub, Secret Manager, and Artifact Registry in a `staging` project.
-- **Evidence:** `terraform plan` output saved in the PR.
+### 3. Vercel backend foundation
+- **Promise:** `apps/web` serves `GET /api/health` that reports the git SHA and whether the database answers, and `packages/db` holds a Drizzle schema plus a migration that applies to a fresh Postgres in a test.
+- **Evidence:** `pnpm verify` green with a migration test against a throwaway Postgres; the health route's response saved in the PR.
 - **Use case:** Start a run.
-- **Scope guard:** Staging only. No prod project. No apply without the human.
-- **Status:** blocked on a decision: backend host (see Queue changes 2026-10-12). Likely replaced by a Vercel-based backend item
+- **Scope guard:** No tables beyond `designs` and `events`. No payments. No queue.
+- **Status:** ready
 
 ### 4. Chain graph in core
 - **Promise:** `packages/core` exports a chain graph (nodes, ship-to edges) that rejects cycles and orphan nodes, orders nodes for parallel and sequential topologies, and its tests reach 100% branch coverage.
@@ -57,6 +57,7 @@ queue is the next short steps.
 - Phase 6: Stripe Connect payouts, net-60, fault withholding.
 - Phase 7: use-case pages, Remotion templates, UGC intake, launch calendar.
 - Phase 8: real pilot of the desk token counter.
+- Phase 1 rest, revised: `api`, `orchestrator`, and `agents` become Vercel route handlers or functions. Terraform and Cloud Run return only if a phase needs them.
 - Issue sync: have `pnpm unknowns:issues` run inside a routine and link every critical and high item.
 
 ## Shipped
@@ -76,4 +77,4 @@ queue is the next short steps.
 
 - 2026-10-12: Queue seeded by the installing agent from the handoff spec. Provisional.
 - 2026-10-12: Queue item 1 (web shell) shipped and removed. Item 4 (chain graph) added to keep 3 ready items.
-- 2026-10-12: The human asked to host on Vercel, not Firebase. Terraform item is blocked until the backend host is decided.
+- 2026-10-12: The human chose Vercel for hosting and the backend. The Terraform item was replaced by item 3 (Vercel backend foundation).
