@@ -12,9 +12,9 @@ export const tokens = {
     text: "#f5f5f5",
     muted: "rgba(245, 245, 245, 0.68)",
     dim: "rgba(245, 245, 245, 0.45)",
-    accent: "#c8102e",
-    accentSoft: "rgba(200, 16, 46, 0.18)",
-    tint: { a: "#c8102e", b: "#1f4f8f", c: "#17705c" },
+    accent: "#ffd100",
+    accentSoft: "rgba(255, 209, 0, 0.18)",
+    tint: { a: "#ffd100", b: "#7a7a7a", c: "#e0a800" },
   },
   font: {
     family: 'Barlow, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',

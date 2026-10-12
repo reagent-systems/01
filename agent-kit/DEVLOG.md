@@ -64,3 +64,9 @@ Evidence: `agent-kit/launch/design-compare/`; `pnpm verify` green.
 The human pointed out that I had copied the reference site from screenshots, not from its code. They were right. Screenshots gave me the numbers but not the behavior. I read the repo `ThyFriendlyFox/ferrera-tooling-website` and ported its stylesheet and component structure into `packages/ui`: the animated hero dividers, hover expand with a blurb, the tint blend, feathered video edges, the phone layout, the drawer header, and scroll reveal. I wrote all copy fresh. For video I took six clips from Mixkit, cut each to 10 seconds, and compressed them to 4.3 MB total. I could not play them here because headless Chromium lacks H.264, so the screenshots show poster frames. I did not check the clips in a real browser.
 
 Evidence: `pnpm verify` green; `agent-kit/launch/design-compare/`.
+
+## 2026-10-12 — Switched to yellow and black, drafted logo options
+
+The human asked for yellow and black, not red. I changed the accent to `#ffd100` and the hero tints to yellow, grey, and amber. Yellow multiplied over the colored footage turned it acid green, so I made all footage monochrome. The logo now sets the 1 in yellow italic. I drew nine logo options, A to I, in `agent-kit/launch/logo-options/`. Each shows a white 0 on black and a black 0 on light grey. Saira Condensed has no italic, so option B is a synthetic slant. The human picks one; the site keeps the Barlow 0 and italic 1 until then.
+
+Evidence: `pnpm verify` green; `agent-kit/launch/logo-options/logo-options.png`.

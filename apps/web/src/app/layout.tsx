@@ -8,6 +8,7 @@ import { footerColumns, primaryNav, site } from "../lib/site";
 const barlow = Barlow({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
   variable: "--font-sans",
   display: "swap",
 });
