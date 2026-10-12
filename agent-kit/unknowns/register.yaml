@@ -1,0 +1,2275 @@
+# Knowledge register. Schema and rules: evidence/knowledge-map.md sections 1-3. Never delete an item; close it.
+- id: VIS-01
+  field: KK
+  domain: vision
+  statement: "Core flow: design → waitlist with group pricing → one button triggers every manufacturer
+    → buyers fund the run."
+  why_it_matters: Sets what the platform is and who it serves.
+  severity: low
+  blocks_phase: null
+  confidence: 0.8
+  current_answer: "Core flow: design → waitlist with group pricing → one button triggers every
+    manufacturer → buyers fund the run."
+  evidence:
+    - evidence/handoff-spec.md
+  resolve_by: research
+  owner: kyle
+  next_action: Re-check against the current spec at the next review.
+  done_when: Evidence is current at the re-check date.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KK).
+      by: agent
+  recheck_every: 180d
+- id: VIS-02
+  field: KK
+  domain: vision
+  statement: "First test articles: desk AI token counter (PCB in a case); modular housing scale model."
+  why_it_matters: Sets what the platform is and who it serves.
+  severity: low
+  blocks_phase: null
+  confidence: 0.8
+  current_answer: "First test articles: desk AI token counter (PCB in a case); modular housing scale model."
+  evidence:
+    - evidence/handoff-spec.md
+  resolve_by: research
+  owner: kyle
+  next_action: Re-check against the current spec at the next review.
+  done_when: Evidence is current at the re-check date.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KK).
+      by: agent
+  recheck_every: 180d
+- id: VIS-03
+  field: KK
+  domain: vision
+  statement: "Planned pieces: per-part serialization, supplier scorecard, negotiation agent,
+    node-graph interface, peer-to-peer engineering changes."
+  why_it_matters: Sets what the platform is and who it serves.
+  severity: low
+  blocks_phase: null
+  confidence: 0.8
+  current_answer: "Planned pieces: per-part serialization, supplier scorecard, negotiation agent,
+    node-graph interface, peer-to-peer engineering changes."
+  evidence:
+    - evidence/handoff-spec.md
+  resolve_by: research
+  owner: kyle
+  next_action: Re-check against the current spec at the next review.
+  done_when: Evidence is current at the re-check date.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KK).
+      by: agent
+  recheck_every: 180d
+- id: VIS-04
+  field: KU
+  domain: vision
+  statement: "Which modular housing model ships first: cat tower, chicken coop, or dog house? (decision)"
+  why_it_matters: Sets what the platform is and who it serves.
+  severity: high
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: decision
+  owner: kyle
+  next_action: Write the options and a recommendation for Kyle or Colt.
+  done_when: Choice, reason, and review date in the decision log.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: VIS-05
+  field: KU
+  domain: vision
+  statement: Who is the first paying designer who is not us?
+  why_it_matters: Sets what the platform is and who it serves.
+  severity: high
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: VIS-06
+  field: KU
+  domain: vision
+  statement: Is the platform a marketplace (third-party designers) or a brand (our designs) at launch?
+    Liability, tax, and payments differ.
+  why_it_matters: Sets what the platform is and who it serves.
+  severity: critical
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: decision
+  owner: kyle
+  next_action: Write the options and a recommendation for Kyle or Colt.
+  done_when: Choice, reason, and review date in the decision log.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: VIS-07
+  field: ZONE
+  domain: vision
+  statement: Product categories we have not thought about that designers will try first.
+  why_it_matters: Sets what the platform is and who it serves.
+  severity: medium
+  blocks_phase: null
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: ORG-01
+  field: KK
+  domain: organization
+  statement: Reagent takes equity or profit share in deals, in proportion to the work it does.
+  why_it_matters: Decides who owns, runs, and funds the venture.
+  severity: low
+  blocks_phase: 8
+  confidence: 0.8
+  current_answer: Reagent takes equity or profit share in deals, in proportion to the work it does.
+  evidence:
+    - evidence/handoff-spec.md
+  resolve_by: research
+  owner: kyle
+  next_action: Re-check against the current spec at the next review.
+  done_when: Evidence is current at the re-check date.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KK).
+      by: agent
+  recheck_every: 180d
+- id: ORG-02
+  field: KU
+  domain: organization
+  statement: "Entity: which legal entity runs the platform, and is it separate from Reagent Systems? (legal)"
+  why_it_matters: Decides who owns, runs, and funds the venture.
+  severity: critical
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal+decision
+  owner: agent
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: "Lawyer's written answer saved to evidence. Then: Choice, reason, and review date in the
+    decision log."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: ORG-03
+  field: KU
+  domain: organization
+  statement: "Written agreement with Colt: roles, ownership, decision rights, exit terms. (legal + decision)"
+  why_it_matters: Decides who owns, runs, and funds the venture.
+  severity: critical
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal+decision
+  owner: colt
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: "Lawyer's written answer saved to evidence. Then: Choice, reason, and review date in the
+    decision log."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: ORG-04
+  field: KU
+  domain: organization
+  statement: Who answers support email at 2 a.m. when a run breaks?
+  why_it_matters: Decides who owns, runs, and funds the venture.
+  severity: high
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: decision
+  owner: kyle
+  next_action: Write the options and a recommendation for Kyle or Colt.
+  done_when: Choice, reason, and review date in the decision log.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: ORG-05
+  field: KU
+  domain: organization
+  statement: "Runway: what does the platform cost to run per month before revenue?"
+  why_it_matters: Decides who owns, runs, and funds the venture.
+  severity: high
+  blocks_phase: null
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: Source saved to evidence; answer written in plain words.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: ORG-06
+  field: UK
+  domain: organization
+  statement: Colt's full idea as recorded in the 44-minute call. (extraction)
+  why_it_matters: Decides who owns, runs, and funds the venture.
+  severity: high
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: extraction
+  owner: colt
+  next_action: Schedule the extraction session and transcribe it.
+  done_when: Transcript saved; resulting KKs and KUs written to the register.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (UK).
+      by: agent
+- id: MKT-01
+  field: KU
+  domain: market
+  statement: What fraction of waitlist signups save a card? What fraction of saved cards charge
+    successfully at trigger?
+  why_it_matters: Decides whether buyers and designers show up.
+  severity: high
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MKT-02
+  field: KU
+  domain: market
+  statement: How long will buyers wait between trigger and delivery before they ask for refunds?
+  why_it_matters: Decides whether buyers and designers show up.
+  severity: high
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MKT-03
+  field: KU
+  domain: market
+  statement: Do designers trust a new platform with their files?
+  why_it_matters: Decides whether buyers and designers show up.
+  severity: medium
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MKT-04
+  field: KU
+  domain: market
+  statement: "Price gap: can a multi-shop chain beat a single-vendor service such as JLCPCB plus a
+    generic enclosure?"
+  why_it_matters: Decides whether buyers and designers show up.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MKT-05
+  field: KU
+  domain: market
+  statement: What share of designs reach their trigger count?
+  why_it_matters: Decides whether buyers and designers show up.
+  severity: medium
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MKT-06
+  field: ZONE
+  domain: market
+  statement: Who else is building this right now. Re-scan monthly.
+  why_it_matters: Decides whether buyers and designers show up.
+  severity: medium
+  blocks_phase: null
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: ECO-01
+  field: KU
+  domain: economics
+  statement: "One-time costs (NRE): molds, fixtures, stencils, programming. Who pays them, and how
+    does the price curve amortize them?"
+  why_it_matters: Decides whether a run makes or loses money.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: ECO-02
+  field: KU
+  domain: economics
+  statement: "Quote validity: shop quotes often expire in weeks. Waitlists may run for months. How do
+    we lock prices, or re-quote at trigger without breaking buyer trust?"
+  why_it_matters: Decides whether a run makes or loses money.
+  severity: critical
+  blocks_phase: 4
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: ECO-03
+  field: KU
+  domain: economics
+  statement: "Scrap and yield: what overage per node do we order so the run still ships every unit?"
+  why_it_matters: Decides whether a run makes or loses money.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: ECO-04
+  field: KU
+  domain: economics
+  statement: Minimum order quantity per node, and how it sets the lowest trigger count.
+  why_it_matters: Decides whether a run makes or loses money.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: ECO-05
+  field: KU
+  domain: economics
+  statement: "Full landed cost per unit: parts, labor, shipping between nodes, duties, packaging,
+    payment fees, returns, support, Reagent share."
+  why_it_matters: Decides whether a run makes or loses money.
+  severity: critical
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: ECO-06
+  field: KU
+  domain: economics
+  statement: Payment processor fees on many small charges vs. one large charge.
+  why_it_matters: Decides whether a run makes or loses money.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: ECO-07
+  field: ZONE
+  domain: economics
+  statement: Hidden per-unit costs that appear only in a real run.
+  why_it_matters: Decides whether a run makes or loses money.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: MFG-01
+  field: KU
+  domain: manufacturing
+  statement: Tolerance stack-up across shops that never talk to each other. How do we set and check
+    interface tolerances?
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-02
+  field: KU
+  domain: manufacturing
+  statement: First article inspection per node before the full run. Who inspects, and to what standard?
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: high
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-03
+  field: KU
+  domain: manufacturing
+  statement: "Material substitution: a shop swaps a material or a part without telling us. How do we
+    detect it?"
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: high
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-04
+  field: KU
+  domain: manufacturing
+  statement: Electronic part shortages and lead times between waitlist open and trigger.
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: medium
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-05
+  field: KU
+  domain: manufacturing
+  statement: Counterfeit electronic parts in the chain.
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-06
+  field: KU
+  domain: manufacturing
+  statement: "Revision control: a drawing changes mid-run. Which units carry which revision?"
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: high
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-07
+  field: KU
+  domain: manufacturing
+  statement: "Base platforms: which enclosures and footprints do we standardize first? (Secondary.
+    Custom designs are the main path.)"
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-09
+  field: KU
+  domain: manufacturing
+  statement: Can geometry-based estimates get within a useful range of real quotes for each process?
+    Measure error per process.
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-10
+  field: KU
+  domain: manufacturing
+  statement: Which design types will the decomposition step get wrong? Collect failures.
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-11
+  field: KU
+  domain: manufacturing
+  statement: Which processes have no qualified shop in the network yet?
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-12
+  field: KU
+  domain: manufacturing
+  statement: "Process switch points: at what quantity does tooling (molds, dies) beat CNC or printing
+    for typical parts?"
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert+experiment
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: "Interview recorded to evidence; answer and confidence written. Then: Test run; result
+    saved to evidence; surprises logged."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: MFG-13
+  field: ZONE
+  domain: manufacturing
+  statement: Custom designs that fit no process in the catalog.
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: MFG-08
+  field: ZONE
+  domain: manufacturing
+  statement: "Process steps we have not modeled: finishing, coating, cleaning, programming firmware,
+    testing, packaging, kitting."
+  why_it_matters: Decides whether the parts fit and ship on spec.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: SUP-01
+  field: KU
+  domain: suppliers
+  statement: Do shops accept net-60 from a new platform? Many small shops ask for a deposit. Verify
+    with a probe.
+  why_it_matters: Decides whether shops join, stay, and deliver.
+  severity: critical
+  blocks_phase: 6
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: SUP-02
+  field: KU
+  domain: suppliers
+  statement: How do we vet a shop before its first job?
+  why_it_matters: Decides whether shops join, stay, and deliver.
+  severity: high
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: SUP-03
+  field: KU
+  domain: suppliers
+  statement: "Design leakage: a shop copies the design and sells it. What contract and technical
+    controls apply? (legal)"
+  why_it_matters: Decides whether shops join, stay, and deliver.
+  severity: critical
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal+expert
+  owner: agent
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: "Lawyer's written answer saved to evidence. Then: Interview recorded to evidence; answer
+    and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: SUP-04
+  field: KU
+  domain: suppliers
+  statement: "Shops that answer only on WhatsApp: how reliable is a bridge, and what records do we keep?"
+  why_it_matters: Decides whether shops join, stay, and deliver.
+  severity: medium
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: SUP-05
+  field: KU
+  domain: suppliers
+  statement: "Shop capacity: what happens when a run triggers and a shop is full?"
+  why_it_matters: Decides whether shops join, stay, and deliver.
+  severity: high
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: SUP-06
+  field: KU
+  domain: suppliers
+  statement: Floor staff may have no terminal at each station. Is a phone scan workflow enough?
+  why_it_matters: Decides whether shops join, stay, and deliver.
+  severity: medium
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: SUP-07
+  field: ZONE
+  domain: suppliers
+  statement: Reasons a good shop would refuse to join.
+  why_it_matters: Decides whether shops join, stay, and deliver.
+  severity: medium
+  blocks_phase: 5
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: LOG-01
+  field: KU
+  domain: logistics
+  statement: A sequential chain that crosses borders pays duties and waits at customs each time. Which
+    chains must stay in one country?
+  why_it_matters: Decides cost, delay, and customs risk between nodes.
+  severity: critical
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LOG-02
+  field: KU
+  domain: logistics
+  statement: Current US tariff rates and de minimis rules for each source country. These change often.
+    Verify at each run.
+  why_it_matters: Decides cost, delay, and customs risk between nodes.
+  severity: high
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LOG-03
+  field: KU
+  domain: logistics
+  statement: Who is the importer of record for each shipment?
+  why_it_matters: Decides cost, delay, and customs risk between nodes.
+  severity: high
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LOG-04
+  field: KU
+  domain: logistics
+  statement: "Lithium batteries: shipping classification and testing (verify UN 38.3 requirements)."
+  why_it_matters: Decides cost, delay, and customs risk between nodes.
+  severity: high
+  blocks_phase: 4
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LOG-05
+  field: KU
+  domain: logistics
+  statement: "Lost or damaged parts in transit between nodes: insurance and reship rules."
+  why_it_matters: Decides cost, delay, and customs risk between nodes.
+  severity: medium
+  blocks_phase: 4
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LOG-06
+  field: KU
+  domain: logistics
+  statement: "Final packaging and fulfillment: which node packs and ships to buyers?"
+  why_it_matters: Decides cost, delay, and customs risk between nodes.
+  severity: medium
+  blocks_phase: 4
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+expert
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Interview recorded to
+    evidence; answer and confidence written."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LOG-07
+  field: ZONE
+  domain: logistics
+  statement: Delays we cannot see until a real shipment moves.
+  why_it_matters: Decides cost, delay, and customs risk between nodes.
+  severity: medium
+  blocks_phase: 8
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: QUA-01
+  field: KU
+  domain: quality
+  statement: Is sampling every 100th unit enough to catch a bad batch in time? Depends on run size and
+    failure mode.
+  why_it_matters: Decides whether bad parts are caught before buyers see them.
+  severity: medium
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: QUA-02
+  field: KU
+  domain: quality
+  statement: Who decides a part is bad when the upstream and downstream shops disagree?
+  why_it_matters: Decides whether bad parts are caught before buyers see them.
+  severity: medium
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: QUA-03
+  field: KU
+  domain: quality
+  statement: "QR stickers: do they survive the process (heat, coating, cleaning)? When do we need
+    laser marking?"
+  why_it_matters: Decides whether bad parts are caught before buyers see them.
+  severity: medium
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: QUA-04
+  field: KU
+  domain: quality
+  statement: "Warranty: who pays for a unit that fails after delivery?"
+  why_it_matters: Decides whether bad parts are caught before buyers see them.
+  severity: high
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: QUA-05
+  field: ZONE
+  domain: quality
+  statement: Defects that only appear after assembly or after use.
+  why_it_matters: Decides whether bad parts are caught before buyers see them.
+  severity: medium
+  blocks_phase: 5
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: PAY-01
+  field: KU
+  domain: payments
+  statement: Card authorizations expire in days, so saved payment methods (Stripe SetupIntent) plus a
+    charge at trigger is the base design. Verify current Stripe docs.
+  why_it_matters: Direct money loss or regulatory exposure per run.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: Source saved to evidence; answer written in plain words.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded as KK; the item says verify current Stripe docs, so it loads as a KU.
+      by: agent
+- id: PAY-02
+  field: KU
+  domain: payments
+  statement: Off-session charges in regions with strong customer authentication may need the buyer to
+    return and confirm. What share of buyers does this affect?
+  why_it_matters: Direct money loss or regulatory exposure per run.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: Source saved to evidence; answer written in plain words.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: PAY-03
+  field: KU
+  domain: payments
+  statement: Failed charge rate on cards saved months earlier.
+  why_it_matters: Direct money loss or regulatory exposure per run.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: Source saved to evidence; answer written in plain words.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: PAY-04
+  field: KU
+  domain: payments
+  statement: "Holding buyer funds and paying many shops: does our structure trigger money transmitter
+    rules? Does Stripe Connect cover it? (legal)"
+  why_it_matters: Direct money loss or regulatory exposure per run.
+  severity: critical
+  blocks_phase: 6
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+legal
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Lawyer's written answer
+    saved to evidence."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: PAY-05
+  field: KU
+  domain: payments
+  statement: Chargebacks can arrive after we pay shops on net-60. Who absorbs the loss?
+  why_it_matters: Direct money loss or regulatory exposure per run.
+  severity: critical
+  blocks_phase: 6
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research+legal
+  owner: lawyer
+  next_action: Find the primary source and save it to evidence/.
+  done_when: "Source saved to evidence; answer written in plain words. Then: Lawyer's written answer
+    saved to evidence."
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: PAY-06
+  field: KU
+  domain: payments
+  statement: "Refunds after trigger but before shipment: who pays for parts already made?"
+  why_it_matters: Direct money loss or regulatory exposure per run.
+  severity: critical
+  blocks_phase: 6
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: decision
+  owner: kyle
+  next_action: Write the options and a recommendation for Kyle or Colt.
+  done_when: Choice, reason, and review date in the decision log.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: PAY-07
+  field: KU
+  domain: payments
+  statement: "Paying shops in other countries: currencies, fees, and tax forms."
+  why_it_matters: Direct money loss or regulatory exposure per run.
+  severity: high
+  blocks_phase: 6
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: Source saved to evidence; answer written in plain words.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: PAY-08
+  field: KU
+  domain: payments
+  statement: "Fraud: stolen cards joining waitlists to test cards."
+  why_it_matters: Direct money loss or regulatory exposure per run.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: Source saved to evidence; answer written in plain words.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-01
+  field: KU
+  domain: legal
+  statement: "FTC Mail Order Rule: ship-date promises, delay notices, refund options for preorders."
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: critical
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-02
+  field: KU
+  domain: legal
+  statement: "Product liability: courts have held some marketplaces liable as part of the chain of
+    distribution. Does orchestrating manufacture make us the manufacturer or seller?"
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: critical
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-03
+  field: KU
+  domain: legal
+  statement: "Designer agreement: who owns the design, who is liable for it, what license we get."
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: critical
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-04
+  field: KU
+  domain: legal
+  statement: "Supplier agreement: quality terms, payment withholding for faults, confidentiality,
+    no-copy terms."
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: high
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-05
+  field: KU
+  domain: legal
+  statement: "Buyer terms: what a buyer commits to on the waitlist; refund rights; state consumer laws."
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: critical
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-06
+  field: KU
+  domain: legal
+  statement: "Sales tax: marketplace facilitator laws in most US states may require us to collect and remit."
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: critical
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-07
+  field: KU
+  domain: legal
+  statement: "Reagent's profit share per project entity, and any investor money: securities review.
+    Pure preorders are purchases, not investments, but any profit promise to buyers changes that."
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: critical
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-08
+  field: KU
+  domain: legal
+  statement: "FCC: a digital device needs Part 15 compliance; a device with a radio needs
+    certification, and a certified module does not remove all host duties. Who is the responsible
+    party per design?"
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: critical
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-09
+  field: KU
+  domain: legal
+  statement: "Other regimes by category: children's products (CPSIA), California Prop 65, EU CE and
+    RoHS if we sell in the EU, battery rules."
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: high
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-10
+  field: KU
+  domain: legal
+  statement: "Export control beyond ITAR: EAR classification for electronics and encryption."
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-11
+  field: KU
+  domain: legal
+  statement: "Banned categories: weapons and weapon parts, medical claims, and others. Write the list."
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-12
+  field: KU
+  domain: legal
+  statement: IP takedown process for designs that copy someone else's product.
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-13
+  field: KU
+  domain: legal
+  statement: "Data privacy: buyer data, design files, call recordings between shops."
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: high
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: legal
+  owner: lawyer
+  next_action: Draft the question for counsel. Do not close without the written answer.
+  done_when: Lawyer's written answer saved to evidence.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LEG-14
+  field: ZONE
+  domain: legal
+  statement: Laws in states and countries we ship to that we have not checked.
+  why_it_matters: Liability, fines, or an injunction if wrong.
+  severity: medium
+  blocks_phase: 8
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: INS-01
+  field: KU
+  domain: insurance
+  statement: Product liability insurance for the platform and per design.
+  why_it_matters: Uninsured loss if a run or product fails.
+  severity: high
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: Interview recorded to evidence; answer and confidence written.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: INS-02
+  field: KU
+  domain: insurance
+  statement: Cargo insurance between nodes.
+  why_it_matters: Uninsured loss if a run or product fails.
+  severity: medium
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: Interview recorded to evidence; answer and confidence written.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: INS-03
+  field: KU
+  domain: insurance
+  statement: Errors and omissions for agent-made decisions (prices, drawing revisions).
+  why_it_matters: Uninsured loss if a run or product fails.
+  severity: high
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: Interview recorded to evidence; answer and confidence written.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: INS-04
+  field: KU
+  domain: insurance
+  statement: What insurers require from shops in the network.
+  why_it_matters: Uninsured loss if a run or product fails.
+  severity: medium
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: Interview recorded to evidence; answer and confidence written.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: TNS-01
+  field: KU
+  domain: trust-safety
+  statement: Review flow for every new design before publish.
+  why_it_matters: Fraud, unsafe designs, and abandoned runs.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: decision
+  owner: kyle
+  next_action: Write the options and a recommendation for Kyle or Colt.
+  done_when: Choice, reason, and review date in the decision log.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: TNS-02
+  field: KU
+  domain: trust-safety
+  statement: Fake designs that collect waitlist cards and never intend to ship.
+  why_it_matters: Fraud, unsafe designs, and abandoned runs.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: decision
+  owner: kyle
+  next_action: Write the options and a recommendation for Kyle or Colt.
+  done_when: Choice, reason, and review date in the decision log.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: TNS-03
+  field: KU
+  domain: trust-safety
+  statement: Designers who disappear after trigger. Who finishes the run?
+  why_it_matters: Fraud, unsafe designs, and abandoned runs.
+  severity: high
+  blocks_phase: 6
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: decision
+  owner: kyle
+  next_action: Write the options and a recommendation for Kyle or Colt.
+  done_when: Choice, reason, and review date in the decision log.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: TNS-04
+  field: KU
+  domain: trust-safety
+  statement: Shops that take a job and go silent.
+  why_it_matters: Fraud, unsafe designs, and abandoned runs.
+  severity: medium
+  blocks_phase: 6
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: decision
+  owner: kyle
+  next_action: Write the options and a recommendation for Kyle or Colt.
+  done_when: Choice, reason, and review date in the decision log.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: TNS-05
+  field: ZONE
+  domain: trust-safety
+  statement: Abuse patterns we have not imagined. Run red-team agents (4.2) each phase.
+  why_it_matters: Fraud, unsafe designs, and abandoned runs.
+  severity: medium
+  blocks_phase: 3
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: TEC-01
+  field: KU
+  domain: technology
+  statement: Can the DFM agent reliably read STEP files and drawings, or does it need a geometry tool?
+  why_it_matters: Agents and the state machine act on money and drawings.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: TEC-02
+  field: KU
+  domain: technology
+  statement: "ECR agent: how do we verify a drawing revision is correct before a human approves it?"
+  why_it_matters: Agents and the state machine act on money and drawings.
+  severity: high
+  blocks_phase: 5
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: TEC-03
+  field: KU
+  domain: technology
+  statement: "Negotiation agent: what data source gives fair machine-time estimates?"
+  why_it_matters: Agents and the state machine act on money and drawings.
+  severity: high
+  blocks_phase: 3
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: TEC-04
+  field: KU
+  domain: technology
+  statement: "Run state machine under partial failure: network splits, duplicate events, Stripe
+    webhooks out of order."
+  why_it_matters: Agents and the state machine act on money and drawings.
+  severity: critical
+  blocks_phase: 4
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: TEC-05
+  field: KU
+  domain: technology
+  statement: Cost of agent calls per run at scale.
+  why_it_matters: Agents and the state machine act on money and drawings.
+  severity: medium
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: agent
+  next_action: Design the cheapest real test and list what it could show.
+  done_when: Test run; result saved to evidence; surprises logged.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: TEC-06
+  field: ZONE
+  domain: technology
+  statement: Failure modes of agents acting on money and drawings.
+  why_it_matters: Agents and the state machine act on money and drawings.
+  severity: medium
+  blocks_phase: 4
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: LCH-01
+  field: KU
+  domain: launch
+  statement: "Final brand name and domain. (decision) Update 2026-10-12: the working name is 01. The
+    domain and final-name sign-off stay open."
+  why_it_matters: Brand, rights, and disclosure at launch.
+  severity: high
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: "Working name: 01."
+  evidence: []
+  resolve_by: decision
+  owner: kyle
+  next_action: Write the options and a recommendation for Kyle or Colt.
+  done_when: Choice, reason, and review date in the decision log.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LCH-02
+  field: KU
+  domain: launch
+  statement: Right to reuse the reference site's visual design. (decision; confirm)
+  why_it_matters: Brand, rights, and disclosure at launch.
+  severity: medium
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: decision
+  owner: kyle
+  next_action: Write the options and a recommendation for Kyle or Colt.
+  done_when: Choice, reason, and review date in the decision log.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LCH-03
+  field: KU
+  domain: launch
+  statement: Which creators fit the UGC brief, and what they charge.
+  why_it_matters: Brand, rights, and disclosure at launch.
+  severity: medium
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: Source saved to evidence; answer written in plain words.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LCH-04
+  field: KU
+  domain: launch
+  statement: FTC endorsement disclosure rules for each platform.
+  why_it_matters: Brand, rights, and disclosure at launch.
+  severity: medium
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: research
+  owner: agent
+  next_action: Find the primary source and save it to evidence/.
+  done_when: Source saved to evidence; answer written in plain words.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LCH-05
+  field: KU
+  domain: launch
+  statement: "Real footage: which shops let us film?"
+  why_it_matters: Brand, rights, and disclosure at launch.
+  severity: medium
+  blocks_phase: 7
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: Interview recorded to evidence; answer and confidence written.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: LCH-06
+  field: ZONE
+  domain: launch
+  statement: How the "crowdfunded hardware failed" story could be told about us, and what proof prevents it.
+  why_it_matters: Brand, rights, and disclosure at launch.
+  severity: medium
+  blocks_phase: 7
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent
+- id: SUPA-01
+  field: KU
+  domain: support
+  statement: "Returns: where does a returned unit go, and who inspects it?"
+  why_it_matters: Cost and risk after the unit ships.
+  severity: medium
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: Interview recorded to evidence; answer and confidence written.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: SUPA-02
+  field: KU
+  domain: support
+  statement: Spare parts and repairs after the run closes.
+  why_it_matters: Cost and risk after the unit ships.
+  severity: medium
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: Interview recorded to evidence; answer and confidence written.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: SUPA-03
+  field: KU
+  domain: support
+  statement: Support volume per 100 units, and who handles it.
+  why_it_matters: Cost and risk after the unit ships.
+  severity: medium
+  blocks_phase: 8
+  confidence: 0.1
+  current_answer: null
+  evidence: []
+  resolve_by: expert
+  owner: agent
+  next_action: Find one practitioner and run the interview protocol (knowledge-map 5.2).
+  done_when: Interview recorded to evidence; answer and confidence written.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (KU).
+      by: agent
+- id: SUPA-04
+  field: ZONE
+  domain: support
+  statement: Buyer problems that arrive months after delivery.
+  why_it_matters: Cost and risk after the unit ships.
+  severity: medium
+  blocks_phase: 8
+  confidence: 0
+  current_answer: null
+  evidence: []
+  resolve_by: discovery
+  owner: agent
+  next_action: Run the next discovery method from knowledge-map section 4 against this zone.
+  done_when: Three discovery methods run; surprise rate falls four straight weeks.
+  origin: seed
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Seeded from knowledge-map section 7 (ZONE).
+      by: agent

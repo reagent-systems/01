@@ -1,0 +1,25 @@
+name: Unknown
+description: A question or blind spot that should enter the register
+labels: [unknown, needs-triage]
+body:
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain
+      options: [vision, organization, market, economics, manufacturing, suppliers, logistics, quality, payments, legal, insurance, trust-safety, technology, launch, support]
+    validations: { required: true }
+  - type: textarea
+    id: statement
+    attributes:
+      label: The question
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: Who loses money, gets hurt, or can sue
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity guess
+      options: [critical, high, medium, low]

@@ -1,0 +1,23 @@
+name: Surprise
+description: Something happened that we did not expect
+labels: [surprise, needs-triage]
+body:
+  - type: textarea
+    id: expected
+    attributes:
+      label: What we expected
+    validations: { required: true }
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+    validations: { required: true }
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Links, logs, photos, quotes
+  - type: input
+    id: register
+    attributes:
+      label: Related register IDs

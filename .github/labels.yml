@@ -1,0 +1,132 @@
+- name: feedback
+  color: 1d76db
+  description: Raw feedback from a user, designer, shop, or tester
+- name: surprise
+  color: d93f0b
+  description: Something unexpected. Feeds agent-kit/unknowns/surprises.md
+- name: unknown
+  color: 5319e7
+  description: Tracks a register item in agent-kit/unknowns/register.yaml
+- name: needs-triage
+  color: fbca04
+  description: Not yet read by the triage routine or a maintainer
+- name: roadmap
+  color: 0e8a16
+  description: Request for the Feature Queue in ROADMAP.md
+- name: bug
+  color: d73a4a
+  description: Something is broken
+- name: enhancement
+  color: a2eeef
+  description: Improvement to existing behavior
+- name: docs
+  color: 0075ca
+  description: Documentation
+- name: needs-repro
+  color: e4e669
+  description: Cannot act without steps to reproduce
+- name: blocked
+  color: b60205
+  description: Waiting on something outside the issue
+- name: wontfix
+  color: ffffff
+  description: Declined, with a reason in the thread
+- name: security
+  color: b60205
+  description: Security-shaped. Never discuss a vulnerability in public
+- name: ci-failure
+  color: b60205
+  description: A gate failed in CI
+- name: accepted
+  color: 0e8a16
+  description: Triaged and queued
+- name: stale
+  color: ededed
+  description: No activity in 60 days
+- name: good first issue
+  color: 7057ff
+  description: Small and well scoped
+- name: help wanted
+  color: 008672
+  description: Open for outside help
+- name: severity:critical
+  color: b60205
+  description: Register severity critical
+- name: severity:high
+  color: d93f0b
+  description: Register severity high
+- name: severity:medium
+  color: fbca04
+  description: Register severity medium
+- name: severity:low
+  color: c5def5
+  description: Register severity low
+- name: phase:1
+  color: bfd4f2
+  description: Blocks or belongs to phase 1
+- name: phase:2
+  color: bfd4f2
+  description: Blocks or belongs to phase 2
+- name: phase:3
+  color: bfd4f2
+  description: Blocks or belongs to phase 3
+- name: phase:4
+  color: bfd4f2
+  description: Blocks or belongs to phase 4
+- name: phase:5
+  color: bfd4f2
+  description: Blocks or belongs to phase 5
+- name: phase:6
+  color: bfd4f2
+  description: Blocks or belongs to phase 6
+- name: phase:7
+  color: bfd4f2
+  description: Blocks or belongs to phase 7
+- name: phase:8
+  color: bfd4f2
+  description: Blocks or belongs to phase 8
+- name: domain:vision
+  color: c2e0c6
+  description: Register domain vision
+- name: domain:organization
+  color: c2e0c6
+  description: Register domain organization
+- name: domain:market
+  color: c2e0c6
+  description: Register domain market
+- name: domain:economics
+  color: c2e0c6
+  description: Register domain economics
+- name: domain:manufacturing
+  color: c2e0c6
+  description: Register domain manufacturing
+- name: domain:suppliers
+  color: c2e0c6
+  description: Register domain suppliers
+- name: domain:logistics
+  color: c2e0c6
+  description: Register domain logistics
+- name: domain:quality
+  color: c2e0c6
+  description: Register domain quality
+- name: domain:payments
+  color: c2e0c6
+  description: Register domain payments
+- name: domain:legal
+  color: c2e0c6
+  description: Register domain legal
+- name: domain:insurance
+  color: c2e0c6
+  description: Register domain insurance
+- name: domain:trust-safety
+  color: c2e0c6
+  description: Register domain trust-safety
+- name: domain:technology
+  color: c2e0c6
+  description: Register domain technology
+- name: domain:launch
+  color: c2e0c6
+  description: Register domain launch
+- name: domain:support
+  color: c2e0c6
+  description: Register domain support

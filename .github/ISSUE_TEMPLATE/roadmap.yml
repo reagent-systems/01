@@ -1,0 +1,20 @@
+name: Roadmap request
+description: A feature for the Feature Queue
+labels: [roadmap, needs-triage]
+body:
+  - type: textarea
+    id: case
+    attributes:
+      label: Use case
+      description: The case in agent-kit/docs/USE-CASES.md this serves, or a new one
+    validations: { required: true }
+  - type: textarea
+    id: promise
+    attributes:
+      label: Completion promise
+      description: One sentence that is provably true or false
+    validations: { required: true }
+  - type: textarea
+    id: scope
+    attributes:
+      label: Out of scope

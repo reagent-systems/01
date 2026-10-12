@@ -1,0 +1,30 @@
+name: Feedback
+description: Something a user, designer, shop, or tester told us or did
+labels: [feedback, needs-triage]
+body:
+  - type: dropdown
+    id: source
+    attributes:
+      label: Who gave it
+      options: [Designer, Buyer, Shop or node, Floor staff, Operator, Tester, Other]
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes:
+      label: What they said or did
+      description: Quote them. Link the recording or message.
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes:
+      label: What they expected
+  - type: input
+    id: where
+    attributes:
+      label: Where it happened
+      description: Page, app, design slug, run ID, or shop
+  - type: input
+    id: register
+    attributes:
+      label: Related register IDs
+      description: For example PAY-05, SUP-01. Leave empty if unknown.
