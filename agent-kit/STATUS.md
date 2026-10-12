@@ -14,6 +14,7 @@ behavior change. The weekly cycle (WEEKLY.md step 5) refreshes it.
 | Routines | 🚧 | Prompts in `ROUTINES.md`. No schedule created yet |
 | `apps/web` with `/ops/unknowns` | ✅ | Screenshot `unknowns/evidence/ops-unknowns.png`; page counts equal `pnpm unknowns:report` (test in `apps/web/src/lib/register-view.test.ts`) |
 | Vercel preview deploy of `apps/web` | ❌ | Blocked: the Vercel GitHub app has no access to `reagent-systems/01`. `create_git_project` failed with 400 |
+| Route tree: 34 sitemap URLs, forms to GitHub issues, legal placeholders, SEO files | ✅ | `pnpm verify` runs the smoke gate: every sitemap URL returns 200 with title, canonical, description, one h1 |
 | Design system and styled home page with video backgrounds | ✅ | `packages/ui` ports the reference site's stylesheet and component structure; `agent-kit/launch/design-compare/` has screenshots and media credits; tokens test in `packages/ui/src/tokens.test.ts` |
 | `packages/core` | ❌ | ROADMAP queue items 1 and 3 |
 | Backend on Vercel | ❌ | ROADMAP queue item 2 |
@@ -26,4 +27,4 @@ States: ✅ done (gated) · 🚧 in progress · ❌ not started · 🧊 frozen/w
 - **Shipping:** between cycles
 - **Last release:** none
 - **Known red:** none
-- **Needs the human:** merge the install branch to `main`; set `OPS_PASSWORD` in the Vercel project; run the `Labels` workflow once; turn on branch protection (CI.md); grant the Vercel GitHub app access to `reagent-systems/01` (the web deploy waits on it); create the routines (ROUTINES.md).
+- **Needs the human:** set `GITHUB_ISSUES_TOKEN` and `NEXT_PUBLIC_SITE_URL` in Vercel; merge the install branch to `main`; set `OPS_PASSWORD` in the Vercel project; run the `Labels` workflow once; turn on branch protection (CI.md); grant the Vercel GitHub app access to `reagent-systems/01` (the web deploy waits on it); create the routines (ROUTINES.md).

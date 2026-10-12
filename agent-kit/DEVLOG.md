@@ -70,3 +70,9 @@ Evidence: `pnpm verify` green; `agent-kit/launch/design-compare/`.
 The human asked for yellow and black, not red. I changed the accent to `#ffd100` and the hero tints to yellow, grey, and amber. Yellow multiplied over the colored footage turned it acid green, so I made all footage monochrome. The logo now sets the 1 in yellow italic. I drew nine logo options, A to I, in `agent-kit/launch/logo-options/`. Each shows a white 0 on black and a black 0 on light grey. Saira Condensed has no italic, so option B is a synthetic slant. The human picks one; the site keeps the Barlow 0 and italic 1 until then.
 
 Evidence: `pnpm verify` green; `agent-kit/launch/logo-options/logo-options.png`.
+
+## 2026-10-12 — Built the full route tree, the footer, and the SEO set
+
+The human said I had not copied the footer, the SEO, or the routes. I read the reference repo's footer, `seo.ts`, `site.ts`, `robots.ts`, `sitemap.ts`, `manifest.ts`, `opengraph-image.tsx`, `next.config.ts`, and its smoke test. I ported each one. The footer now has the brand block, four link columns, a dotted list, and a legal row. I built 34 routes from the spec's own page list: how it works, 11 process pages, 8 audience pages, platforms, designs, compliance, start, contact, and four legal placeholders. The forms file a GitHub issue labeled `feedback`, `lead`, and `needs-triage`, so the triage routine sees them. The smoke gate checks every sitemap URL for a title, canonical, description, and one `h1`. A vitest run picked up the smoke file and hung; I scoped vitest to the unit tests. The logo is now a stencil 0 and a blocky italic yellow 1. My first 1 read as a 7, so I gave it an angled flag. Form submissions put an email address into a GitHub issue, so keep the repo private (register item LEG-13).
+
+Evidence: `pnpm verify` green with 11 smoke tests; `agent-kit/launch/logo-options/logo-01.png`.

@@ -1,6 +1,14 @@
 import { FIELDS } from "@01/unknowns/schema";
 import { items, registerReport } from "../../../lib/register-view";
+import { pageMetadata } from "../../../lib/seo";
 import { RegisterTable } from "./table";
+
+export const metadata = pageMetadata({
+  title: "Unknowns",
+  description: "Operator view of the register of open questions.",
+  path: "/ops/unknowns",
+  noindex: true,
+});
 
 export const dynamic = "force-dynamic";
 

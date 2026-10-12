@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Logo } from "./Logo";
+import { SmartLink } from "./SmartLink";
 
 type NavLink = { href: string; label: string };
 
@@ -47,16 +48,16 @@ export function Header({
         <Logo />
         <nav className="nav" aria-label="Primary">
           {links.map((l) => (
-            <a key={l.href} href={l.href}>
+            <SmartLink key={l.href} href={l.href}>
               {l.label}
-            </a>
+            </SmartLink>
           ))}
         </nav>
         <div className="header-actions">
           {action && (
-            <a href={action.href} className="header-quote">
+            <SmartLink href={action.href} className="header-quote">
               {action.label}
-            </a>
+            </SmartLink>
           )}
           <button
             type="button"
@@ -85,10 +86,10 @@ export function Header({
           <ul>
             {drawerLinks.map((l, i) => (
               <li key={l.href} style={{ transitionDelay: open ? `${80 + i * 45}ms` : "0ms" }}>
-                <a href={l.href} onClick={() => setOpen(false)}>
+                <SmartLink href={l.href} onClick={() => setOpen(false)}>
                   {l.label}
                   <span aria-hidden="true">→</span>
-                </a>
+                </SmartLink>
               </li>
             ))}
           </ul>
@@ -96,9 +97,9 @@ export function Header({
         {drawerFoot && (
           <div className="drawer-foot">
             {drawerFoot.map((l) => (
-              <a key={l.href} href={l.href}>
+              <SmartLink key={l.href} href={l.href}>
                 {l.label}
-              </a>
+              </SmartLink>
             ))}
           </div>
         )}

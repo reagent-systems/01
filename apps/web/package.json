@@ -7,7 +7,7 @@
     "dev": "pnpm generate && next dev",
     "typecheck": "pnpm generate && tsc --noEmit",
     "build": "pnpm generate && next build",
-    "test": "pnpm generate && vitest run"
+    "test": "pnpm generate && vitest run && node --test tests/*.test.mjs"
   },
   "dependencies": {
     "@01/ui": "workspace:*",

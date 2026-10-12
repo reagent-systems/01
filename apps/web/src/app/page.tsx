@@ -1,9 +1,20 @@
-import { BgVideo, CtaBand, Hero, type HeroPanel, Reveal } from "@01/ui";
+import { BgVideo, CtaBand, Hero, type HeroPanel, JsonLd, Reveal, SmartLink } from "@01/ui";
+import { audiences } from "../lib/audiences";
+import { faqs } from "../lib/faqs";
+import { processes } from "../lib/processes";
+import { faqSchema, pageMetadata } from "../lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Design Hardware Without Capital",
+  description:
+    "Publish a hardware design, let buyers join a waitlist with a saved card, and start every shop in the chain with one button. Custom designs, any process.",
+  path: "/",
+});
 
 const heroPanels: HeroPanel[] = [
   {
     label: "Publish",
-    href: "#step-1",
+    href: "/start",
     video: "publish",
     alt: "A 3D printer building a model",
     blurb:
@@ -11,7 +22,7 @@ const heroPanels: HeroPanel[] = [
   },
   {
     label: "Fund",
-    href: "#step-3",
+    href: "/designs",
     video: "fund",
     alt: "A machine placing components on a circuit board",
     blurb:
@@ -19,7 +30,7 @@ const heroPanels: HeroPanel[] = [
   },
   {
     label: "Build",
-    href: "#step-4",
+    href: "/for/manufacturers",
     video: "build",
     alt: "A robot working on a production line",
     blurb:
@@ -74,47 +85,41 @@ const why = [
 
 const steps = [
   {
+    href: "/start",
     title: "Publish a design",
     body: "Upload STEP, STL, DXF, Gerber, and BOM files. The geometry service reads every part. The DFM agent proposes a parts tree.",
   },
   {
+    href: "/processes",
     title: "Get a price",
     body: "Each part gets an estimate from its geometry, process, and quantity. Real shop quotes replace the estimates before trigger.",
   },
   {
+    href: "/designs",
     title: "Join the waitlist",
     body: "Buyers save a card and pay nothing. The unit price falls at each tier as the count rises.",
   },
   {
+    href: "/how-it-works#run",
     title: "Press start",
     body: "One button confirms every shop, charges every buyer, and sends a purchase order to the whole chain at once.",
   },
   {
+    href: "/how-it-works#trace",
     title: "Track every part",
     body: "Each part carries a serial code. Floor staff scan it at every step. A bad part routes to the shop that made it.",
   },
   {
+    href: "/how-it-works#ship",
     title: "Ship to buyers",
     body: "The last shop ships the unit. Buyers see one tracking view from raw stock to their desk.",
-  },
-];
-
-const faqs = [
-  {
-    q: "When is my card charged?",
-    a: "At trigger. A saved card holds no funds, and nothing is authorized before then.",
-  },
-  { q: "Can I leave the waitlist?", a: "Yes. Leave at any time before trigger and pay nothing." },
-  { q: "What if the ship date slips?", a: "You get a notice and the option of a refund." },
-  {
-    q: "What can I design?",
-    a: "Any design. A custom upload is the main path. Standard enclosures and footprints are shortcuts, never requirements.",
   },
 ];
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={faqSchema(faqs)} />
       <Hero panels={heroPanels} label="01" />
 
       <div className="section-seam" aria-hidden="true" />
@@ -198,9 +203,9 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <a href="#how" className="btn">
+            <SmartLink href="/how-it-works" className="btn">
               How it works
-            </a>
+            </SmartLink>
           </Reveal>
         </div>
       </section>
@@ -232,12 +237,12 @@ export default function Home() {
               ))}
             </ul>
             <div className="btn-row">
-              <a href="#how" className="btn btn-solid">
+              <SmartLink href="/how-it-works" className="btn btn-solid">
                 How it works
-              </a>
-              <a href="#faq" className="btn">
+              </SmartLink>
+              <SmartLink href="/#faq" className="btn">
                 FAQ
-              </a>
+              </SmartLink>
             </div>
           </Reveal>
         </div>
@@ -264,13 +269,67 @@ export default function Home() {
           </div>
           <div className="card-grid">
             {steps.map((s, i) => (
-              <div className="card" id={`step-${i + 1}`} key={s.title}>
+              <SmartLink href={s.href} className="card" id={`step-${i + 1}`} key={s.title}>
                 <span className="card-kicker">{String(i + 1).padStart(2, "0")} · Step</span>
                 <h3 className="h3">{s.title}</h3>
                 <p>{s.body}</p>
-              </div>
+                <span className="arrow-link">
+                  Learn more <span aria-hidden="true">→</span>
+                </span>
+              </SmartLink>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section bordered-top" aria-labelledby="proc-title">
+        <div className="container">
+          <div className="section-head">
+            <Reveal>
+              <p className="eyebrow">Processes</p>
+              <h2 id="proc-title" className="h2">
+                Every part finds its process
+              </h2>
+            </Reveal>
+            <Reveal delay={100}>
+              <p className="lead" style={{ margin: 0 }}>
+                Machining, molding, printing, boards, finishing, and assembly. Each shop declares
+                what it runs, and parts match to shops by process and limits.
+              </p>
+            </Reveal>
+          </div>
+          <div className="card-grid">
+            {processes.slice(0, 6).map((p, i) => (
+              <SmartLink href={`/processes/${p.slug}`} className="card" key={p.slug}>
+                <span className="card-kicker">
+                  {String(i + 1).padStart(2, "0")} · {p.kind}
+                </span>
+                <h3 className="h3">{p.title}</h3>
+                <p>{p.summary}</p>
+                <span className="arrow-link">
+                  Learn more <span aria-hidden="true">→</span>
+                </span>
+              </SmartLink>
+            ))}
+          </div>
+          <p style={{ marginTop: "2rem" }}>
+            <SmartLink href="/processes" className="arrow-link">
+              All processes <span aria-hidden="true">→</span>
+            </SmartLink>
+          </p>
+        </div>
+      </section>
+
+      <section className="section-tight bordered-top" aria-label="Who it is for">
+        <div className="container">
+          <p className="eyebrow">Who it’s for</p>
+          <ul className="tag-list">
+            {audiences.map((a) => (
+              <li key={a.slug} style={{ padding: 0, border: 0 }}>
+                <SmartLink href={`/for/${a.slug}`}>{a.name}</SmartLink>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -296,8 +355,8 @@ export default function Home() {
       <CtaBand
         title="Ready to build without capital?"
         body="Publish a design. Let the waitlist fund the run."
-        primary={{ href: "#how", label: "How it works" }}
-        secondary={{ href: "#faq", label: "FAQ" }}
+        primary={{ href: "/start", label: "Start a design" }}
+        secondary={{ href: "/contact", label: "Contact" }}
       />
     </>
   );

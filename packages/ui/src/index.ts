@@ -1,8 +1,12 @@
 export { BgVideo } from "./BgVideo";
+export { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 export { CtaBand } from "./CtaBand";
-export { Footer } from "./Footer";
+export { Footer, type FooterProps } from "./Footer";
 export { Header } from "./Header";
 export { Hero, type HeroPanel } from "./Hero";
-export { Logo } from "./Logo";
+export { JsonLd } from "./JsonLd";
+export { Logo, LogoMark } from "./Logo";
+export { PageHero } from "./PageHero";
 export { Reveal } from "./Reveal";
+export { SmartLink } from "./SmartLink";
 export { tokens } from "./tokens";

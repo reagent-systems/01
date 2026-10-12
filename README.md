@@ -25,7 +25,7 @@ The full spec is [`handoff-spec.md`](agent-kit/unknowns/evidence/handoff-spec.md
 
 | Path | What it is |
 |---|---|
-| `apps/web` | Next.js 16 app. Video-backed home page and the operator page `/ops/unknowns` |
+| `apps/web` | Next.js 16 app: 34 routes (how it works, processes, audiences, platforms, designs, compliance, start, contact, legal), forms that file GitHub issues, and the operator page `/ops/unknowns` |
 | `packages/ui` | Design tokens and components shared by every app |
 | `packages/config` | Zod environment schema helper |
 | `tools/unknowns` | Lints, reports, and links the register to GitHub issues |

@@ -7,6 +7,9 @@
 - name: unknown
   color: 5319e7
   description: Tracks a register item in agent-kit/unknowns/register.yaml
+- name: lead
+  color: 0e8a16
+  description: Inbound interest from the website forms
 - name: needs-triage
   color: fbca04
   description: Not yet read by the triage routine or a maintainer

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { SmartLink } from "./SmartLink";
 
 type Action = { href: string; label: string };
 
@@ -23,12 +24,12 @@ export function CtaBand({
           </p>
         </div>
         <div className="btn-row">
-          <a href={primary.href} className="btn btn-solid">
+          <SmartLink href={primary.href} className="btn btn-solid">
             {primary.label}
-          </a>
-          <a href={secondary.href} className="btn">
+          </SmartLink>
+          <SmartLink href={secondary.href} className="btn">
             {secondary.label}
-          </a>
+          </SmartLink>
         </div>
       </div>
     </section>

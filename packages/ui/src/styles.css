@@ -1673,15 +1673,15 @@ button {
 }
 
 /* Logo mark */
-.logo-text {
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 1;
+.logo-svg {
+  height: 30px;
+  width: auto;
+  color: #fff;
 }
-.logo-text i {
-  font-style: italic;
-  color: var(--accent);
+@media (max-width: 520px) {
+  .logo-svg {
+    height: 26px;
+  }
 }
 
 /* Yellow and black: all footage is monochrome so the yellow tint and accents read cleanly. */
@@ -1692,4 +1692,93 @@ button {
 .split-media video,
 .split-media img {
   filter: grayscale(1) contrast(1.08);
+}
+
+/* Chain graph: stages run left to right; nodes inside a stage run in parallel. */
+.chain {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+}
+.chain-stage {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 11rem;
+}
+.chain-stage:not(:last-child)::after {
+  content: "→";
+  padding: 0 0.9rem;
+  color: var(--accent);
+  font-size: 1.4rem;
+}
+.chain-nodes {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.chain-node {
+  border: 1px solid var(--line-strong);
+  padding: 1rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--bg);
+}
+.chain--animated .chain-node {
+  animation: chain-lit 5s var(--ease) infinite;
+  animation-delay: calc(var(--s) * 0.7s);
+}
+@keyframes chain-lit {
+  0%,
+  16%,
+  100% {
+    border-color: var(--line-strong);
+    background: var(--bg);
+    color: var(--text);
+  }
+  4%,
+  12% {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: #000;
+  }
+}
+@media (max-width: 760px) {
+  .chain {
+    flex-direction: column;
+  }
+  .chain-stage {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .chain-stage:not(:last-child)::after {
+    content: "↓";
+    padding: 0.6rem 0;
+    text-align: center;
+  }
+}
+
+/* Notice box for placeholder legal pages */
+.notice {
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+  max-width: 46rem;
+}
+.notice strong {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
 }

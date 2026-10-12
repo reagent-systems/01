@@ -31,12 +31,32 @@ The path below is the feedback loop that runs today.
 
 ## `apps/web`
 
+Routes mirror the reference site's shape: index pages, `[slug]` detail pages, forms, legal, and generated SEO files.
+
+| Route | Source | Task |
+|---|---|---|
+| `/` | `app/page.tsx` | Video hero, mission, promises, technology, steps, processes, audiences, FAQ |
+| `/how-it-works` | `app/how-it-works` | Seven steps, animated chain graph, price break table, fault handling |
+| `/processes`, `/processes/[slug]` | `lib/processes.ts` | 11 process pages: CNC, sheet metal, molding, printing, boards, casting, finishing, assembly, testing, packing |
+| `/for`, `/for/[slug]` | `lib/audiences.ts` | 8 audience pages, including `/for/manufacturers` for shops |
+| `/platforms`, `/platforms/[slug]` | `lib/platforms.ts` | Base platforms |
+| `/designs`, `/designs/[slug]` | `lib/designs.ts` | Design pages with a waitlist notice. No invented counts or prices |
+| `/compliance` | `app/compliance` | FCC, batteries, export control |
+| `/start`, `/contact` | `components/InquiryForm.tsx` | Forms that post to `/api/inquiry` |
+| `/api/inquiry` | `app/api/inquiry/route.ts` | Files each submission as a GitHub issue labeled `feedback`, `lead`, `needs-triage` |
+| `/terms`, `/privacy`, `/designer-agreement`, `/supplier-agreement` | `components/LegalPage.tsx` | Placeholders marked "needs legal review" |
+| `/ops/unknowns` | `app/ops/unknowns` | Operator view of the register. Password gated, noindex |
+| `/sitemap.xml`, `/robots.txt`, `/manifest.webmanifest`, `/opengraph-image`, `/icon.svg`, `/apple-icon.png` | `app/*.ts(x)` | Generated SEO and app files |
+
+Alias routes redirect permanently (`next.config.ts`): `/capabilities`, `/quote`, `/certifications`, `/contracting`, `/join`, and others.
+
+SEO: one `pageMetadata()` per page (canonical, Open Graph, Twitter), JSON-LD for the organization, website, FAQ, services, and breadcrumbs, security headers, a long cache on `/video`, and a smoke gate (`tests/smoke.test.mjs`) that checks every sitemap URL for a title, canonical, description, and one `h1`.
+
 | File | Task |
 |---|---|
 | `src/proxy.ts` | Gates `/ops/*` behind HTTP Basic auth. Returns 404 when `OPS_PASSWORD` is unset |
-| `src/lib/ops-auth.ts` | Constant-time password check |
 | `src/lib/register-view.ts` | Reads `src/generated/register.json`, builds the report |
-| `src/app/ops/unknowns/` | Stats, domain × field grid, blockers by phase, filterable register table |
+| `src/lib/site.ts`, `seo.ts` | Site facts, nav, metadata and schema helpers |
 
 `pnpm generate` writes `src/generated/register.json` from `agent-kit/unknowns/register.yaml` before every build, typecheck, and test. The file is gitignored.
 

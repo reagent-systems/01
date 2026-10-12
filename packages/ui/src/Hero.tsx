@@ -1,4 +1,5 @@
 import { BgVideo } from "./BgVideo";
+import { SmartLink } from "./SmartLink";
 
 export type HeroPanel = {
   label: string;
@@ -13,7 +14,7 @@ export function Hero({ panels, label }: { panels: HeroPanel[]; label: string }) 
   return (
     <section className="hero-split" aria-label={label}>
       {panels.map((p, i) => (
-        <a key={p.label} href={p.href} className={`hero-panel hero-panel-${i + 1}`}>
+        <SmartLink key={p.label} href={p.href} className={`hero-panel hero-panel-${i + 1}`}>
           <span className="hero-panel-media">
             <BgVideo name={p.video} priority label={p.alt} />
           </span>
@@ -23,7 +24,7 @@ export function Hero({ panels, label }: { panels: HeroPanel[]; label: string }) 
             <span className="hero-panel-rule" aria-hidden="true" />
             <span className="hero-panel-blurb">{p.blurb}</span>
           </span>
-        </a>
+        </SmartLink>
       ))}
     </section>
   );
