@@ -1,4 +1,3 @@
-import { Header } from "@01/ui";
 import { FIELDS } from "@01/unknowns/schema";
 import { items, registerReport } from "../../../lib/register-view";
 import { RegisterTable } from "./table";
@@ -9,8 +8,7 @@ export default function UnknownsPage() {
   const report = registerReport(new Date().toISOString().slice(0, 10));
   return (
     <>
-      <Header links={[]} />
-      <main className="ops">
+      <div className="ops">
         <div className="stats">
           <div>
             <span>{report.total}</span>items
@@ -71,7 +69,7 @@ export default function UnknownsPage() {
 
         <h2>Register</h2>
         <RegisterTable items={items} />
-      </main>
+      </div>
     </>
   );
 }

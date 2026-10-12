@@ -58,3 +58,9 @@ Evidence: `pnpm verify` green; `agent-kit/unknowns/evidence/ops-unknowns.png`.
 The first web shell looked plain. I opened the reference site in a browser, took screenshots at 1280px and 390px, and read its computed CSS. I wrote the values into `packages/ui` as tokens and rebuilt its patterns as components: header, three slanted hero panels, numbered card grid, checklist, FAQ, closing band, and footer. The first hero had edges that did not meet the white rules. I rewrote the geometry so the slant is a fixed share of the hero height. I took only the design system: no name, text, photo, video, or link. The hero uses gradients until we film our own footage. My first measurement script missed the hero label and footer heading, so I matched those by eye and said so in the comparison notes.
 
 Evidence: `agent-kit/launch/design-compare/`; `pnpm verify` green.
+
+## 2026-10-12 — Ported the reference source and added video
+
+The human pointed out that I had copied the reference site from screenshots, not from its code. They were right. Screenshots gave me the numbers but not the behavior. I read the repo `ThyFriendlyFox/ferrera-tooling-website` and ported its stylesheet and component structure into `packages/ui`: the animated hero dividers, hover expand with a blurb, the tint blend, feathered video edges, the phone layout, the drawer header, and scroll reveal. I wrote all copy fresh. For video I took six clips from Mixkit, cut each to 10 seconds, and compressed them to 4.3 MB total. I could not play them here because headless Chromium lacks H.264, so the screenshots show poster frames. I did not check the clips in a real browser.
+
+Evidence: `pnpm verify` green; `agent-kit/launch/design-compare/`.

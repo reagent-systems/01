@@ -36,7 +36,7 @@ Source spec: `unknowns/evidence/handoff-spec.md`. Open questions: `unknowns/regi
 |---|---|
 | `agent-kit/unknowns/register.yaml` | Never delete an item or reuse an ID. Close it. Edit with `pnpm unknowns:link` or by hand, then run `pnpm unknowns:lint`. |
 | `agent-kit/unknowns/evidence/` | Holds the source spec and map. Treat as read-only. Biome and the placeholder gate skip it. |
-| Reference site `ferrera-tooling-website.vercel.app` | Copy the design system only. Never copy its name, logo, text, phone, address, videos, or images. Never link to it. |
+| Reference site source `ThyFriendlyFox/ferrera-tooling-website` | `packages/ui/src/styles.css` is its stylesheet. Copy the design system only. Never copy its name, logo, text, phone, address, videos, or images. Never link to it. |
 | Ferrera Tooling customer data, pricing, supplier lists | Belongs to an employer. It never enters the register or the repo. |
 | UI copy | No microcopy, subtitles, badges, pills, or toasts beyond the section patterns in the spec. |
 | `.claude/ralph-loop.local.md` | Runtime state. Gitignored. Never commit it. |

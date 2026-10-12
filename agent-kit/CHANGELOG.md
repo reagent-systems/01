@@ -9,7 +9,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/) · Versioning: [SemVer](
 - Unknowns register with 105 seeded items, `pnpm unknowns:lint`, `:report`, `:issues`, `:link`.
 - GitHub issue forms, labels, CI, nightly, release, stale, and label-sync workflows.
 - Routine prompts in `agent-kit/ROUTINES.md`.
-- `packages/ui`: design tokens and components matched to the reference site's computed CSS. The home page uses them.
+- `packages/ui`: the reference site's stylesheet and component structure, with our own copy. The home page has an animated three-panel video hero and video sections from Mixkit.
 - `apps/web`: Next.js 16 shell and a password-gated `/ops/unknowns` page that renders the register.
 ### Changed
 ### Deprecated

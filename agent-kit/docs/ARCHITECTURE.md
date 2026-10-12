@@ -14,7 +14,7 @@
 | Orchestrator | `apps/orchestrator` | Runs the chain state machine | planned |
 | Agents | `apps/agents` | Negotiation, DFM, ECR agents | planned |
 | Launch | `apps/launch` | Remotion reels | planned |
-| UI | `packages/ui` | Design tokens (`tokens.ts`, `styles.css`) and components: header, hero, card grid, checklist, FAQ, CTA band, footer | built |
+| UI | `packages/ui` | `styles.css` (the design system), `tokens.ts`, and components: `Header` with drawer, `Hero`, `BgVideo`, `Reveal`, `CtaBand`, `Footer` | built |
 | DB, Core, SDK | `packages/db`, `core`, `sdk` | Schema, domain logic, API client | planned |
 | Infra | Vercel project settings | Hosting for web and backend. No Terraform yet | planned |
 
