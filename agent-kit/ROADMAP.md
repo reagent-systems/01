@@ -19,28 +19,21 @@ queue is the next short steps.
 
 ## Feature Queue — ordered; top unblocked item ships next
 
-### 1. Design tokens from the reference site
-- **Promise:** `packages/ui/tokens` holds the colors, fonts, sizes, spacing, radii, and motion timings read from the reference site's computed CSS, and a side-by-side screenshot test of the home page at 1280px and 390px shows matching layout, type, and color.
-- **Evidence:** Token file, desktop and mobile screenshot pairs, a diff report saved under `agent-kit/launch/`.
-- **Use case:** Publish a design.
-- **Scope guard:** Design system only. No Ferrera name, logo, text, phone, address, video, or image. No link to it. No pages beyond the home page.
-- **Status:** ready
-
-### 2. Pricing curve in core
+### 1. Pricing curve in core
 - **Promise:** `packages/core` exports a tiered price curve with process switch points, and its tests reach 100% branch coverage including property tests for monotonic price and tier boundaries.
 - **Evidence:** `pnpm test` output with the coverage table at 100% branches for the curve module.
 - **Use case:** Join a waitlist.
 - **Scope guard:** No state machine, no payouts, no I/O, no database.
 - **Status:** ready
 
-### 3. Vercel backend foundation
+### 2. Vercel backend foundation
 - **Promise:** `apps/web` serves `GET /api/health` that reports the git SHA and whether the database answers, and `packages/db` holds a Drizzle schema plus a migration that applies to a fresh Postgres in a test.
 - **Evidence:** `pnpm verify` green with a migration test against a throwaway Postgres; the health route's response saved in the PR.
 - **Use case:** Start a run.
 - **Scope guard:** No tables beyond `designs` and `events`. No payments. No queue.
 - **Status:** ready
 
-### 4. Chain graph in core
+### 3. Chain graph in core
 - **Promise:** `packages/core` exports a chain graph (nodes, ship-to edges) that rejects cycles and orphan nodes, orders nodes for parallel and sequential topologies, and its tests reach 100% branch coverage.
 - **Evidence:** `pnpm test` coverage table at 100% branches for the graph module; property tests on random DAGs.
 - **Use case:** Start a run.
@@ -49,6 +42,8 @@ queue is the next short steps.
 
 ## Later — candidates, not yet specced
 
+- Home page: add "Learn more" links, the use-case pages, and a real start flow. The CTA buttons point at in-page anchors until those pages exist.
+- Real media for the hero: our own footage (shot list in the launch kit).
 - Phase 1 rest: empty `api`, `orchestrator`, `agents`, `supplier`, `floor`, `launch` apps; Vercel previews; deploy workflows.
 - Phase 2: chain graph, run state machine, serialization, payouts in `packages/core`.
 - Phase 3: upload, geometry service, decomposition, quoting engine, DFM agent, waitlist, Stripe SetupIntent.
@@ -65,6 +60,7 @@ queue is the next short steps.
 | Week | Feature | Release | Evidence |
 |---|---|---|---|
 | 2026-10-12 | Agent kit installed; monorepo; register and tooling; GitHub feedback wiring | none | `pnpm verify` green, see STATUS.md |
+| 2026-10-12 | Design tokens, `packages/ui`, and the restyled home page | none | `agent-kit/launch/design-compare/` (screenshots at 1280px and 390px, token table); `pnpm verify` green; tokens test keeps `tokens.ts` and `styles.css` in sync |
 | 2026-10-12 | Web shell with `/ops/unknowns` | none | `agent-kit/unknowns/evidence/ops-unknowns.png`; 105 rows, 19 after the critical filter; `pnpm verify` green |
 
 ## Explicitly not doing
@@ -78,3 +74,4 @@ queue is the next short steps.
 - 2026-10-12: Queue seeded by the installing agent from the handoff spec. Provisional.
 - 2026-10-12: Queue item 1 (web shell) shipped and removed. Item 4 (chain graph) added to keep 3 ready items.
 - 2026-10-12: The human chose Vercel for hosting and the backend. The Terraform item was replaced by item 3 (Vercel backend foundation).
+- 2026-10-12: Design tokens item shipped and removed. Queue is now pricing curve, Vercel backend foundation, chain graph.

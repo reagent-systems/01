@@ -14,9 +14,9 @@ behavior change. The weekly cycle (WEEKLY.md step 5) refreshes it.
 | Routines | 🚧 | Prompts in `ROUTINES.md`. No schedule created yet |
 | `apps/web` with `/ops/unknowns` | ✅ | Screenshot `unknowns/evidence/ops-unknowns.png`; page counts equal `pnpm unknowns:report` (test in `apps/web/src/lib/register-view.test.ts`) |
 | Vercel preview deploy of `apps/web` | ❌ | Blocked: the Vercel GitHub app has no access to `reagent-systems/01`. `create_git_project` failed with 400 |
-| Design tokens, `packages/ui` | ❌ | ROADMAP queue item 1 |
-| `packages/core` | ❌ | ROADMAP queue items 2 and 4 |
-| Backend on Vercel | ❌ | ROADMAP queue item 3 |
+| Design tokens, `packages/ui`, styled home page | ✅ | `agent-kit/launch/design-compare/`; tokens test in `packages/ui/src/tokens.test.ts`. Matched by measurement except the hero label and footer heading, matched by eye |
+| `packages/core` | ❌ | ROADMAP queue items 1 and 3 |
+| Backend on Vercel | ❌ | ROADMAP queue item 2 |
 | Phases 2–8 | ❌ | ROADMAP "Later" |
 
 States: ✅ done (gated) · 🚧 in progress · ❌ not started · 🧊 frozen/won't do.

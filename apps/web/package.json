@@ -10,6 +10,7 @@
     "test": "pnpm generate && vitest run"
   },
   "dependencies": {
+    "@01/ui": "workspace:*",
     "@01/unknowns": "workspace:*",
     "next": "16.4.0",
     "react": "19.3.0",

@@ -52,3 +52,9 @@ Evidence: `pnpm verify` green; `pnpm unknowns:report` shows 19 open critical ite
 I built `apps/web`: a Next.js 16 app with a home page and `/ops/unknowns`. The page shows 105 register items, a domain-by-field grid, and the open critical items by phase. A table filters by domain, field, severity, and text. The 19 critical items show when I filter on critical. The page sits behind a password. With no `OPS_PASSWORD` set it returns 404, so a missing secret fails closed. I first looked at Firebase for hosting. It added nothing that Vercel and Google Cloud did not already cover, so the human chose Vercel. The Vercel account is on the Hobby plan, which forbids commercial use.
 
 Evidence: `pnpm verify` green; `agent-kit/unknowns/evidence/ops-unknowns.png`.
+
+## 2026-10-12 — Restyled the site from the reference
+
+The first web shell looked plain. I opened the reference site in a browser, took screenshots at 1280px and 390px, and read its computed CSS. I wrote the values into `packages/ui` as tokens and rebuilt its patterns as components: header, three slanted hero panels, numbered card grid, checklist, FAQ, closing band, and footer. The first hero had edges that did not meet the white rules. I rewrote the geometry so the slant is a fixed share of the hero height. I took only the design system: no name, text, photo, video, or link. The hero uses gradients until we film our own footage. My first measurement script missed the hero label and footer heading, so I matched those by eye and said so in the comparison notes.
+
+Evidence: `agent-kit/launch/design-compare/`; `pnpm verify` green.
