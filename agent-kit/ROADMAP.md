@@ -19,33 +19,33 @@ queue is the next short steps.
 
 ## Feature Queue — ordered; top unblocked item ships next
 
-### 1. Web shell with the unknowns page
-- **Promise:** `apps/web` builds under `pnpm build`, and `/ops/unknowns` renders the register as a filterable table and a domain × field grid whose counts equal `pnpm unknowns:report --json`.
-- **Evidence:** `pnpm verify` green; a test that compares page data to the report; a screenshot of the page.
-- **Use case:** Close an unknown.
-- **Scope guard:** No design tokens, no public pages, no auth provider beyond a single operator password gate, no deploy.
-- **Status:** ready
-
-### 2. Design tokens from the reference site
+### 1. Design tokens from the reference site
 - **Promise:** `packages/ui/tokens` holds the colors, fonts, sizes, spacing, radii, and motion timings read from the reference site's computed CSS, and a side-by-side screenshot test of the home page at 1280px and 390px shows matching layout, type, and color.
 - **Evidence:** Token file, desktop and mobile screenshot pairs, a diff report saved under `agent-kit/launch/`.
 - **Use case:** Publish a design.
 - **Scope guard:** Design system only. No Ferrera name, logo, text, phone, address, video, or image. No link to it. No pages beyond the home page.
 - **Status:** ready
 
-### 3. Pricing curve in core
+### 2. Pricing curve in core
 - **Promise:** `packages/core` exports a tiered price curve with process switch points, and its tests reach 100% branch coverage including property tests for monotonic price and tier boundaries.
 - **Evidence:** `pnpm test` output with the coverage table at 100% branches for the curve module.
 - **Use case:** Join a waitlist.
 - **Scope guard:** No state machine, no payouts, no I/O, no database.
 - **Status:** ready
 
-### 4. Terraform for staging
+### 3. Terraform for staging
 - **Promise:** `terraform validate` and `terraform plan` pass for `infra/terraform` with Cloud Run `api`, `orchestrator`, `agents`, Cloud SQL Postgres 16 on private IP, Cloud Storage, Pub/Sub, Secret Manager, and Artifact Registry in a `staging` project.
 - **Evidence:** `terraform plan` output saved in the PR.
 - **Use case:** Start a run.
 - **Scope guard:** Staging only. No prod project. No apply without the human.
-- **Status:** blocked on a GCP staging project ID and billing from the human
+- **Status:** blocked on a decision: backend host (see Queue changes 2026-10-12). Likely replaced by a Vercel-based backend item
+
+### 4. Chain graph in core
+- **Promise:** `packages/core` exports a chain graph (nodes, ship-to edges) that rejects cycles and orphan nodes, orders nodes for parallel and sequential topologies, and its tests reach 100% branch coverage.
+- **Evidence:** `pnpm test` coverage table at 100% branches for the graph module; property tests on random DAGs.
+- **Use case:** Start a run.
+- **Scope guard:** No state machine, no I/O, no database.
+- **Status:** ready
 
 ## Later — candidates, not yet specced
 
@@ -64,6 +64,7 @@ queue is the next short steps.
 | Week | Feature | Release | Evidence |
 |---|---|---|---|
 | 2026-10-12 | Agent kit installed; monorepo; register and tooling; GitHub feedback wiring | none | `pnpm verify` green, see STATUS.md |
+| 2026-10-12 | Web shell with `/ops/unknowns` | none | `agent-kit/unknowns/evidence/ops-unknowns.png`; 105 rows, 19 after the critical filter; `pnpm verify` green |
 
 ## Explicitly not doing
 
@@ -74,3 +75,5 @@ queue is the next short steps.
 ## Queue changes
 
 - 2026-10-12: Queue seeded by the installing agent from the handoff spec. Provisional.
+- 2026-10-12: Queue item 1 (web shell) shipped and removed. Item 4 (chain graph) added to keep 3 ready items.
+- 2026-10-12: The human asked to host on Vercel, not Firebase. Terraform item is blocked until the backend host is decided.

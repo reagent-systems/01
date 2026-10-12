@@ -10,3 +10,6 @@ coverage
 .claude/ralph-loop.local.md
 .claude/*.local.md
 .claude/settings.local.json
+apps/web/src/generated
+next-env.d.ts
+*.tsbuildinfo

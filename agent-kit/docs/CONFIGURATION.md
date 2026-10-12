@@ -11,4 +11,6 @@ An invalid environment stops the app at start with an error that names the faili
 | `APP_ENV` | `local` \| `staging` \| `prod` | `local` | Selects the environment |
 | `LOG_LEVEL` | `debug` \| `info` \| `warn` \| `error` | `info` | Sets log detail |
 
+| `OPS_PASSWORD` | string | unset | `apps/web` only. Password for `/ops`. Unset means `/ops` returns 404 |
+
 Each app adds its own fields in this table when it lands.

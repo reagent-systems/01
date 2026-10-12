@@ -7,7 +7,7 @@
 | Config | `packages/config` | Zod env schema helper shared by every app | built |
 | Unknowns tools | `tools/unknowns` | Lints and reports the register; drafts and links GitHub issues | built |
 | Agent kit | `agent-kit/` | Process files, register, evidence, launch kit | built |
-| Web | `apps/web` | Marketing site, designer app, buyer pages, `/ops/unknowns` | planned |
+| Web | `apps/web` | Next.js 16 app. Home page and `/ops/unknowns` today; designer app and buyer pages planned | `/ops/unknowns` built |
 | Supplier | `apps/supplier` | Node-graph portal for shops | planned |
 | Floor | `apps/floor` | Expo app for scans | planned |
 | API | `apps/api` | Node service on Cloud Run | planned |
@@ -27,6 +27,17 @@ The path below is the feedback loop that runs today.
 4. CI runs `pnpm verify`, which includes `pnpm unknowns:lint`.
 5. `pnpm unknowns:issues` lists open critical and high items with no issue. The routine files them and runs `pnpm unknowns:link <ID> <n>`.
 6. `pnpm unknowns:report --record` appends the weekly metrics row to `unknowns/metrics.csv`.
+
+## `apps/web`
+
+| File | Task |
+|---|---|
+| `src/proxy.ts` | Gates `/ops/*` behind HTTP Basic auth. Returns 404 when `OPS_PASSWORD` is unset |
+| `src/lib/ops-auth.ts` | Constant-time password check |
+| `src/lib/register-view.ts` | Reads `src/generated/register.json`, builds the report |
+| `src/app/ops/unknowns/` | Stats, domain × field grid, blockers by phase, filterable register table |
+
+`pnpm generate` writes `src/generated/register.json` from `agent-kit/unknowns/register.yaml` before every build, typecheck, and test. The file is gitignored.
 
 ## Boundaries
 

@@ -1,0 +1,87 @@
+:root {
+  color-scheme: dark;
+  --bg: #000;
+  --fg: #f2f2f2;
+  --muted: #8a8a8a;
+  --line: #262626;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font:
+    14px / 1.5 system-ui,
+    sans-serif;
+}
+.center {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  margin: 0;
+}
+.ops {
+  padding: 24px 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.ops h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin: 32px 0 12px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+th {
+  color: var(--muted);
+  font-weight: 500;
+}
+th.num,
+td.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.scroll {
+  overflow-x: auto;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+select,
+input {
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid var(--line);
+  padding: 6px 8px;
+  font: inherit;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.stats div span {
+  display: block;
+  font-size: 28px;
+  font-variant-numeric: tabular-nums;
+}

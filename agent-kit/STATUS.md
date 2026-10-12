@@ -12,10 +12,11 @@ behavior change. The weekly cycle (WEEKLY.md step 5) refreshes it.
 | Unknowns register: 105 seeded items, lint, report, issue drafts, link | ✅ | `pnpm unknowns:lint` reports 0 errors; tests in `tools/unknowns/test` |
 | GitHub intake: issue forms, labels, triage label, CI, nightly | 🚧 | Files committed. Labels sync and branch protection need `main` and a human (see below) |
 | Routines | 🚧 | Prompts in `ROUTINES.md`. No schedule created yet |
-| `/ops/unknowns` page | ❌ | ROADMAP queue item 1 |
-| Design tokens, `packages/ui` | ❌ | ROADMAP queue item 2 |
-| `packages/core` | ❌ | ROADMAP queue item 3 |
-| Terraform, Cloud Run, Vercel deploys | ❌ | ROADMAP queue item 4; blocked on a GCP project |
+| `apps/web` with `/ops/unknowns` | ✅ | Screenshot `unknowns/evidence/ops-unknowns.png`; page counts equal `pnpm unknowns:report` (test in `apps/web/src/lib/register-view.test.ts`) |
+| Vercel preview deploy of `apps/web` | 🚧 | See DEVLOG |
+| Design tokens, `packages/ui` | ❌ | ROADMAP queue item 1 |
+| `packages/core` | ❌ | ROADMAP queue items 2 and 4 |
+| Backend host (Vercel or Cloud Run) | ❌ | ROADMAP queue item 3; blocked on a decision |
 | Phases 2–8 | ❌ | ROADMAP "Later" |
 
 States: ✅ done (gated) · 🚧 in progress · ❌ not started · 🧊 frozen/won't do.
@@ -25,4 +26,4 @@ States: ✅ done (gated) · 🚧 in progress · ❌ not started · 🧊 frozen/w
 - **Shipping:** between cycles
 - **Last release:** none
 - **Known red:** none
-- **Needs the human:** merge the install branch to `main`; run the `Labels` workflow once; turn on branch protection (CI.md); give the GCP staging project ID; create the routines (ROUTINES.md).
+- **Needs the human:** merge the install branch to `main`; set `OPS_PASSWORD` in the Vercel project; run the `Labels` workflow once; turn on branch protection (CI.md); decide the backend host; create the routines (ROUTINES.md).

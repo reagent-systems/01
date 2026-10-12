@@ -1,5 +1,5 @@
-import { appendFileSync, existsSync, writeFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { appendFileSync, existsSync, mkdirSync, writeFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
 import { issueDrafts } from "./issues";
 import { linkIssue } from "./link";
 import { lintRegister } from "./lint";
@@ -28,6 +28,16 @@ function main(): number {
       }
       return 0;
     }
+    case "export": {
+      const [out] = args;
+      if (!out) {
+        console.error("usage: export <output.json>");
+        return 2;
+      }
+      mkdirSync(dirname(resolve(out)), { recursive: true });
+      writeFileSync(resolve(out), `${JSON.stringify(loadRegister())}\n`);
+      return 0;
+    }
     case "issues": {
       console.log(JSON.stringify(issueDrafts(loadRegister()), null, 2));
       return 0;
@@ -44,7 +54,9 @@ function main(): number {
       return 0;
     }
     default:
-      console.error("usage: cli.ts lint | report [--json] [--record] | issues | link <ID> <n>");
+      console.error(
+        "usage: cli.ts lint | report [--json] [--record] | export <file> | issues | link <ID> <n>",
+      );
       return 2;
   }
 }
