@@ -1,0 +1,30 @@
+{
+  "state": "Illinois",
+  "slug": "illinois",
+  "abbr": "IL",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "Chicago", "note": "mHUB is a hardtech innovation center on a 2-acre site on the near west side with prototyping labs and a micro-factory.", "source": "https://mhub.org/about" },
+    { "city": "Champaign", "note": "The University of Illinois Research Park hosts the EnterpriseWorks incubator at 60 Hazelwood Drive.", "source": "https://researchpark.illinois.edu/locate-here/enterpriseworks-incubator/" }
+  ],
+  "makerspaces": [
+    { "name": "Workshop 88", "city": "Glen Ellyn", "note": "Lists laser cutting and engraving, a Shapeoko CNC, a CNC mill, several 3D printers and an electronics lab with SMD PCB fabrication.", "url": "https://blog.workshop88.com/" },
+    { "name": "Pumping Station: One", "city": "Chicago", "note": "Volunteer-run space at 3519 N. Elston Ave. whose site mentions an electronics lab and links a tools page that was not readable.", "url": "https://www.pumpingstationone.org" }
+  ],
+  "events": [
+    { "name": "Maker Faire Lake County", "city": "Grayslake", "cadence": "annual", "month": "April", "note": "Free faire hosted by the College of Lake County, with the 2026 edition held on April 18.", "url": "https://lakecounty.makerfaire.com/" }
+  ],
+  "programs": [
+    { "name": "mHUB", "city": "Chicago", "note": "Runs an accelerator with energy tech, MedTech and sustainable manufacturing tracks plus access to prototyping labs and mentors.", "url": "https://mhub.org/about" },
+    { "name": "EnterpriseWorks", "city": "Champaign", "note": "University of Illinois Research Park incubator that lists wet labs, offices and an entrepreneur-in-residence team.", "url": "https://researchpark.illinois.edu/locate-here/enterpriseworks-incubator/" }
+  ],
+  "specialties": [
+    { "name": "Food processing", "note": "A state-promotional article calls the Illinois food processing cluster the second largest in the country, with more than 2,100 facilities.", "source": "https://www.tradeandindustrydev.com/region/illinois/advanced-manufacturing-agtech-illinois-built-35985" },
+    { "name": "Aerospace and defense", "note": "The same article reports nearly 19,000 companies and about 236,000 workers in aerospace and defense.", "source": "https://www.tradeandindustrydev.com/region/illinois/advanced-manufacturing-agtech-illinois-built-35985" },
+    { "name": "Automotive", "note": "The same article reports the fifth-largest automotive employer ecosystem in the U.S.", "source": "https://www.tradeandindustrydev.com/region/illinois/advanced-manufacturing-agtech-illinois-built-35985" },
+    { "name": "Advanced manufacturing", "note": "The same article reports more than 582,700 manufacturing workers, a concentration 18 percent above the national average.", "source": "https://www.tradeandindustrydev.com/region/illinois/advanced-manufacturing-agtech-illinois-built-35985" }
+  ],
+  "support": [
+    { "name": "Illinois Manufacturing Excellence Center (IMEC)", "note": "Not-for-profit funded in part by NIST MEP that offers consulting, training and supply chain help to manufacturers.", "url": "https://www.imec.org/about-imec" }
+  ]
+}

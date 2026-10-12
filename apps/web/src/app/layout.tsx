@@ -1,12 +1,13 @@
 import "@01/ui/styles.css";
-import { Footer, Header, JsonLd } from "@01/ui";
+import { Footer, Header, JsonLd, SmoothScroll } from "@01/ui";
 import type { Metadata, Viewport } from "next";
 import { Barlow } from "next/font/google";
 import type { ReactNode } from "react";
 import { audiences } from "../lib/audiences";
 import { processes } from "../lib/processes";
 import { organizationSchema, websiteSchema } from "../lib/seo";
-import { drawerNav, fileTypes, primaryNav, site } from "../lib/site";
+import { fileTypes, menus, site } from "../lib/site";
+import { researchedStates } from "../lib/state-data";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -82,10 +83,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           Skip to content
         </a>
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
+        <SmoothScroll />
         <Header
-          links={primaryNav}
-          drawerLinks={drawerNav}
-          action={{ href: "/start", label: "Start a design" }}
+          menus={menus}
+          secondary={{ href: "/for/manufacturers", label: "Join as a shop" }}
+          primary={{ href: "/start", label: "Start a design" }}
         />
         <main id="main">{children}</main>
         <Footer
@@ -97,6 +99,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               links: [
                 link("About and mission", "/#mission"),
                 link("How it works", "/how-it-works"),
+                link("Insights", "/insights"),
+                link("Hardware by state", "/states"),
                 link("Compliance", "/compliance"),
                 link("Join as a shop", "/for/manufacturers"),
                 link("Start a design", "/start"),
@@ -119,10 +123,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               links: audiences.map((a) => link(a.name, `/for/${a.slug}`)),
             },
           ]}
-          list={{
-            title: "Files we read",
-            items: fileTypes.map((t) => ({ label: t })),
-          }}
+          lists={[
+            {
+              title: "Hardware by state",
+              href: "/states",
+              items: researchedStates().map((s) => ({ label: s.name, href: `/states/${s.slug}` })),
+            },
+            { title: "Files we read", items: fileTypes.map((t) => ({ label: t })) },
+          ]}
           legal={`© ${new Date().getFullYear()} ${site.legalName}. All rights reserved.`}
           legalLinks={[
             link("Terms", "/terms"),

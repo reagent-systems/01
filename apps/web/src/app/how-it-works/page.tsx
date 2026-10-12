@@ -126,7 +126,7 @@ export default function HowItWorksPage() {
         </section>
       ))}
 
-      <section className="section bordered-top" aria-labelledby="curve-title">
+      <section id="price" className="section bordered-top" aria-labelledby="curve-title">
         <div className="container two-col">
           <Reveal>
             <p className="eyebrow">Price break</p>
@@ -165,7 +165,7 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <section className="section-tight bordered-top" aria-label="Faults">
+      <section id="faults" className="section-tight bordered-top" aria-label="Faults">
         <div className="container">
           <p className="eyebrow">When a part is bad</p>
           <div className="pillars">

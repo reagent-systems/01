@@ -1,0 +1,29 @@
+{
+  "state": "Arkansas",
+  "slug": "arkansas",
+  "abbr": "AR",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "North Little Rock", "note": "The Arkansas Regional Innovation Hub runs Makerspace Studios with laser cutters and 3D printers.", "source": "https://arhub.org" },
+    { "city": "Fayetteville", "note": "The Arkansas Research and Technology Park hosts the GENESIS Technology Incubator and companies such as Wolfspeed.", "source": "https://artp.uark.edu/?p=312" }
+  ],
+  "makerspaces": [
+    { "name": "Arkansas Regional Innovation Hub Makerspace Studios", "city": "North Little Rock", "note": "Membership access to a wood shop, laser cutters, 3D printers and more after a staff assessment.", "url": "https://arhub.org" },
+    { "name": "Fayetteville Public Library Koenig Family Fabrication and Robotics Lab", "city": "Fayetteville", "note": "Public lab with 3D printers, a laser cutter and engraver, and a CNC router, after an orientation.", "url": "https://www.faylib.org/event/7584428" }
+  ],
+  "events": [
+    { "name": "Maker Faire NWA", "city": "Fayetteville", "cadence": "annual", "month": "September", "note": "Held at the Fayetteville Public Library on September 7, 2024 and September 6, 2025.", "url": "https://nwa.makerfaire.com/author/nwa" }
+  ],
+  "programs": [
+    { "name": "GENESIS Technology Incubator", "city": "Fayetteville", "note": "University of Arkansas incubator at the Research and Technology Park with engineering lab access and shared services.", "url": "https://artp.uark.edu/?p=312" }
+  ],
+  "specialties": [
+    { "name": "Steel and metals", "note": "AEDC says metals employs over 22,000 people and Mississippi County has the second-largest steel production capacity in the nation.", "source": "https://www.arkansasedc.com/why-arkansas/key-industries" },
+    { "name": "Aerospace and defense", "note": "An AEDC booklet reports 220 aerospace and defense operations and that aerospace is the state's leading export.", "source": "https://www.arkansasedc.com/docs/default-source/data-and-reports/updated_7-13_aedc-bookletdigital_v2.pdf" },
+    { "name": "Poultry and food processing", "note": "AEDC ranks Arkansas second nationally in broiler production and lists Tyson Foods among its manufacturers.", "source": "https://www.arkansasedc.com/why-arkansas/key-industries" },
+    { "name": "Wood products", "note": "AEDC says Arkansas is the second leading lumber producing state in the South.", "source": "https://www.arkansasedc.com/why-arkansas/key-industries" }
+  ],
+  "support": [
+    { "name": "Arkansas Manufacturing Solutions (AEDC)", "note": "Arkansas's NIST MEP center, with growth and innovation, operational excellence, cybersecurity and technology transfer grant help.", "url": "https://www.mfgsolutions.org/" }
+  ]
+}

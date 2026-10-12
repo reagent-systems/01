@@ -1,0 +1,80 @@
+{
+  "state": "Texas",
+  "slug": "texas",
+  "abbr": "TX",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Austin",
+      "note": "Home to Asmbly makerspace and the 25,000 square foot Texas Inventionworks at UT Austin.",
+      "source": "https://inventionworks.engr.utexas.edu"
+    },
+    {
+      "city": "Houston",
+      "note": "Home to the 30,000 square foot TX/RX Labs hackerspace and Rice's 20,000 square foot Oshman Engineering Design Kitchen.",
+      "source": "https://apps.txrxlabs.org/about-us"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Asmbly Mechatronic Makerspace",
+      "city": "Austin",
+      "note": "Its site lists Laguna and Tormach CNC machines, large laser cutters, an electronics space and a 3D printing space.",
+      "url": "https://www.asmbly.org"
+    },
+    {
+      "name": "TX/RX Labs",
+      "city": "Houston",
+      "note": "Nonprofit in a 30,000 square foot building with a rapid fabrication lab, electronics lab, metal shop, wood shop and machine shop.",
+      "url": "https://apps.txrxlabs.org/about-us"
+    }
+  ],
+  "events": [
+    {
+      "name": "Offshore Technology Conference",
+      "city": "Houston",
+      "cadence": "annual",
+      "month": "May",
+      "note": "Energy industry trade show and conference held at NRG Park, running since 1969.",
+      "url": "https://www.jetro.go.jp/en/database/j-messe/tradefair/detail/142854"
+    }
+  ],
+  "programs": [
+    {
+      "name": "Texas Inventionworks",
+      "city": "Austin",
+      "note": "UT Austin engineering facility of over 25,000 square feet with electronics, additive manufacturing, wood and metal working equipment and an innovation accelerator.",
+      "url": "https://inventionworks.engr.utexas.edu/about"
+    },
+    {
+      "name": "Oshman Engineering Design Kitchen",
+      "city": "Houston",
+      "note": "Rice University prototyping facility with a machine shop, welding access and rapid prototyping equipment.",
+      "url": "https://magazine.rice.edu/spring-2024/controlled-chaos"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Semiconductors and electronics",
+      "note": "Computers, electronics and semiconductors employ 85,000 Texans, with Texas Instruments expanding in Sherman and Samsung building a fab in Taylor.",
+      "source": "https://siteselection.com/advanced-manufacturing-inside-texas-push-to-scale-chips-and-aerospace/"
+    },
+    {
+      "name": "Aerospace",
+      "note": "Aerospace employs about 51,000 Texas advanced manufacturing workers, concentrated around SpaceX Starbase and Lockheed Martin facilities.",
+      "source": "https://siteselection.com/advanced-manufacturing-inside-texas-push-to-scale-chips-and-aerospace/"
+    },
+    {
+      "name": "Chemicals and petroleum products",
+      "note": "Chemicals were about 21 percent of state manufacturing GDP in a 2021 snapshot, with petroleum and coal products at about 14.5 percent.",
+      "source": "https://mansfield-texas.com/assets/main/manufacturing_snapshot.pdf"
+    }
+  ],
+  "support": [
+    {
+      "name": "Texas Manufacturing Assistance Center (TMAC)",
+      "note": "The NIST MEP center for Texas, run by the University of Texas at Arlington, helping manufacturers with technology, supply chain, workforce and continuous improvement.",
+      "url": "https://www.tmac.org/"
+    }
+  ]
+}

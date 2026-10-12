@@ -14,7 +14,9 @@ behavior change. The weekly cycle (WEEKLY.md step 5) refreshes it.
 | Routines | 🚧 | Prompts in `ROUTINES.md`. No schedule created yet |
 | `apps/web` with `/ops/unknowns` | ✅ | Screenshot `unknowns/evidence/ops-unknowns.png`; page counts equal `pnpm unknowns:report` (test in `apps/web/src/lib/register-view.test.ts`) |
 | Vercel preview deploy of `apps/web` | ❌ | Blocked: the Vercel GitHub app has no access to `reagent-systems/01`. `create_git_project` failed with 400 |
-| Route tree: 34 sitemap URLs, forms to GitHub issues, legal placeholders, SEO files | ✅ | `pnpm verify` runs the smoke gate: every sitemap URL returns 200 with title, canonical, description, one h1 |
+| Redesign: hook hero, mega header, scroll-scrubbed Mixkit video, pinned run, calculator, horizontal reel | ✅ | Frames saved in `agent-kit/launch/design-compare/`; smoke gate checks the home page. Not tested on a real phone (TEC-07) |
+| State guides: 27 of 50 published, 4 insight guides | 🚧 | 27 states pass the three-entry bar; 23 wait for more research (MKT-07) |
+| Route tree: 60+ sitemap URLs, forms to GitHub issues, legal placeholders, SEO files | ✅ | `pnpm verify` runs the smoke gate: every sitemap URL returns 200 with title, canonical, description, one h1 |
 | Design system and styled home page with video backgrounds | ✅ | `packages/ui` ports the reference site's stylesheet and component structure; `agent-kit/launch/design-compare/` has screenshots and media credits; tokens test in `packages/ui/src/tokens.test.ts` |
 | `packages/core` | ❌ | ROADMAP queue items 1 and 3 |
 | Backend on Vercel | ❌ | ROADMAP queue item 2 |

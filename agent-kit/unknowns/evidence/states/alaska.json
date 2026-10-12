@@ -1,0 +1,85 @@
+{
+  "state": "Alaska",
+  "slug": "alaska",
+  "abbr": "AK",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Fairbanks",
+      "note": "The UAF Makerspace offers CNC milling, 3D printing, laser cutting and small-batch production of 1 to 100+ units.",
+      "source": "https://www.uaf.edu/makerspace/services.php"
+    },
+    {
+      "city": "Anchorage",
+      "note": "Anchorage MakerSpace is a roughly 3,600 square foot shop in Spenard.",
+      "source": "https://www.adn.com/alaska-life/2017/04/21/making-it-work-anchorage-makerspace-creates-a-hub-for-alaska-diyers/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "UAF Makerspace",
+      "city": "Fairbanks",
+      "note": "University lab in Duckering Room 345 with laser cutters, a desktop CNC and 3D printers, free to use.",
+      "url": "https://www.uaf.edu/makerspace/"
+    },
+    {
+      "name": "Anchorage MakerSpace",
+      "city": "Anchorage",
+      "note": "About 3,600 square feet in Spenard, with a grant-funded laser-cutting class reported in 2017 (current equipment not confirmed).",
+      "url": "https://www.adn.com/alaska-life/2017/04/21/making-it-work-anchorage-makerspace-creates-a-hub-for-alaska-diyers/"
+    }
+  ],
+  "events": [
+    {
+      "name": "Alaska Startup Week",
+      "city": "Statewide",
+      "cadence": "annual",
+      "note": "Techstars Startup Week Alaska ran more than 50 events across the state in 2021.",
+      "url": "https://www.uaf.edu/innovation/news/2021/december/miss-our-startup-week-events-watch-them-here.php"
+    },
+    {
+      "name": "Arctic Innovation Competition",
+      "city": "Fairbanks",
+      "cadence": "annual",
+      "note": "UAF pitch competition with no entry fee that does not require a developed product.",
+      "url": "https://uaf.edu/oipc/news/2019/"
+    }
+  ],
+  "programs": [
+    {
+      "name": "UAF Makerspace Network",
+      "city": "Fairbanks",
+      "note": "Offers design, prototyping and small-batch manufacturing services to researchers and inventors.",
+      "url": "https://www.uaf.edu/makerspace/services.php"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Seafood processing",
+      "note": "Seafood is the state's main export after oil and natural gas, mainly salmon, cod, pollock and crab.",
+      "source": "https://en.wikipedia.org/wiki/Economy_of_Alaska"
+    },
+    {
+      "name": "Oil and gas",
+      "note": "Petroleum is one of the three main legs of the state economy.",
+      "source": "https://en.wikipedia.org/wiki/Economy_of_Alaska"
+    },
+    {
+      "name": "Mining",
+      "note": "Gold, zinc and other mining are listed among the state's industrial outputs.",
+      "source": "https://en.wikipedia.org/wiki/Economy_of_Alaska"
+    }
+  ],
+  "support": [
+    {
+      "name": "Alaska MEP (UAA Business Enterprise Institute)",
+      "note": "Alaska's NIST MEP center was hosted by UAA, and a November 2025 trade article says it was set to shut down on June 30 (status not confirmed on NIST).",
+      "url": "https://digital.akbizmag.com/issue/november-2025/manufacturing-connections/"
+    },
+    {
+      "name": "Alaska Manufacturing Association",
+      "note": "New trade group founded after the MEP closure to unify and advocate for Alaska manufacturers.",
+      "url": "https://digital.akbizmag.com/issue/november-2025/manufacturing-connections/"
+    }
+  ]
+}

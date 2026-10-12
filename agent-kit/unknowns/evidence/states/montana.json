@@ -1,0 +1,47 @@
+{
+  "state": "Montana",
+  "slug": "montana",
+  "abbr": "MT",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Bozeman",
+      "note": "Montana State University hosts the Bill Wurst Makerspace and the state MEP center.",
+      "source": "https://www.montana.edu/makerspace/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Bill Wurst Makerspace",
+      "city": "Bozeman",
+      "note": "Lists 3D printers, CNC machines, a laser cutter, an electronics station and a textiles area, open to MSU students, faculty and staff.",
+      "url": "https://www.montana.edu/makerspace/"
+    }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [
+    {
+      "name": "Optics and photonics",
+      "note": "A state economic development report says the optics and photonics cluster includes over 40 companies.",
+      "source": "https://archive.legmt.gov/content/Committees/Interim/2019-2020/Economic-Affairs/Committee-Topics/GOEDEcoDevReport2019.pdf"
+    },
+    {
+      "name": "Outdoor gear and recreation products",
+      "note": "An industry article says hundreds of companies design and manufacture outdoor gear in the state.",
+      "source": "https://www.expansionsolutionsmagazine.com/the-secret-is-out-montana-has-been-discovered/"
+    },
+    {
+      "name": "Wood products",
+      "note": "A University of Montana research report lists wood, paper and furniture manufacturing among the state's manufacturing sectors.",
+      "source": "https://bber.umt.edu/pubs/seminars/2014/Manufacturing.pdf"
+    }
+  ],
+  "support": [
+    {
+      "name": "Montana Manufacturing Extension Center (MMEC)",
+      "note": "NIST MEP center at Montana State University offering lean, quality, supply chain and workforce help to manufacturers.",
+      "url": "https://www.montana.edu/mmec/"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "state": "Colorado",
+  "slug": "colorado",
+  "abbr": "CO",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Longmont",
+      "note": "TinkerMill describes itself as the largest makerspace in Colorado and the Rocky Mountain region.",
+      "source": "https://tinkermill.org/about/"
+    },
+    {
+      "city": "Fort Collins",
+      "note": "Innosphere, a science and technology startup accelerator with lab space, is headquartered here.",
+      "source": "https://www.innosphere.org"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "TinkerMill",
+      "city": "Longmont",
+      "note": "Nonprofit makerspace with a 4kW laser, machine shop, rapid prototyping, woodshop, and electronics and robotics shops.",
+      "url": "https://tinkermill.org/about/"
+    },
+    {
+      "name": "denhac",
+      "city": "Denver",
+      "note": "Denver hackerspace that its Meetup listing says has 3D printers, laser cutters, a woodshop, welders and CNC.",
+      "url": "https://www.denhac.org"
+    }
+  ],
+  "events": [],
+  "programs": [
+    {
+      "name": "Innosphere",
+      "city": "Fort Collins",
+      "note": "Accelerator for science and technology startups offering dry lab and office space and a focus on advanced industries.",
+      "url": "https://www.innosphere.org"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Aerospace",
+      "note": "Colorado ranks first per capita in aerospace employment and hosts U.S. Space Command, with United Launch Alliance and Lockheed Martin Space active.",
+      "source": "https://choosecolorado.com/key-industries/aerospace/"
+    },
+    {
+      "name": "Advanced manufacturing",
+      "note": "A state industry profile cites 5,600 companies and 143,000 employees, though the figures are older.",
+      "source": "https://choosecolorado.com/wp-content/uploads/2016/06/Colorado-Advanced-Manufacturing-Industry-Profile.pdf"
+    }
+  ],
+  "support": [
+    {
+      "name": "Manufacturer's Edge",
+      "note": "Colorado's NIST MEP center, offering onsite support, training and technical assistance from offices in Westminster, Loveland and Lakewood.",
+      "url": "https://manufacturersedge.com/about/"
+    }
+  ]
+}

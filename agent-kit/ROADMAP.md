@@ -40,8 +40,18 @@ queue is the next short steps.
 - **Scope guard:** No state machine, no I/O, no database.
 - **Status:** ready
 
+### 4. Fill the thin state pages
+- **Promise:** Every one of the 50 states has at least three sourced entries and a published page, and every entry on those pages was read from an opened source page.
+- **Evidence:** `pnpm verify` smoke gate with 50 state URLs in the sitemap; the re-check notes saved in `unknowns/evidence/states/`.
+- **Use case:** Turn feedback into a record.
+- **Scope guard:** No entry without a source page that was opened. No page below three entries.
+- **Status:** ready
+
 ## Later — candidates, not yet specced
 
+- Real-device check of the scroll video and pinned scenes on iPhone and mid-range Android (register TEC-07).
+- Replace the Mixkit footage with our own (register LCH-07).
+- More insight guides from the register's research, one per week.
 - Home page: add "Learn more" links, the use-case pages, and a real start flow. The CTA buttons point at in-page anchors until those pages exist.
 - Real media for the hero: our own footage (shot list in the launch kit).
 - Phase 1 rest: empty `api`, `orchestrator`, `agents`, `supplier`, `floor`, `launch` apps; Vercel previews; deploy workflows.
@@ -60,6 +70,7 @@ queue is the next short steps.
 | Week | Feature | Release | Evidence |
 |---|---|---|---|
 | 2026-10-12 | Agent kit installed; monorepo; register and tooling; GitHub feedback wiring | none | `pnpm verify` green, see STATUS.md |
+| 2026-10-12 | Redesign: Printify-style hook and flow, mega-menu header, scroll-scrubbed video, pinned run, price calculator, state guides, insights | none | `pnpm verify` green with 12 smoke tests; frames at 0%, 12%, 26%, 38% of the scroll |
 | 2026-10-12 | Design tokens, `packages/ui`, and the restyled home page | none | `agent-kit/launch/design-compare/` (screenshots at 1280px and 390px, token table); `pnpm verify` green; tokens test keeps `tokens.ts` and `styles.css` in sync |
 | 2026-10-12 | Web shell with `/ops/unknowns` | none | `agent-kit/unknowns/evidence/ops-unknowns.png`; 105 rows, 19 after the critical filter; `pnpm verify` green |
 

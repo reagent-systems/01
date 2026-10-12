@@ -1,0 +1,24 @@
+{
+  "state": "Hawaii",
+  "slug": "hawaii",
+  "abbr": "HI",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "Honolulu", "note": "Ourspace, a nonprofit production and prototyping studio at 1052 Waimanu Street, lists 3D printing, laser and CNC tools for makers.", "source": "https://ourspacehawaii.org" },
+    { "city": "Kailua-Kona", "note": "NELHA runs the 870-acre Hawaii Ocean Science and Technology Park, a state-run park for ocean, energy and aquaculture technology.", "source": "https://nelha.hawaii.gov" }
+  ],
+  "makerspaces": [
+    { "name": "Ourspace", "city": "Honolulu", "note": "Site lists 3D printing, laser cutting and engraving, CNC and onsite machine training.", "url": "https://ourspacehawaii.org" }
+  ],
+  "events": [],
+  "programs": [
+    { "name": "Manoa Innovation Center", "city": "Honolulu", "note": "Incubation facility at 2800 Woodlawn Drive that was taken over by the University of Hawaii in 2018 and hosts an electronics tenant, Nalu Scientific.", "url": "https://civilbeat.org/2018/03/uh-takeover-of-innovation-center-is-raising-tech-community-eyebrows/" },
+    { "name": "UH Ventures Accelerator", "city": "Honolulu", "note": "Three-month accelerator run by PACE at the Shidler College of Business for founders with a University of Hawaii tie, not specific to hardware.", "url": "https://www.hawaii.edu/news/2019/11/05/uh-startup-accelerator-adds-pace/" }
+  ],
+  "specialties": [
+    { "name": "Ocean science and technology", "note": "NELHA's park pipes in deep cold seawater and warm surface seawater for ocean-based and renewable energy demonstration projects.", "source": "https://nelha.hawaii.gov" }
+  ],
+  "support": [
+    { "name": "INNOVATE Hawaii (HTDC, NIST MEP center)", "note": "Listed as the state's MEP center offering coaching, training and grants, but its page carries a May 16, 2025 notice of discontinuation of federal funding.", "url": "https://www.htdc.org/programs/innovate-hawaii/" }
+  ]
+}

@@ -1,335 +1,343 @@
-import { BgVideo, CtaBand, Hero, type HeroPanel, JsonLd, Reveal, SmartLink } from "@01/ui";
+import {
+  CtaBand,
+  HeroParallax,
+  HorizontalReel,
+  JsonLd,
+  PinnedRun,
+  PriceCalc,
+  Reveal,
+  ScrollVideo,
+  SmartLink,
+  WordReveal,
+} from "@01/ui";
 import { audiences } from "../lib/audiences";
 import { faqs } from "../lib/faqs";
+import { insights } from "../lib/insights";
 import { processes } from "../lib/processes";
 import { faqSchema, pageMetadata } from "../lib/seo";
+import { researchedStates } from "../lib/state-data";
 
 export const metadata = pageMetadata({
   title: "Design Hardware Without Capital",
   description:
-    "Publish a hardware design, let buyers join a waitlist with a saved card, and start every shop in the chain with one button. Custom designs, any process.",
+    "Publish a hardware design, let buyers join a waitlist with a saved card, and start every shop in the chain with one button. Custom designs, any process, no capital up front.",
   path: "/",
 });
 
-const heroPanels: HeroPanel[] = [
-  {
-    label: "Publish",
-    href: "/start",
-    video: "publish",
-    alt: "A 3D printer building a model",
-    blurb:
-      "Upload your STEP, STL, Gerber, and BOM files. We read every part and propose how each one gets made.",
-  },
-  {
-    label: "Fund",
-    href: "/designs",
-    video: "fund",
-    alt: "A machine placing components on a circuit board",
-    blurb:
-      "Buyers join the waitlist and save a card. The price falls as the count rises. Nobody pays before trigger.",
-  },
-  {
-    label: "Build",
-    href: "/for/manufacturers",
-    video: "build",
-    alt: "A robot working on a production line",
-    blurb:
-      "One button sends the order to every shop at once. Every part gets a serial code and a full trace.",
-  },
-];
+const Check = () => (
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+    <path d="M3 9.5l4 4 8-9" stroke="currentColor" strokeWidth="2" strokeLinecap="square" />
+  </svg>
+);
 
-const promises = [
-  {
-    title: "Buyers fund the run",
-    body: "A card is saved, not charged. Charges happen only at trigger, and a buyer can leave before then at no cost.",
-  },
-  {
-    title: "Every part has a trace",
-    body: "Each part carries a serial code. Floor staff scan it at every step, so a fault routes to the shop that made it.",
-  },
-  {
-    title: "Faults are paid by the shop",
-    body: "A confirmed fault withholds payment for that part. The shop at fault pays the reship.",
-  },
-];
+const ticks = ["Designers pay nothing up front", "Buyers pay only at trigger", "Any custom design"];
 
-const tech = [
-  {
-    tag: "GEOMETRY",
-    title: "Read Every Part",
-    body: "A CAD kernel reads STEP files and Gerbers: bounding box, volume, features, and minimum feature size.",
-  },
-  {
-    tag: "QUOTING",
-    title: "Price From Geometry",
-    body: "Estimates come from geometry, process, and quantity. They carry a confidence range until real quotes arrive.",
-  },
-  {
-    tag: "ROUTING",
-    title: "Match Parts To Shops",
-    body: "Parts match to qualified shops by process and limits, in parallel, in sequence, or both.",
-  },
-  {
-    tag: "TRACE",
-    title: "Serial Code On Every Part",
-    body: "One code maps to one node, one part, and one run, from raw stock to delivery.",
-  },
-];
-
-const why = [
-  { title: "No capital", body: "Buyers fund the run. The designer pays with design time." },
-  { title: "No factory contacts", body: "Every part matches to qualified shops by process." },
-  { title: "No early charges", body: "A card is charged only at trigger." },
-  { title: "No unpaid faults", body: "A confirmed fault withholds payment for that part." },
+const proof = [
+  { k: "01", v: "Charged only at trigger" },
+  { k: "02", v: "A serial code on every part" },
+  { k: "03", v: "Faults paid by the shop that made them" },
+  { k: "04", v: "Any design, any process" },
 ];
 
 const steps = [
   {
-    href: "/start",
-    title: "Publish a design",
-    body: "Upload STEP, STL, DXF, Gerber, and BOM files. The geometry service reads every part. The DFM agent proposes a parts tree.",
+    title: "Upload your design",
+    body: "Send STEP, STL, Gerber, and BOM files. 01 reads every part, picks a process for each, and shows you a price curve.",
   },
   {
-    href: "/processes",
-    title: "Get a price",
-    body: "Each part gets an estimate from its geometry, process, and quantity. Real shop quotes replace the estimates before trigger.",
+    title: "Buyers join the waitlist",
+    body: "People save a card and pay nothing. The price falls at every tier as the count rises, and the page always shows the next break.",
+  },
+  {
+    title: "One button builds it",
+    body: "At the target count you press start. Every shop gets its order at once, buyers are charged, and every part is traced to your buyer.",
+  },
+];
+
+const resources = [
+  {
+    href: "/how-it-works",
+    k: "Platform",
+    t: "How it works",
+    b: "The seven steps from upload to a unit on a desk.",
+  },
+  {
+    href: "/insights",
+    k: "Insights",
+    t: "Guides",
+    b: "Molding vs printing, DFM, group buys, and boards.",
+  },
+  {
+    href: "/states",
+    k: "Insights",
+    t: "Hardware by state",
+    b: "Makerspaces, events, programs, and specialties in each state.",
+  },
+  {
+    href: "/compliance",
+    k: "Platform",
+    t: "Compliance",
+    b: "FCC, batteries, and export control, before you publish.",
   },
   {
     href: "/designs",
-    title: "Join the waitlist",
-    body: "Buyers save a card and pay nothing. The unit price falls at each tier as the count rises.",
+    k: "Designs",
+    t: "Join a waitlist",
+    b: "See a live design and how its price curve works.",
   },
   {
-    href: "/how-it-works#run",
-    title: "Press start",
-    body: "One button confirms every shop, charges every buyer, and sends a purchase order to the whole chain at once.",
-  },
-  {
-    href: "/how-it-works#trace",
-    title: "Track every part",
-    body: "Each part carries a serial code. Floor staff scan it at every step. A bad part routes to the shop that made it.",
-  },
-  {
-    href: "/how-it-works#ship",
-    title: "Ship to buyers",
-    body: "The last shop ships the unit. Buyers see one tracking view from raw stock to their desk.",
+    href: "/for/manufacturers",
+    k: "Shops",
+    t: "Join as a shop",
+    b: "Declare your processes and get matched to funded orders.",
   },
 ];
 
 export default function Home() {
+  const stateList = researchedStates();
   return (
-    <>
+    <div className="has-scroll-video">
+      <ScrollVideo
+        src="/video/story.mp4"
+        srcSmall="/video/story-sm.mp4"
+        poster="/video/story.jpg"
+      />
       <JsonLd data={faqSchema(faqs)} />
-      <Hero panels={heroPanels} label="01" />
 
-      <div className="section-seam" aria-hidden="true" />
-
-      <section id="mission" className="media-section" aria-labelledby="mission-title">
-        <div className="media-bg">
-          <BgVideo name="mission" />
+      <HeroParallax>
+        <h1 className="hook">
+          <span className="hook-line">
+            <span>Design it.</span>
+          </span>
+          <span className="hook-line">
+            <span>Buyers fund it.</span>
+          </span>
+          <span className="hook-line">
+            <span>
+              Shops <em>build it.</em>
+            </span>
+          </span>
+        </h1>
+        <p className="hook-sub">
+          Publish a hardware design. People join a waitlist, and the price drops as more join. At
+          the target count, one button sends the order to every shop in the chain.
+        </p>
+        <ul className="ticks">
+          {ticks.map((t) => (
+            <li key={t}>
+              <Check />
+              {t}
+            </li>
+          ))}
+        </ul>
+        <div className="hero-cta">
+          <SmartLink href="/start" className="btn btn-yellow">
+            Start a design
+          </SmartLink>
+          <SmartLink href="/how-it-works" className="btn">
+            See how it works
+          </SmartLink>
         </div>
-        <div className="media-shade" />
-        <div className="media-content narrow">
-          <Reveal>
-            <p className="eyebrow">Our Mission</p>
-            <h1 id="mission-title" className="display">
-              Hardware Without Capital
-            </h1>
-          </Reveal>
-          <Reveal delay={120}>
-            <p className="lead" style={{ marginTop: "1.75rem" }}>
-              A good design should not need a factory contact or a seed round. Today it does.
-              Tooling costs, order minimums, and a chain of shops that never talk to each other keep
-              most ideas on the screen.
-            </p>
-            <p className="lead">
-              01 turns that chain into one order. Buyers fund the run. Every shop starts at once.
-              Every part carries its history from raw stock to a buyer’s desk.
-            </p>
-          </Reveal>
+        <p className="hero-micro">No factory contacts. No seed round.</p>
+        <span className="scroll-cue" aria-hidden="true" />
+      </HeroParallax>
+
+      <div className="proof" aria-label="What to expect">
+        {proof.map((p) => (
+          <div key={p.k}>
+            <b>{p.k}</b>
+            {p.v}
+          </div>
+        ))}
+      </div>
+
+      <section id="mission" className="statement" aria-label="Why 01 exists">
+        <div className="statement-wrap">
+          <WordReveal text="Hardware is hard to fund. Tooling, minimums, and a chain of shops that never talk. 01 turns that chain into one order." />
         </div>
       </section>
 
-      <section className="section" aria-label="Three promises">
-        <div className="container">
-          <div className="section-head">
-            <Reveal>
-              <p className="eyebrow">What it means to us</p>
-              <h2 className="h2">Three promises behind every run</h2>
-            </Reveal>
-            <Reveal delay={100}>
-              <p className="lead" style={{ margin: 0 }}>
-                Every run follows the same rules, whatever the part and whatever the quantity.
-              </p>
-            </Reveal>
+      <section id="start" className="section section-yellow" aria-labelledby="start-title">
+        <div className="container steps3">
+          <div className="steps3-head">
+            <p className="eyebrow">How it works</p>
+            <h2 id="start-title" className="h2" style={{ fontSize: "clamp(2.4rem, 6vw, 5rem)" }}>
+              Start with no capital
+            </h2>
+            <p className="lead">
+              Three steps take a design from your screen to a buyer’s desk. You never hold inventory
+              and you never pay for tooling up front.
+            </p>
+            <SmartLink href="/how-it-works" className="btn btn-solid">
+              The full flow
+            </SmartLink>
           </div>
-          <div className="pillars">
-            {promises.map((p, i) => (
-              <Reveal key={p.title} className="pillar" delay={i * 120}>
-                <span className="pillar-num">0{i + 1}</span>
-                <h3 className="h3">{p.title}</h3>
-                <p>{p.body}</p>
+          <div>
+            {steps.map((s, i) => (
+              <Reveal key={s.title} className="step3" delay={i * 90}>
+                <span className="step3-n">{i + 1}</span>
+                <div>
+                  <h3>{s.title}</h3>
+                  <p>{s.body}</p>
+                </div>
               </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="technology" className="media-section" aria-labelledby="tech-title">
-        <div className="media-bg">
-          <BgVideo name="technology" />
-        </div>
-        <div className="media-shade" />
-        <div className="media-content">
+      <PinnedRun />
+
+      <section id="price" className="section" aria-labelledby="calc-title">
+        <div className="container">
+          <div className="section-head">
+            <Reveal>
+              <p className="eyebrow">The price curve</p>
+              <h2 id="calc-title" className="h2">
+                Watch the price fall
+              </h2>
+            </Reveal>
+            <Reveal delay={100}>
+              <p className="lead" style={{ margin: 0 }}>
+                Slide the waitlist count. Every price break lowers the unit price, and at a high
+                tier the case moves from printing to molding.
+              </p>
+            </Reveal>
+          </div>
           <Reveal>
-            <p className="eyebrow">Technology</p>
-            <h2 id="tech-title" className="display" style={{ maxWidth: "16ch" }}>
-              Any Design, Broken Into Processes
-            </h2>
-          </Reveal>
-          <Reveal delay={120}>
-            <p className="lead" style={{ marginTop: "1.75rem" }}>
-              Printify standardizes the product. 01 standardizes the process. Every part maps to a
-              process, every shop declares the processes it runs, and the platform matches the two.
-            </p>
-          </Reveal>
-          <Reveal delay={200}>
-            <div className="tech-grid" style={{ marginBottom: "2.5rem" }}>
-              {tech.map((t) => (
-                <div className="tech-card" key={t.title}>
-                  <span className="tag">{t.tag}</span>
-                  <h3 className="h3">{t.title}</h3>
-                  <p>{t.body}</p>
-                </div>
-              ))}
-            </div>
-            <SmartLink href="/how-it-works" className="btn">
-              How it works
-            </SmartLink>
+            <PriceCalc />
           </Reveal>
         </div>
       </section>
 
-      <section id="why" className="split" aria-labelledby="why-title">
-        <div className="split-text">
+      <section className="section-tight bordered-top" aria-labelledby="proc-title">
+        <div className="container">
           <Reveal>
-            <p className="eyebrow">Why 01</p>
-            <h2 id="why-title" className="h2">
-              Funded. Traced. Paid on proof.
+            <p className="eyebrow">Processes</p>
+            <h2 id="proc-title" className="h2">
+              Every part finds a process
             </h2>
             <p className="lead">
-              A run only works if every party can see what happened. Each step leaves a record that
-              the buyers, the shops, and the designer can read.
+              Machining, molding, printing, boards, finishing, and assembly. Each shop declares what
+              it runs, and parts match to shops by process and limits.
             </p>
           </Reveal>
-          <Reveal delay={120}>
-            <ul className="checklist">
-              {why.map((g) => (
-                <li key={g.title}>
-                  <span className="ck" aria-hidden="true">
-                    ✓
-                  </span>
-                  <div>
-                    <strong>{g.title}</strong>
-                    <span>{g.body}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-            <div className="btn-row">
-              <SmartLink href="/how-it-works" className="btn btn-solid">
-                How it works
+        </div>
+      </section>
+      <HorizontalReel>
+        {processes.map((p, i) => (
+          <SmartLink key={p.slug} href={`/processes/${p.slug}`} className="reel-card">
+            <span className="card-kicker">
+              {String(i + 1).padStart(2, "0")} · {p.kind}
+            </span>
+            <h3 className="h3">{p.title}</h3>
+            <p>{p.summary}</p>
+            <span className="arrow-link">
+              Learn more <span aria-hidden="true">→</span>
+            </span>
+          </SmartLink>
+        ))}
+        <SmartLink href="/processes" className="reel-card">
+          <span className="card-kicker">All</span>
+          <h3 className="h3">See every process</h3>
+          <p>The full catalog, with what each one is best at.</p>
+          <span className="arrow-link">
+            All processes <span aria-hidden="true">→</span>
+          </span>
+        </SmartLink>
+      </HorizontalReel>
+
+      <section className="section bordered-top" aria-labelledby="who-title">
+        <div className="container">
+          <div className="section-head">
+            <Reveal>
+              <p className="eyebrow">Who it’s for</p>
+              <h2 id="who-title" className="h2">
+                One answer, for eight kinds of people
+              </h2>
+            </Reveal>
+            <Reveal delay={100}>
+              <p className="lead" style={{ margin: 0 }}>
+                I want to design hardware, but I do not have the capital. Pick the page that sounds
+                like you.
+              </p>
+            </Reveal>
+          </div>
+          <div className="card-grid">
+            {audiences.map((a, i) => (
+              <SmartLink href={`/for/${a.slug}`} className="card" key={a.slug}>
+                <span className="card-kicker">{String(i + 1).padStart(2, "0")}</span>
+                <h3 className="h3">{a.name}</h3>
+                <p>{a.summary}</p>
+                <span className="arrow-link">
+                  Learn more <span aria-hidden="true">→</span>
+                </span>
               </SmartLink>
-              <SmartLink href="/#faq" className="btn">
-                FAQ
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {stateList.length > 0 && (
+        <section className="section-tight bordered-top" aria-labelledby="states-title">
+          <div className="container two-col">
+            <Reveal>
+              <p className="eyebrow">Insights</p>
+              <h2 id="states-title" className="h2">
+                Hardware, state by state
+              </h2>
+              <p className="lead">
+                Where to prototype, which events to go to, and which programs back small
+                manufacturers in your state, with a source for every line.
+              </p>
+              <SmartLink href="/states" className="btn">
+                All states
               </SmartLink>
-            </div>
+            </Reveal>
+            <Reveal delay={100}>
+              <ul className="state-cloud">
+                {stateList.map((s) => (
+                  <li key={s.slug}>
+                    <SmartLink href={`/states/${s.slug}`}>
+                      {s.name} <abbr>{s.abbr}</abbr>
+                    </SmartLink>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </section>
+      )}
+
+      <section className="section bordered-top" aria-labelledby="res-title">
+        <div className="container">
+          <Reveal>
+            <p className="eyebrow">Resources</p>
+            <h2 id="res-title" className="h2">
+              Everything you need to go from idea to unit
+            </h2>
           </Reveal>
-        </div>
-        <div className="split-media">
-          <BgVideo name="guarantee" label="Engineers watching a 3D printer work" />
-        </div>
-      </section>
-
-      <section id="how" className="section bordered-top" aria-labelledby="how-title">
-        <div className="container">
-          <div className="section-head">
-            <Reveal>
-              <p className="eyebrow">How it works</p>
-              <h2 id="how-title" className="h2">
-                One button starts every shop
-              </h2>
-            </Reveal>
-            <Reveal delay={100}>
-              <p className="lead" style={{ margin: 0 }}>
-                Six steps take a design from upload to a buyer’s desk. The orchestrator runs them as
-                one chain.
-              </p>
-            </Reveal>
-          </div>
-          <div className="card-grid">
-            {steps.map((s, i) => (
-              <SmartLink href={s.href} className="card" id={`step-${i + 1}`} key={s.title}>
-                <span className="card-kicker">{String(i + 1).padStart(2, "0")} · Step</span>
-                <h3 className="h3">{s.title}</h3>
-                <p>{s.body}</p>
+          <div className="res-grid" style={{ marginTop: "3rem" }}>
+            {resources.map((r) => (
+              <SmartLink href={r.href} className="card" key={r.href}>
+                <span className="card-kicker">{r.k}</span>
+                <h3 className="h3">{r.t}</h3>
+                <p>{r.b}</p>
                 <span className="arrow-link">
-                  Learn more <span aria-hidden="true">→</span>
+                  Open <span aria-hidden="true">→</span>
                 </span>
               </SmartLink>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section bordered-top" aria-labelledby="proc-title">
-        <div className="container">
-          <div className="section-head">
-            <Reveal>
-              <p className="eyebrow">Processes</p>
-              <h2 id="proc-title" className="h2">
-                Every part finds its process
-              </h2>
-            </Reveal>
-            <Reveal delay={100}>
-              <p className="lead" style={{ margin: 0 }}>
-                Machining, molding, printing, boards, finishing, and assembly. Each shop declares
-                what it runs, and parts match to shops by process and limits.
-              </p>
-            </Reveal>
-          </div>
-          <div className="card-grid">
-            {processes.slice(0, 6).map((p, i) => (
-              <SmartLink href={`/processes/${p.slug}`} className="card" key={p.slug}>
-                <span className="card-kicker">
-                  {String(i + 1).padStart(2, "0")} · {p.kind}
-                </span>
-                <h3 className="h3">{p.title}</h3>
-                <p>{p.summary}</p>
-                <span className="arrow-link">
-                  Learn more <span aria-hidden="true">→</span>
-                </span>
-              </SmartLink>
-            ))}
-          </div>
-          <p style={{ marginTop: "2rem" }}>
-            <SmartLink href="/processes" className="arrow-link">
-              All processes <span aria-hidden="true">→</span>
+          <p style={{ marginTop: "2rem", color: "var(--dim)", fontSize: "0.85rem" }}>
+            Latest guide:{" "}
+            <SmartLink
+              href={`/insights/${insights[0]?.slug}`}
+              style={{ textDecoration: "underline" }}
+            >
+              {insights[0]?.title}
             </SmartLink>
           </p>
-        </div>
-      </section>
-
-      <section className="section-tight bordered-top" aria-label="Who it is for">
-        <div className="container">
-          <p className="eyebrow">Who it’s for</p>
-          <ul className="tag-list">
-            {audiences.map((a) => (
-              <li key={a.slug} style={{ padding: 0, border: 0 }}>
-                <SmartLink href={`/for/${a.slug}`}>{a.name}</SmartLink>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
@@ -358,6 +366,6 @@ export default function Home() {
         primary={{ href: "/start", label: "Start a design" }}
         secondary={{ href: "/contact", label: "Contact" }}
       />
-    </>
+    </div>
   );
 }

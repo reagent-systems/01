@@ -1,0 +1,58 @@
+{
+  "state": "Missouri",
+  "slug": "missouri",
+  "abbr": "MO",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Kansas City",
+      "note": "Hammerspace Community Workshop offers 3D printing, CNC machining and laser cutting.",
+      "source": "http://hammerspacehobby.com/"
+    },
+    {
+      "city": "St. Louis",
+      "note": "Boeing's defense operations anchor aerospace manufacturing in St. Louis according to the state economic development group.",
+      "source": "https://www.missouripartnership.com/key-industries/manufacturing/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Hammerspace Community Workshop",
+      "city": "Kansas City",
+      "note": "Lists 3D printing, CNC machining, circuit board production, laser cutting and precision machining.",
+      "url": "http://hammerspacehobby.com/"
+    },
+    {
+      "name": "MADE Makerspace",
+      "city": "St. Louis",
+      "note": "A search listing describes laser cutters, CNC machines, welding and a waterjet.",
+      "url": "https://madestl.com/"
+    }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [
+    {
+      "name": "Aerospace and defense",
+      "note": "The state economic development group reports more than 100 aerospace manufacturers and Boeing defense operations employing over 18,000 workers.",
+      "source": "https://www.missouripartnership.com/key-industries/manufacturing/"
+    },
+    {
+      "name": "Automotive",
+      "note": "The same source reports more than 674,000 vehicles produced in 2025 and over $4 billion invested since 2010.",
+      "source": "https://www.missouripartnership.com/key-industries/manufacturing/"
+    },
+    {
+      "name": "Stainless-steel equipment and remanufacturing",
+      "note": "The same source reports strength in stainless-steel equipment, remanufacturing and aluminum boat manufacturing.",
+      "source": "https://www.missouripartnership.com/key-industries/manufacturing/"
+    }
+  ],
+  "support": [
+    {
+      "name": "Missouri Enterprise",
+      "note": "NIST MEP center based in Rolla that helps manufacturers improve productivity and growth.",
+      "url": "https://www.missourienterprise.org/"
+    }
+  ]
+}

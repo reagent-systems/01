@@ -1,0 +1,20 @@
+{
+  "state": "Kansas",
+  "slug": "kansas",
+  "abbr": "KS",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "Wichita", "note": "Wichita State's National Institute for Aviation Research provides prototyping, testing and advanced manufacturing services to the aviation and manufacturing industries.", "source": "https://www.wichita.edu/research/niar/" }
+  ],
+  "makerspaces": [],
+  "events": [],
+  "programs": [
+    { "name": "National Institute for Aviation Research (NIAR), Wichita State University", "city": "Wichita", "note": "Lists engineering, certification and prototyping, test and evaluation, and training in additive manufacturing and CAD/CAM.", "url": "https://www.wichita.edu/research/niar/" }
+  ],
+  "specialties": [
+    { "name": "Aviation and aerospace", "note": "NIAR states its mission includes supporting the aviation and manufacturing industries.", "source": "https://www.wichita.edu/research/niar/" }
+  ],
+  "support": [
+    { "name": "Kansas Manufacturing Solutions (KMS)", "note": "NIST lists it as the Kansas MEP center, offering continuous improvement, workforce, quality and smart manufacturing help from an office in Shawnee.", "url": "https://www.wearekms.com/" }
+  ]
+}

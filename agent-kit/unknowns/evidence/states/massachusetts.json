@@ -1,0 +1,87 @@
+{
+  "state": "Massachusetts",
+  "slug": "massachusetts",
+  "abbr": "MA",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Boston",
+      "note": "MassRobotics operates a workspace and resource center for robotics startups at 12 Channel Street.",
+      "source": "https://www.massrobotics.org/"
+    },
+    {
+      "city": "Lowell",
+      "note": "Lowell Makes is a makerspace with an electronics shop, machine shop, lasers, 3D printing and rapid prototyping.",
+      "source": "https://www.lowellmakes.com/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Artisans Asylum",
+      "city": "Boston (Allston-Brighton)",
+      "note": "Nonprofit makerspace with shared workshops and studios on a campus of more than 52,000 square feet.",
+      "url": "https://artisansasylum.com/about/"
+    },
+    {
+      "name": "Lowell Makes",
+      "city": "Lowell",
+      "note": "Lists an electronics shop, machine shop, lasers, 3D printing and rapid prototyping.",
+      "url": "https://www.lowellmakes.com/"
+    }
+  ],
+  "events": [
+    {
+      "name": "RoboBoston: Robot Block Party",
+      "city": "Boston",
+      "cadence": "annual",
+      "note": "MassRobotics lists this as its 9th annual event; the 2026 date was postponed.",
+      "url": "https://www.massrobotics.org/events/"
+    },
+    {
+      "name": "Massachusetts Manufacturing Mash-Up",
+      "city": "Boston",
+      "cadence": "annual",
+      "month": "October",
+      "note": "MassRobotics lists it as returning for its sixth year.",
+      "url": "https://www.massrobotics.org/events/"
+    }
+  ],
+  "programs": [
+    {
+      "name": "MassRobotics",
+      "city": "Boston",
+      "note": "Offers workspace, resources and programming to help robotics startups develop, prototype, test and commercialize products.",
+      "url": "https://www.massrobotics.org/"
+    },
+    {
+      "name": "The Engine",
+      "city": "Greater Boston",
+      "note": "Offers managed lab, engineering and office space with over 1,880 pieces of equipment for tough tech startups.",
+      "url": "https://www.engine.xyz/"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Medical device manufacturing",
+      "note": "A trade article profiles Massachusetts as a medtech manufacturing hub.",
+      "source": "https://www.plasticstoday.com/blow-molding/regional-focus-molding-a-global-medtech-hub-in-massachusetts"
+    },
+    {
+      "name": "Advanced and hard tech manufacturing",
+      "note": "A trade publication reports 5,920 manufacturing companies employing 229,700 people, including medical supplies, aerospace and defense components, and robotics and electronics.",
+      "source": "https://www.advancedmanufacturing.org/states-of-the-industry/massachusetts/from-textiles-to-hard-tech-manufacturing-evolves-in-massachusetts/article_ec89fe79-7d9d-48ee-9904-ed0c35094e19.html"
+    },
+    {
+      "name": "Robotics",
+      "note": "MassRobotics supports robotics startups in Boston with workspace and prototyping resources.",
+      "source": "https://www.massrobotics.org/"
+    }
+  ],
+  "support": [
+    {
+      "name": "Massachusetts Manufacturing Extension Partnership (MassMEP)",
+      "note": "NIST MEP center offering consulting, workforce programs and technology support to small and mid-size manufacturers.",
+      "url": "https://www.massmep.org/"
+    }
+  ]
+}

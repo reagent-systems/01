@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "tsx ../../tools/unknowns/src/cli.ts export src/generated/register.json",
+    "generate": "tsx ../../tools/unknowns/src/cli.ts export src/generated/register.json && node scripts/build-states.mjs",
     "dev": "pnpm generate && next dev",
     "typecheck": "pnpm generate && tsc --noEmit",
     "build": "pnpm generate && next build",

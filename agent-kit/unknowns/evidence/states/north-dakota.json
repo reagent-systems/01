@@ -1,0 +1,52 @@
+{
+  "state": "North Dakota",
+  "slug": "north-dakota",
+  "abbr": "ND",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Fargo",
+      "note": "The Greater Fargo-Moorhead region is credited with the first skid steer loader and a pioneering four-wheel-drive tractor.",
+      "source": "https://gfmedc.com/wp-content/uploads/2025/03/2025-AgTechOpportunity-External-2.pdf"
+    },
+    {
+      "city": "Grand Forks",
+      "note": "Grand Sky is described as the first UAS business and aviation park, beside Grand Forks Air Force Base.",
+      "source": "https://www.tradeandindustrydev.com/industry/aerospace-defense/news/nd-north-dakota-lands-its-first-uas-manufacturing-10035"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "MELD Workshop",
+      "city": "Fargo",
+      "note": "A 2013 article lists three 3D printers, a laser cutter, and metal and wood tools; current operating status was not verified.",
+      "url": "https://emergingprairie.com/meld-workshop-launches-makerspace-in-fargo"
+    }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [
+    {
+      "name": "Advanced manufacturing",
+      "note": "The state science and technology plan names it one of its targeted industries.",
+      "source": "https://ndepscor.ndus.edu/nd-science-and-technology-plan-targeted-industries"
+    },
+    {
+      "name": "Autonomous systems and unmanned aircraft",
+      "note": "The same plan lists autonomous systems, and the state hosts Grand Sky near Grand Forks.",
+      "source": "https://ndepscor.ndus.edu/nd-science-and-technology-plan-targeted-industries"
+    },
+    {
+      "name": "Agricultural equipment",
+      "note": "Regional economic development material cites Bobcat and Steiger and expansions by Doosan, Caterpillar and John Deere.",
+      "source": "https://gfmedc.com/wp-content/uploads/2025/03/2025-AgTechOpportunity-External-2.pdf"
+    }
+  ],
+  "support": [
+    {
+      "name": "Impact Dakota",
+      "note": "NIST MEP center for North Dakota, formerly the Dakota Manufacturing Extension Partnership.",
+      "url": "https://www.nist.gov/mep/centers/impact-dakota"
+    }
+  ]
+}

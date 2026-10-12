@@ -1,0 +1,42 @@
+{
+  "state": "Ohio",
+  "slug": "ohio",
+  "abbr": "OH",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Youngstown",
+      "note": "Youngstown Business Incubator runs an additive manufacturing headquarters with 3D printers.",
+      "source": "http://ybi.org/"
+    }
+  ],
+  "makerspaces": [],
+  "events": [],
+  "programs": [
+    {
+      "name": "Youngstown Business Incubator",
+      "city": "Youngstown",
+      "note": "Supports early-stage and advanced manufacturing companies and offers additive manufacturing services and facilities.",
+      "url": "http://ybi.org/"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Additive manufacturing",
+      "note": "YBI's additive manufacturing team works with Ohio manufacturers on 3D printing adoption.",
+      "source": "http://ybi.org/"
+    }
+  ],
+  "support": [
+    {
+      "name": "MAGNET",
+      "note": "Not-for-profit consultancy listed by NIST as part of the Ohio MEP, helping manufacturers with operations, technology and engineering.",
+      "url": "http://www.manufacturingsuccess.org/"
+    },
+    {
+      "name": "The MEP at Columbus State",
+      "note": "Second Ohio MEP center listed on the NIST Ohio page.",
+      "url": "https://www.nist.gov/states/mep/Ohio"
+    }
+  ]
+}

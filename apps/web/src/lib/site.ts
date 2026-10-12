@@ -35,24 +35,113 @@ export const site: Site = {
 
 export type NavLink = { label: string; href: string };
 
-export const primaryNav: NavLink[] = [
-  { label: "How it works", href: "/how-it-works" },
-  { label: "Processes", href: "/processes" },
-  { label: "Who it’s for", href: "/for" },
-  { label: "Platforms", href: "/platforms" },
+import type { NavMenu } from "@01/ui";
+import { audiences } from "./audiences";
+import { insights } from "./insights";
+import { processes } from "./processes";
+
+export const menus: NavMenu[] = [
+  {
+    label: "How it works",
+    groups: [
+      {
+        title: "The platform",
+        items: [
+          {
+            label: "The flow",
+            href: "/how-it-works",
+            desc: "Seven steps from upload to a unit on a desk",
+          },
+          {
+            label: "Price drops",
+            href: "/how-it-works#price",
+            desc: "How the price falls and the process changes",
+          },
+          {
+            label: "When a part is bad",
+            href: "/how-it-works#faults",
+            desc: "How faults are routed and paid",
+          },
+        ],
+      },
+      {
+        title: "Before you start",
+        items: [
+          { label: "Platforms", href: "/platforms", desc: "Shortcuts that make quotes faster" },
+          { label: "Compliance", href: "/compliance", desc: "FCC, batteries, export control" },
+          { label: "Start a design", href: "/start", desc: "Tell us what you are building" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Processes",
+    groups: [
+      {
+        title: "Make the parts",
+        items: processes
+          .filter((p) => p.kind === "Low setup" || p.kind === "Tooled")
+          .map((p) => ({
+            label: p.title,
+            href: `/processes/${p.slug}`,
+            desc: p.summary.split(".")[0] ?? "",
+          })),
+      },
+      {
+        title: "Boards, finish, and assembly",
+        items: [
+          ...processes
+            .filter((p) => p.kind === "Electronics" || p.kind === "Finishing and assembly")
+            .map((p) => ({
+              label: p.title,
+              href: `/processes/${p.slug}`,
+              desc: p.summary.split(".")[0] ?? "",
+            })),
+        ],
+      },
+    ],
+  },
+  {
+    label: "Who it’s for",
+    groups: [
+      {
+        items: audiences
+          .slice(0, 4)
+          .map((a) => ({ label: a.name, href: `/for/${a.slug}`, desc: a.eyebrow })),
+      },
+      {
+        items: audiences
+          .slice(4)
+          .map((a) => ({ label: a.name, href: `/for/${a.slug}`, desc: a.eyebrow })),
+      },
+    ],
+  },
+  {
+    label: "Insights",
+    groups: [
+      {
+        title: "Guides",
+        items: insights.map((i) => ({
+          label: i.title.split(":")[0] ?? i.title,
+          href: `/insights/${i.slug}`,
+        })),
+      },
+      {
+        title: "By state",
+        items: [
+          {
+            label: "Hardware by state",
+            href: "/states",
+            desc: "Makerspaces, events, programs, and specialties",
+          },
+          { label: "All insights", href: "/insights" },
+        ],
+      },
+    ],
+  },
   { label: "Designs", href: "/designs" },
 ];
 
-export const drawerNav: NavLink[] = [
-  { label: "How it works", href: "/how-it-works" },
-  { label: "Processes", href: "/processes" },
-  { label: "Who it’s for", href: "/for" },
-  { label: "Platforms", href: "/platforms" },
-  { label: "Designs", href: "/designs" },
-  { label: "Compliance", href: "/compliance" },
-  { label: "Join as a shop", href: "/for/manufacturers" },
-  { label: "Start a design", href: "/start" },
-  { label: "Contact", href: "/contact" },
-];
+export const drawerNav: NavLink[] = menus.map((m) => ({ label: m.label, href: m.href ?? "/" }));
 
 export const fileTypes = ["STEP", "STL", "DXF", "PDF drawings", "KiCad", "Gerber", "BOM (CSV)"];

@@ -1,0 +1,81 @@
+{
+  "state": "New Hampshire",
+  "slug": "new-hampshire",
+  "abbr": "NH",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Nashua",
+      "note": "MakeIt Labs is described as New Hampshire's first and largest makerspace with CNC and laser equipment.",
+      "source": "https://www.makeitlabs.com/"
+    },
+    {
+      "city": "Portsmouth",
+      "note": "Port City Makerspace has a CNC room, machine shop and electronics lab.",
+      "source": "http://portcitymakerspace.com/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "MakeIt Labs",
+      "city": "Nashua",
+      "note": "Lists a manual and CNC machine shop, CNC router table, laser cutting and 3D printing.",
+      "url": "https://www.makeitlabs.com/"
+    },
+    {
+      "name": "Port City Makerspace",
+      "city": "Portsmouth",
+      "note": "Lists a CNC room with routers, a machine shop, metal shop and electronics lab with 3D printing.",
+      "url": "http://portcitymakerspace.com/"
+    },
+    {
+      "name": "Manchester Makerspace",
+      "city": "Manchester",
+      "note": "Lists welding and plasma cutting, 3D printers, laser etchers and a computer lab.",
+      "url": "https://www.manchestermakerspace.org/"
+    },
+    {
+      "name": "Makerspace at the ECenter",
+      "city": "Durham",
+      "note": "Lists a DATRON CNC mill, 40-watt laser, 3D printers and an electronics station, free to the UNH community.",
+      "url": "https://www.unh.edu/ecenter/makerspace"
+    }
+  ],
+  "events": [
+    {
+      "name": "NH Maker Fest",
+      "city": "Dover",
+      "cadence": "annual",
+      "month": "June",
+      "note": "Run by the Children's Museum of New Hampshire; the listed 15th edition is on June 5, 2027.",
+      "url": "https://childrens-museum.org/programs/nh-maker-fest/"
+    }
+  ],
+  "programs": [
+    {
+      "name": "UNH Entrepreneurship Center (ECenter)",
+      "city": "Durham",
+      "note": "Runs a student makerspace with CNC milling, laser cutting and 3D printing.",
+      "url": "https://www.unh.edu/ecenter/makerspace"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Advanced manufacturing cluster",
+      "note": "The state's economic affairs office describes a cluster including aerospace and defense, fabricated metal, electronics and machinery that makes medical devices, semiconductors and precision optics.",
+      "source": "https://www.nheconomy.com/news-press/advanced-manufacturing-report-released"
+    },
+    {
+      "name": "Precision bearings",
+      "note": "New Hampshire Ball Bearings in Peterborough makes precision bearings for aerospace, defense and medical device markets.",
+      "source": "https://www.nhbb.com/careers/who-we-are"
+    }
+  ],
+  "support": [
+    {
+      "name": "New Hampshire Manufacturing Extension Partnership (NHMEP)",
+      "note": "NIST MEP center offering lean training, quality systems and technology help to small and medium-sized manufacturers.",
+      "url": "http://www.nhmep.org/"
+    }
+  ]
+}

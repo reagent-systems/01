@@ -1,0 +1,107 @@
+{
+  "state": "North Carolina",
+  "slug": "north-carolina",
+  "abbr": "NC",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Research Triangle Park",
+      "note": "Hangar6 is a shared prototyping lab at 6 Davis Drive in the park.",
+      "source": "https://www.manufacturednc.com/first-flight-venture-center---hangar6"
+    },
+    {
+      "city": "Raleigh",
+      "note": "NC State hosts its additive manufacturing research center and a libraries makerspace with 3D printers and a laser cutter.",
+      "source": "https://www.industryweek.com/technology-and-iiot/additive/article/22014772/how-universities-and-talent-are-turning-north-carolina-into-a-3d-printing-hub"
+    },
+    {
+      "city": "Charlotte",
+      "note": "A 2017 report notes additive manufacturing firms opening or planning sites in the metro area.",
+      "source": "https://www.industryweek.com/technology-and-iiot/additive/article/22014772/how-universities-and-talent-are-turning-north-carolina-into-a-3d-printing-hub"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Hangar6",
+      "city": "Research Triangle Park",
+      "note": "Prototyping lab run by First Flight Venture Center with machining, woodworking and engineering support.",
+      "url": "https://www.manufacturednc.com/first-flight-venture-center---hangar6"
+    },
+    {
+      "name": "NC State Libraries Makerspace (D. H. Hill Library)",
+      "city": "Raleigh",
+      "note": "Lists 3D printers, 3D scanners, a laser cutter and electronics prototyping equipment.",
+      "url": "https://www.lib.ncsu.edu/node/27271"
+    },
+    {
+      "name": "N.C. PSI Makerspace",
+      "city": "Raleigh",
+      "note": "NC State lab with 3D printers, laser cutters, power tools and an electronics station.",
+      "url": "https://cals.ncsu.edu/psi/research-facilities/n-c-psi-makerspace/"
+    },
+    {
+      "name": "MakeUNCC (Area 49 Makerspace and CCI Makerspace)",
+      "city": "Charlotte",
+      "note": "UNC Charlotte spaces with 3D printers, laser cutters and circuitry components, open to campus users.",
+      "url": "https://library.charlotte.edu/makeuncc"
+    }
+  ],
+  "events": [
+    {
+      "name": "Asheville Maker Faire",
+      "city": "Asheville",
+      "cadence": "annual",
+      "month": "April",
+      "note": "Run by the nonprofit Asheville Makers, with the 2026 edition billed as the sixth.",
+      "url": "https://asheville.makerfaire.com/about/"
+    }
+  ],
+  "programs": [
+    {
+      "name": "First Flight Venture Center",
+      "city": "Research Triangle Park",
+      "note": "Incubator that launched the Hangar6 prototyping lab with federal EDA funding.",
+      "url": "https://www.eda.gov/funding/programs/build-to-scale/past-grantees/2020-venture-challenge/First-Flight-Venture-Center"
+    },
+    {
+      "name": "NC State Entrepreneurship Initiative Garage",
+      "city": "Raleigh",
+      "note": "Prototyping studios and woodworking shops on Centennial Campus, per a 2014 NC State news item.",
+      "url": "https://news.ncsu.edu/2014/09/03/bright-ideas-brought-to-life"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Batteries and electric vehicle supply chain",
+      "note": "A trade overview cites Toyota's battery campus in Randolph County and its supply chain.",
+      "source": "https://www.tradeandindustrydev.com/region/north-carolina/north-carolinas-triple-threat-manufacturing-36395"
+    },
+    {
+      "name": "Aerospace",
+      "note": "The same overview lists advanced aerospace products among state manufacturing strengths.",
+      "source": "https://www.tradeandindustrydev.com/region/north-carolina/north-carolinas-triple-threat-manufacturing-36395"
+    },
+    {
+      "name": "Medical devices",
+      "note": "The same overview lists medical devices as a key manufacturing sector.",
+      "source": "https://www.tradeandindustrydev.com/region/north-carolina/north-carolinas-triple-threat-manufacturing-36395"
+    },
+    {
+      "name": "Fiber optic cable and glass",
+      "note": "The overview cites Prysmian's expansion in Catawba County.",
+      "source": "https://www.tradeandindustrydev.com/region/north-carolina/north-carolinas-triple-threat-manufacturing-36395"
+    },
+    {
+      "name": "Additive manufacturing",
+      "note": "A 2017 report describes 3D printing research and production firms across the state.",
+      "source": "https://www.industryweek.com/technology-and-iiot/additive/article/22014772/how-universities-and-talent-are-turning-north-carolina-into-a-3d-printing-hub"
+    }
+  ],
+  "support": [
+    {
+      "name": "NCMEP (North Carolina Manufacturing Extension Partnership)",
+      "note": "Administered by NC State Industry Expansion Solutions, with help on productivity, new product design and supply chain.",
+      "url": "https://ncmep.org/about/"
+    }
+  ]
+}

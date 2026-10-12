@@ -1,0 +1,70 @@
+{
+  "state": "Georgia",
+  "slug": "georgia",
+  "abbr": "GA",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Atlanta",
+      "note": "Home to Freeside Atlanta and Georgia Tech's CREATE-X startup programs.",
+      "source": "https://freesideatlanta.org"
+    },
+    {
+      "city": "Augusta",
+      "note": "The Garage makerspace is part of the Georgia Cyber Innovation and Training Center.",
+      "source": "https://nxtbook.com/nxtbooks/gemc/georgia_202406/index.php?startid=26"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Freeside Atlanta",
+      "city": "Atlanta",
+      "note": "Volunteer-run nonprofit with tools for electronics, 3D printing, woodworking and metalworking.",
+      "url": "https://freesideatlanta.org"
+    },
+    {
+      "name": "Cherokee Makerspace",
+      "city": "Acworth",
+      "note": "A June 2024 Georgia Magazine feature lists a plasma cutter, large CNC machines, a machine shop, laser cutters and 3D printers.",
+      "url": "https://nxtbook.com/nxtbooks/gemc/georgia_202406/index.php?startid=26"
+    }
+  ],
+  "events": [],
+  "programs": [
+    {
+      "name": "Georgia Tech CREATE-X",
+      "city": "Atlanta",
+      "note": "Offers prototyping grants through Idea to Prototype and Startup Launch with $5,000 seed funding and $30,000 in services, for students, faculty and alumni.",
+      "url": "https://create-x.gatech.edu"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Advanced manufacturing",
+      "note": "The top job-growth sector in the first half of fiscal year 2023, with over 7,700 new jobs announced.",
+      "source": "https://georgia.org/press-releases/2023/key-industries-sustain-momentum-states-economic-development"
+    },
+    {
+      "name": "Automotive and electric mobility",
+      "note": "Led by the Hyundai Motor Group Metaplant America EV facility.",
+      "source": "https://georgia.org/press-releases/2023/key-industries-sustain-momentum-states-economic-development"
+    },
+    {
+      "name": "Aerospace and defense",
+      "note": "Added over 1,500 new jobs in the first half of fiscal year 2023.",
+      "source": "https://georgia.org/press-releases/2023/key-industries-sustain-momentum-states-economic-development"
+    },
+    {
+      "name": "Food processing",
+      "note": "Drew over $695 million in investment in the first half of fiscal year 2023.",
+      "source": "https://georgia.org/press-releases/2023/key-industries-sustain-momentum-states-economic-development"
+    }
+  ],
+  "support": [
+    {
+      "name": "Georgia Manufacturing Extension Partnership (GaMEP)",
+      "note": "Georgia's NIST MEP center at Georgia Tech, working through ten regions with coaching and education for manufacturers.",
+      "url": "https://gamep.org/"
+    }
+  ]
+}

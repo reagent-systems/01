@@ -18,4 +18,6 @@ An invalid environment stops the app at start with an error that names the faili
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | string | unset | `apps/web`. Search Console verification token |
 | `NEXT_PUBLIC_BING_SITE_VERIFICATION` | string | unset | `apps/web`. Bing Webmaster verification token |
 
+`pnpm generate` bundles `agent-kit/unknowns/evidence/states/*.json` into `apps/web/src/generated/states.json` and drops any entry without an http(s) source. A state page publishes only with three or more sourced makerspace, program, or event entries.
+
 Each app adds its own fields in this table when it lands.

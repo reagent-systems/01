@@ -1,0 +1,20 @@
+{
+  "state": "Maryland",
+  "slug": "maryland",
+  "abbr": "MD",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "College Park", "note": "Terrapin Works at the University of Maryland reports over 100 3D printers and 28,000 square feet of fabrication lab space.", "source": "https://terrapinworks.umd.edu" }
+  ],
+  "makerspaces": [
+    { "name": "Terrapin Works", "city": "College Park", "note": "University of Maryland rapid prototyping service that lists 3D printing, laser cutting, metalworking, scanning and electronics help for the campus and surrounding community.", "url": "https://terrapinworks.umd.edu" }
+  ],
+  "events": [],
+  "programs": [
+    { "name": "TEDCO", "city": "Columbia", "note": "Maryland government organization that funds innovation and startups through its MyTEDCO portal, with no hardware-specific service described on its page.", "url": "https://www.tedcomd.com/" }
+  ],
+  "specialties": [],
+  "support": [
+    { "name": "Maryland MEP (MD MEP)", "note": "Nonprofit NIST MEP center in Columbia that helps small and mid-size manufacturers, including finding suppliers for prototype parts.", "url": "https://www.mdmep.org/" }
+  ]
+}

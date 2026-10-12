@@ -1,0 +1,31 @@
+{
+  "state": "Rhode Island",
+  "slug": "rhode-island",
+  "abbr": "RI",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Providence",
+      "note": "The Steel Yard offers welding, blacksmithing and open studio access in the city.",
+      "source": "https://www.thesteelyard.org"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "The Steel Yard",
+      "city": "Providence",
+      "note": "Industrial arts space with welding and blacksmithing studios, open studio access and Fab Nights; specific machines were not listed.",
+      "url": "https://www.thesteelyard.org"
+    }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [],
+  "support": [
+    {
+      "name": "Polaris MEP",
+      "note": "Rhode Island's NIST MEP center, offering lean, quality, cybersecurity and technology acceleration services.",
+      "url": "https://www.polarismep.org/"
+    }
+  ]
+}

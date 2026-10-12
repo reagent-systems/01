@@ -1,0 +1,57 @@
+{
+  "state": "Connecticut",
+  "slug": "connecticut",
+  "abbr": "CT",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "New Haven",
+      "note": "MakeHaven operates a community makerspace at 770 Chapel Street.",
+      "source": "https://www.makehaven.org"
+    },
+    {
+      "city": "Hartford",
+      "note": "Hartford is the base of Pratt & Whitney's parent company and of the CONNSTEP MEP center at 350 Church Street.",
+      "source": "https://en.wikipedia.org/wiki/Economy_of_Connecticut"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "MakeHaven",
+      "city": "New Haven",
+      "note": "Community makerspace with CNC milling, laser cutters, many 3D printers, a resin printer and an electronics bench with oscilloscopes.",
+      "url": "https://www.makehaven.org"
+    }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [
+    {
+      "name": "Aerospace",
+      "note": "Sikorsky runs the state's largest plant in Stratford and Pratt & Whitney makes jet engines.",
+      "source": "https://en.wikipedia.org/wiki/Economy_of_Connecticut"
+    },
+    {
+      "name": "Submarine building",
+      "note": "Electric Boat, a General Dynamics division, builds submarines in Groton.",
+      "source": "https://en.wikipedia.org/wiki/Economy_of_Connecticut"
+    },
+    {
+      "name": "Pharmaceuticals",
+      "note": "Boehringer Ingelheim manufactures drugs and has its U.S. headquarters in Ridgefield.",
+      "source": "https://en.wikipedia.org/wiki/Economy_of_Connecticut"
+    }
+  ],
+  "support": [
+    {
+      "name": "CONNSTEP",
+      "note": "Connecticut's NIST MEP center, helping small and mid-sized manufacturers with operations, strategic growth, cybersecurity and sustainability.",
+      "url": "https://www.connstep.org/"
+    },
+    {
+      "name": "Manufacturing Innovation Fund (CT DECD)",
+      "note": "State fund for advanced manufacturing, with a voucher program run by CCAT that offers matching grants of $10,000 to $50,000 including for prototype development.",
+      "url": "https://portal.ct.gov/-/media/decd/business-development/documents/manufacturing-innovation-fund/2017-annual-report.pdf"
+    }
+  ]
+}

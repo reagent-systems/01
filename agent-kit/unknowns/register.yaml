@@ -2273,3 +2273,77 @@
     - date: 2026-10-12
       change: Seeded from knowledge-map section 7 (ZONE).
       by: agent
+
+- id: MKT-07
+  field: KU
+  domain: market
+  statement: >-
+    State guides rest on agent research with a shared search budget. 27 of 50 states have enough
+    sourced entries to publish. Many entries came from search snippets or stale pages. Which entries
+    are wrong or out of date?
+  why_it_matters: A wrong makerspace, event, or program on a public page costs trust and SEO value.
+  severity: high
+  blocks_phase: 7
+  confidence: 0.4
+  current_answer: null
+  evidence:
+    - evidence/states/_SCHEMA.md
+  resolve_by: research
+  owner: agent
+  next_action: >-
+    Re-run research for the 23 thin states with a fresh search budget. Open every official page.
+    Drop entries whose status you cannot confirm.
+  done_when: Every published state entry has a source page opened and read, and each thin state has three or more.
+  origin: discovery
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Opened after four research agents reported thin and unverified entries.
+      by: agent
+- id: LCH-07
+  field: KU
+  domain: launch
+  statement: >-
+    The site uses six Mixkit clips as a scroll-scrubbed background. Does the Mixkit Stock Video
+    licence cover this use, and what do we replace them with before launch?
+  why_it_matters: Footage is the first thing a visitor sees. A licence problem or generic stock look hurts the brand.
+  severity: medium
+  blocks_phase: 7
+  confidence: 0.6
+  current_answer: Mixkit states a free commercial licence. The terms were read on the licence page, not reviewed by counsel.
+  evidence: []
+  resolve_by: research+decision
+  owner: kyle
+  next_action: Read the licence terms in full. Decide when to film our own footage (see the launch shot list).
+  done_when: The licence is confirmed in writing, or the clips are replaced with our own footage.
+  origin: discovery
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Opened when the clips became the scroll backdrop.
+      by: agent
+- id: TEC-07
+  field: KU
+  domain: technology
+  statement: >-
+    The scroll-scrubbed video, pinned scenes, and smooth scrolling were tested only in headless
+    Chromium. How do they behave on iOS Safari, low-end Android, and slow connections?
+  why_it_matters: A janky or heavy first page loses visitors. The video files total about 13 MB.
+  severity: medium
+  blocks_phase: 7
+  confidence: 0.3
+  current_answer: null
+  evidence: []
+  resolve_by: experiment
+  owner: kyle
+  next_action: Open the preview on an iPhone and a mid-range Android phone. Record frame rate, load time, and any seek stalls.
+  done_when: Each device class is tested and the results are saved to evidence.
+  origin: discovery
+  opened: 2026-10-12
+  updated: 2026-10-12
+  history:
+    - date: 2026-10-12
+      change: Opened after the scrubbed background shipped to the preview.
+      by: agent

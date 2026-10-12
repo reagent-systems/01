@@ -13,3 +13,4 @@ Source: [Mixkit](https://mixkit.co) free stock video, under the Mixkit Stock Vid
 | `guarantee` | Engineers watching 3D printer working (23230) |
 
 Replace these with our own footage when we film it (see the launch shot list in `ROADMAP.md`).
+| `story` | Stitched from the six clips above, 43 s, 24 fps, keyframe every 3 frames so seeking is instant (desktop 960x540 and mobile 640x360) |

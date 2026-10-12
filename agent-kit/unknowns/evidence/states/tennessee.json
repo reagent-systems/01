@@ -1,0 +1,90 @@
+{
+  "state": "Tennessee",
+  "slug": "tennessee",
+  "abbr": "TN",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Oak Ridge",
+      "note": "Oak Ridge National Laboratory hosts Innovation Crossroads, which embeds startup founders for two years with access to the DOE Manufacturing Demonstration Facility.",
+      "source": "https://www.ornl.gov/project/innovation-crossroads"
+    },
+    {
+      "city": "Nashville",
+      "note": "Vanderbilt's Wond'ry innovation center runs makerspaces and hosts the annual TN Maker Fest.",
+      "source": "https://www.vanderbilt.edu/thewondry/makerspaces/"
+    },
+    {
+      "city": "Chattanooga",
+      "note": "The city designated a 140 acre downtown Innovation District in 2015 to cluster startups, incubators and accelerators.",
+      "source": "https://www.brookings.edu/articles/an-innovation-district-grows-in-chattanooga/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Make Nashville",
+      "city": "Nashville",
+      "note": "Its site lists FDM 3D printers, CNC mills, a CO2 laser, a metal shop with welding, and an electronics lab.",
+      "url": "https://www.makenashville.org"
+    },
+    {
+      "name": "Knox Makers",
+      "city": "Knoxville",
+      "note": "Volunteer-run nonprofit whose site lists 3D printing, laser cutting, machining, metalworking, electronics and woodworking areas.",
+      "url": "https://knoxmakers.org"
+    },
+    {
+      "name": "ChattLab",
+      "city": "Chattanooga",
+      "note": "About 5,000 square feet on the North Shore with woodworking, metalworking, 3D printing and electronics tools, per the state arts commission listing.",
+      "url": "https://tnartscommission.org/tennessee-makerspaces/chattlab-makerspace/"
+    }
+  ],
+  "events": [
+    {
+      "name": "TN Maker Fest",
+      "city": "Nashville",
+      "cadence": "annual",
+      "note": "Free family event at the Wond'ry held each fall, with the 2025 edition on October 4 and the next listed for September 26, 2026.",
+      "url": "https://vanderbilthustler.com/2025/10/08/in-photos-tennessee-maker-fest-2025/"
+    }
+  ],
+  "programs": [
+    {
+      "name": "Innovation Crossroads",
+      "city": "Oak Ridge",
+      "note": "DOE lab-embedded entrepreneurship fellowship at Oak Ridge National Laboratory with access to the Manufacturing Demonstration Facility.",
+      "url": "https://www.ornl.gov/project/innovation-crossroads"
+    },
+    {
+      "name": "The Wond'ry, Vanderbilt University",
+      "city": "Nashville",
+      "note": "Vanderbilt's innovation center with makerspaces and programs for student and faculty inventors.",
+      "url": "https://www.vanderbilt.edu/thewondry/makerspaces/"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Automotive manufacturing",
+      "note": "The state automotive cluster is anchored by Nissan in Smyrna, GM in Spring Hill and Volkswagen in Chattanooga.",
+      "source": "https://tnecd.com/wp-content/uploads/2019/05/Automotive-Research-Paper_01-2019-1.pdf"
+    },
+    {
+      "name": "Advanced manufacturing research",
+      "note": "Oak Ridge hosts the Manufacturing Demonstration Facility, described as DOE's largest advanced manufacturing research center.",
+      "source": "https://www.ornl.gov/project/innovation-crossroads"
+    },
+    {
+      "name": "Nuclear industry supply chain",
+      "note": "The state MEP center lists the nuclear industry as one of its support areas for manufacturers.",
+      "source": "https://tmep.cis.tennessee.edu/about-tmep"
+    }
+  ],
+  "support": [
+    {
+      "name": "Tennessee Manufacturing Extension Partnership (TMEP)",
+      "note": "The state's NIST MEP center, housed in the University of Tennessee Center for Industrial Services, offering consulting on continuous improvement, quality, supply chain and workforce.",
+      "url": "https://tmep.cis.tennessee.edu/about-tmep"
+    }
+  ]
+}

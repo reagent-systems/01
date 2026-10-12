@@ -1,0 +1,53 @@
+{
+  "state": "New Jersey",
+  "slug": "new-jersey",
+  "abbr": "NJ",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Newark",
+      "note": "NJIT Makerspace is a 21,000 square foot facility with about $4 million of equipment.",
+      "source": "https://www.njitmakerspace.com/"
+    },
+    {
+      "city": "North Brunswick",
+      "note": "FUBAR Labs is a nonprofit hackerspace in North Brunswick.",
+      "source": "https://fubarlabs.org/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "NJIT Makerspace",
+      "city": "Newark",
+      "note": "Lists a 21,000 square foot facility with about $4 million of industrial and prototyping equipment; training is offered to NJIT community members.",
+      "url": "https://www.njitmakerspace.com/"
+    },
+    {
+      "name": "FUBAR Labs",
+      "city": "North Brunswick",
+      "note": "A Hackaday listing shows a CNC machine and two 40 W CO2 laser cutters, but the listing date is unclear.",
+      "url": "https://hackaday.io/hackerspace/1086-fubar-labs"
+    }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [
+    {
+      "name": "Biopharma manufacturing",
+      "note": "A June 2026 industry op-ed describes New Jersey as a hub for aseptic manufacturing and cell and gene therapy production.",
+      "source": "https://hinj.org/wp-content/uploads/HINJ-op-ed-NJ-Leading-the-Way-in-Advanced-Manufacturing-NJ-Business-Magazine-June-2026.pdf"
+    },
+    {
+      "name": "Medical technology manufacturing",
+      "note": "The same industry group frames advanced manufacturing for biopharma and medical technologies as a state strength.",
+      "source": "https://hinj.org/op-ed-leading-the-way-in-advanced-manufacturing-for-biopharma-and-medical-technologies/"
+    }
+  ],
+  "support": [
+    {
+      "name": "New Jersey Manufacturing Extension Program (NJMEP)",
+      "note": "NIST MEP center offering lean, process improvement and workforce help to small and mid-sized manufacturers in all 21 counties.",
+      "url": "https://www.njmep.org/"
+    }
+  ]
+}

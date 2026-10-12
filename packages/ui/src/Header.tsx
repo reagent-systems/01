@@ -4,32 +4,36 @@ import { useEffect, useRef, useState } from "react";
 import { Logo } from "./Logo";
 import { SmartLink } from "./SmartLink";
 
-type NavLink = { href: string; label: string };
+type NavLink = { href: string; label: string; desc?: string };
+export type NavMenu = {
+  label: string;
+  href?: string;
+  /** Columns of links for a dropdown. Without groups the item is a plain link. */
+  groups?: { title?: string; items: NavLink[] }[];
+};
+
+const Caret = () => (
+  <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+    <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" />
+  </svg>
+);
 
 export function Header({
-  links,
-  drawerLinks = links,
-  action,
-  drawerFoot,
+  menus,
+  secondary,
+  primary,
 }: {
-  links: NavLink[];
-  drawerLinks?: NavLink[];
-  action?: NavLink;
-  drawerFoot?: NavLink[];
+  menus: NavMenu[];
+  secondary?: NavLink;
+  primary?: NavLink;
 }) {
-  const [open, setOpen] = useState(false);
-  const [hidden, setHidden] = useState(false);
+  const [open, setOpen] = useState(false); // mobile drawer
+  const [menu, setMenu] = useState<string | null>(null); // desktop dropdown
   const [solid, setSolid] = useState(false);
-  const lastY = useRef(0);
+  const bar = useRef<HTMLElement>(null);
 
-  // Hide on scroll down, reveal on scroll up.
   useEffect(() => {
-    const onScroll = () => {
-      const y = window.scrollY;
-      setSolid(y > window.innerHeight * 0.6);
-      setHidden(y > 200 && y > lastY.current);
-      lastY.current = y;
-    };
+    const onScroll = () => setSolid(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -37,26 +41,89 @@ export function Header({
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        setMenu(null);
+      }
+    };
+    const onDown = (e: MouseEvent) => {
+      if (bar.current && !bar.current.contains(e.target as Node)) setMenu(null);
+    };
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    window.addEventListener("mousedown", onDown);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("mousedown", onDown);
+    };
   }, [open]);
+
+  const close = () => {
+    setOpen(false);
+    setMenu(null);
+  };
 
   return (
     <>
-      <header className={`header${hidden && !open ? " is-hidden" : ""}${solid ? " is-solid" : ""}`}>
+      <header
+        ref={bar}
+        className={`header header-mega${solid || menu ? " is-solid" : ""}`}
+        onMouseLeave={() => setMenu(null)}
+      >
         <Logo />
         <nav className="nav" aria-label="Primary">
-          {links.map((l) => (
-            <SmartLink key={l.href} href={l.href}>
-              {l.label}
-            </SmartLink>
-          ))}
+          {menus.map((m) =>
+            m.groups ? (
+              <div className="nav-item" key={m.label} onMouseEnter={() => setMenu(m.label)}>
+                <button
+                  type="button"
+                  className="nav-trigger"
+                  aria-expanded={menu === m.label}
+                  aria-controls={`mega-${m.label}`}
+                  onClick={() => setMenu((c) => (c === m.label ? null : m.label))}
+                >
+                  {m.label} <Caret />
+                </button>
+                <div
+                  id={`mega-${m.label}`}
+                  className={`mega${menu === m.label ? " is-open" : ""}`}
+                  hidden={menu !== m.label}
+                >
+                  <div className="mega-inner">
+                    {m.groups.map((g) => (
+                      <div className="mega-col" key={g.title ?? g.items[0]?.href}>
+                        {g.title && <p className="mega-title">{g.title}</p>}
+                        <ul>
+                          {g.items.map((l) => (
+                            <li key={l.href}>
+                              <SmartLink href={l.href} onClick={close}>
+                                <b>{l.label}</b>
+                                {l.desc && <span>{l.desc}</span>}
+                              </SmartLink>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <SmartLink key={m.label} href={m.href ?? "/"} className="nav-link">
+                {m.label}
+              </SmartLink>
+            ),
+          )}
         </nav>
         <div className="header-actions">
-          {action && (
-            <SmartLink href={action.href} className="header-quote">
-              {action.label}
+          {secondary && (
+            <SmartLink href={secondary.href} className="header-quote header-secondary">
+              {secondary.label}
+            </SmartLink>
+          )}
+          {primary && (
+            <SmartLink href={primary.href} className="header-cta">
+              {primary.label}
             </SmartLink>
           )}
           <button
@@ -71,6 +138,7 @@ export function Header({
           </button>
         </div>
       </header>
+
       <div
         className={`drawer-backdrop${open ? " is-open" : ""}`}
         onClick={() => setOpen(false)}
@@ -83,26 +151,49 @@ export function Header({
         inert={!open}
       >
         <nav aria-label="Menu">
-          <ul>
-            {drawerLinks.map((l, i) => (
-              <li key={l.href} style={{ transitionDelay: open ? `${80 + i * 45}ms` : "0ms" }}>
-                <SmartLink href={l.href} onClick={() => setOpen(false)}>
-                  {l.label}
-                  <span aria-hidden="true">→</span>
-                </SmartLink>
-              </li>
-            ))}
-          </ul>
+          {menus.map((m) => (
+            <div className="drawer-group" key={m.label}>
+              {m.groups ? (
+                <>
+                  <p className="drawer-title">{m.label}</p>
+                  <ul>
+                    {m.groups
+                      .flatMap((g) => g.items)
+                      .map((l) => (
+                        <li key={l.href}>
+                          <SmartLink href={l.href} onClick={close}>
+                            {l.label}
+                            <span aria-hidden="true">→</span>
+                          </SmartLink>
+                        </li>
+                      ))}
+                  </ul>
+                </>
+              ) : (
+                <ul>
+                  <li>
+                    <SmartLink href={m.href ?? "/"} onClick={close}>
+                      {m.label}
+                      <span aria-hidden="true">→</span>
+                    </SmartLink>
+                  </li>
+                </ul>
+              )}
+            </div>
+          ))}
         </nav>
-        {drawerFoot && (
-          <div className="drawer-foot">
-            {drawerFoot.map((l) => (
-              <SmartLink key={l.href} href={l.href}>
-                {l.label}
-              </SmartLink>
-            ))}
-          </div>
-        )}
+        <div className="drawer-foot">
+          {secondary && (
+            <SmartLink href={secondary.href} onClick={close}>
+              {secondary.label}
+            </SmartLink>
+          )}
+          {primary && (
+            <SmartLink href={primary.href} className="btn btn-solid" onClick={close}>
+              {primary.label}
+            </SmartLink>
+          )}
+        </div>
       </aside>
     </>
   );

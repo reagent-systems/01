@@ -1,0 +1,84 @@
+{
+  "state": "Virginia",
+  "slug": "virginia",
+  "abbr": "VA",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Danville",
+      "note": "The Institute for Advanced Learning and Research campus hosts the Center for Manufacturing Advancement and the Navy Additive Manufacturing Center of Excellence.",
+      "source": "https://www.ialr.org/facilities/"
+    },
+    {
+      "city": "Richmond",
+      "note": "Home to the HackRVA and Build RVA makerspaces with CNC, laser and 3D printing equipment.",
+      "source": "https://richmondmagazine.com/arts-entertainment/richmond-makerspaces/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "HackRVA",
+      "city": "Richmond",
+      "note": "Member-run space at 2026 A Dabney Road with a Thunder laser, CNC machines and 3D printers.",
+      "url": "https://hackrva.org"
+    },
+    {
+      "name": "Build RVA",
+      "city": "Richmond",
+      "note": "Community makerspace offering lasers, CNC milling and routing, 3D printing and a woodshop.",
+      "url": "http://www.rvabuild.com/en"
+    },
+    {
+      "name": "MAKE Roanoke",
+      "city": "Roanoke",
+      "note": "Nonprofit makerspace with a CNC router, CO2 laser, resin and FDM 3D printers, an electronics station and a metal shop.",
+      "url": "https://www.downtownroanoke.org/go/make-roanoke"
+    }
+  ],
+  "events": [
+    {
+      "name": "MAKE Roanoke Maker Meetup and Show and Tell",
+      "city": "Roanoke",
+      "cadence": "monthly",
+      "note": "Evening meetup at the makerspace, with sessions listed for October 22 and November 19, 2026.",
+      "url": "https://www.downtownroanoke.org/go/make-roanoke"
+    }
+  ],
+  "programs": [
+    {
+      "name": "IALR Center for Manufacturing Advancement",
+      "city": "Danville",
+      "note": "A 51,250 square foot center with a CNC Machining Innovation Lab, Precision Metrology Lab and Industry 4.0 Integration Lab, plus rapid launch space for new operations.",
+      "url": "https://www.ialr.org/facilities/"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Submarine and defense manufacturing",
+      "note": "State leaders tied the Danville manufacturing center to the Submarine Industrial Base.",
+      "source": "https://www.ialr.org/tag/senator-bill-stanley/"
+    },
+    {
+      "name": "Additive manufacturing",
+      "note": "The U.S. Navy Additive Manufacturing Center of Excellence is housed at IALR in Danville.",
+      "source": "https://www.ialr.org/facilities/"
+    },
+    {
+      "name": "Precision machining",
+      "note": "IALR houses the Gene Haas Center for Integrated Machining.",
+      "source": "https://www.ialr.org/facilities/"
+    },
+    {
+      "name": "Medical device manufacturing",
+      "note": "GENEDGE received a $1 million NIST award to support Virginia medical device manufacturers.",
+      "source": "https://www.kaine.senate.gov/press-releases/warner-and-kaine-announce-1-million-in-federal-funding-for-manufacturing-partnership-in-martinsville-to-support-medical-device-manufacturing"
+    }
+  ],
+  "support": [
+    {
+      "name": "GENEDGE",
+      "note": "Virginia's only NIST MEP center, based in Martinsville, offering consulting on Industry 4.0, lean, quality, cybersecurity and supply chain.",
+      "url": "https://genedge.org"
+    }
+  ]
+}

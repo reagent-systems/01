@@ -35,7 +35,9 @@ Routes mirror the reference site's shape: index pages, `[slug]` detail pages, fo
 
 | Route | Source | Task |
 |---|---|---|
-| `/` | `app/page.tsx` | Video hero, mission, promises, technology, steps, processes, audiences, FAQ |
+| `/` | `app/page.tsx` | Hook hero over a scroll-scrubbed video, proof strip, word-reveal statement, three plain steps, pinned run, price calculator, horizontal process reel, audiences, states, resources, FAQ |
+| `/states`, `/states/[state]` | `lib/states.ts`, `generated/states.json` | 50 states listed; a state page publishes at 3 or more sourced entries. Sources, FAQ, and breadcrumbs per page |
+| `/insights`, `/insights/[slug]` | `lib/insights.ts` | Four guides with Article structured data |
 | `/how-it-works` | `app/how-it-works` | Seven steps, animated chain graph, price break table, fault handling |
 | `/processes`, `/processes/[slug]` | `lib/processes.ts` | 11 process pages: CNC, sheet metal, molding, printing, boards, casting, finishing, assembly, testing, packing |
 | `/for`, `/for/[slug]` | `lib/audiences.ts` | 8 audience pages, including `/for/manufacturers` for shops |

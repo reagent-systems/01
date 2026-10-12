@@ -1,0 +1,74 @@
+{
+  "state": "California",
+  "slug": "california",
+  "abbr": "CA",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Fremont",
+      "note": "The city describes its Bayside industrial zone as home to hundreds of manufacturing and tech companies, from hardware startups to large firms.",
+      "source": "https://fremont.gov/government/departments/economic-development/local-economy-overview/employment-hubs/bayside"
+    },
+    {
+      "city": "El Segundo",
+      "note": "A January 2026 article describes El Segundo as a rising hardware startup hub built on aerospace roots and advanced 3D printing.",
+      "source": "https://www.fabbaloo.com/news/from-surf-breaks-to-build-plates-el-segundos-quiet-rise-as-a-hardware-startup-hub"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Maker Nexus",
+      "city": "Sunnyvale",
+      "note": "Nonprofit makerspace with a CNC router, CNC plasma cutters, laser cutters, Prusa and resin 3D printers and an electronics lab.",
+      "url": "https://makernexus.org"
+    },
+    {
+      "name": "Noisebridge",
+      "city": "San Francisco",
+      "note": "Free-to-visit hackerspace at 272 Capp Street with a laser cutter, wood shop, 3D printer and electronics gear.",
+      "url": "https://www.noisebridge.net"
+    },
+    {
+      "name": "Jacobs Institute for Design Innovation Makerspace",
+      "city": "Berkeley",
+      "note": "UC Berkeley makerspace with 3D printers, laser cutters, CNC routers and mills, a woodshop, a metal shop and an electronics lab.",
+      "url": "https://jacobsinstitute.berkeley.edu/news/jacobs-partners-with-berkeley-skydeck-accelerator-to-support-hardware-startups"
+    }
+  ],
+  "events": [
+    {
+      "name": "Maker Faire Bay Area",
+      "city": "Bay Area",
+      "cadence": "annual",
+      "note": "Maker Faire lists Bay Area editions for 2023, 2024 and 2025.",
+      "url": "https://makerfaire.com/?p=714975"
+    }
+  ],
+  "programs": [
+    {
+      "name": "Berkeley SkyDeck with the Jacobs Institute",
+      "city": "Berkeley",
+      "note": "Since February 2024 selected SkyDeck hardware startups get Entrepreneur Maker Passes for the Jacobs makerspace and design specialist support.",
+      "url": "https://skydeck.berkeley.edu/jacobs-partnership"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Aerospace and defense (Los Angeles area)",
+      "note": "Aerospace and defense are the main anchors of the Los Angeles hardware scene, per a 2026 article on El Segundo.",
+      "source": "https://www.fabbaloo.com/news/from-surf-breaks-to-build-plates-el-segundos-quiet-rise-as-a-hardware-startup-hub"
+    },
+    {
+      "name": "Electronics and tech manufacturing (Fremont)",
+      "note": "Fremont's Bayside zone hosts hundreds of manufacturing and tech companies.",
+      "source": "https://fremont.gov/government/departments/economic-development/local-economy-overview/employment-hubs/bayside"
+    }
+  ],
+  "support": [
+    {
+      "name": "California Manufacturing Technology Consulting (CMTC)",
+      "note": "NIST's state page names CMTC as California's MEP center, but NIST's center page for CMTC is marked Former Center and archived, so the current center is unconfirmed.",
+      "url": "https://www.nist.gov/mep/centers/california-manufacturing-technology-consulting-former-center"
+    }
+  ]
+}

@@ -14,6 +14,12 @@ let site = "";
 
 before(async () => {
   if (!built) return;
+  // A stale server on this port would answer for a build we did not just make.
+  const stale = await fetch(`${BASE}/robots.txt`).then(
+    () => true,
+    () => false,
+  );
+  if (stale) throw new Error(`port ${PORT} is already in use; stop the old server before testing`);
   server = spawn("npx", ["next", "start", "-p", String(PORT), "-H", "127.0.0.1"], {
     stdio: ["ignore", "ignore", "inherit"],
     detached: true,
@@ -54,7 +60,7 @@ const skipUnbuilt = (t) => {
 test("sitemap lists every content route", async (t) => {
   if (skipUnbuilt(t)) return;
   const paths = await sitemapPaths();
-  assert.ok(paths.length >= 34, `expected 34 or more URLs, got ${paths.length}`);
+  assert.ok(paths.length >= 60, `expected 60 or more URLs, got ${paths.length}`);
   for (const p of [
     "/",
     "/how-it-works",
@@ -71,6 +77,9 @@ test("sitemap lists every content route", async (t) => {
     "/supplier-agreement",
     "/for/manufacturers",
     "/processes/cnc-machining",
+    "/insights",
+    "/states",
+    "/insights/what-is-dfm",
   ]) {
     assert.ok(paths.includes(p), `sitemap missing ${p}`);
   }
@@ -80,6 +89,11 @@ test("sitemap lists every content route", async (t) => {
     "expected 11 process pages",
   );
   assert.equal(paths.filter((p) => p.startsWith("/for/")).length, 8, "expected 8 audience pages");
+  assert.equal(paths.filter((p) => p.startsWith("/insights/")).length, 4, "expected 4 guides");
+  assert.ok(
+    paths.filter((p) => p.startsWith("/states/")).length >= 20,
+    "expected 20 or more state pages",
+  );
 });
 
 test("every sitemap URL returns 200 with title, canonical, description and one h1", async (t) => {
@@ -115,15 +129,14 @@ test("alias routes redirect permanently", async (t) => {
   }
 });
 
-test("home: three hero panels, one h1, structured data", async (t) => {
+test("home: the hook is the only h1, with scroll video and structured data", async (t) => {
   if (skipUnbuilt(t)) return;
   const html = await (await get("/")).text();
-  const hero = html.match(/<section class="hero-split"[\s\S]*?<\/section>/)?.[0] ?? "";
-  assert.ok(hero, "hero section not found");
-  const labels = [...hero.matchAll(/class="hero-link"[^>]*>([^<]+)</g)].map((m) => m[1]);
-  assert.deepEqual(labels, ["Publish", "Fund", "Build"]);
-  assert.doesNotMatch(hero, /<h[1-6][\s>]/, "hero carries no headline");
-  assert.match(html, /<h1 id="mission-title"[^>]*>Hardware Without Capital<\/h1>/);
+  assert.match(html, /<h1 class="hook"/);
+  assert.match(html, /Design it\./);
+  assert.match(html, /class="scroll-video"/);
+  assert.match(html, /\/video\/story\.mp4/);
+  assert.match(html, /class="nav-trigger"/, "header dropdown triggers");
   assert.match(html, /"@type":"Organization"/);
   assert.match(html, /"@type":"FAQPage"/);
   assert.match(html, /"@type":"WebSite"/);
@@ -134,6 +147,8 @@ test("footer carries the full link set", async (t) => {
   const html = await (await get("/")).text();
   const footer = html.match(/<footer class="footer"[\s\S]*?<\/footer>/)?.[0] ?? "";
   for (const href of [
+    "/insights",
+    "/states",
     "/processes/cnc-machining",
     "/processes/pcb-assembly",
     "/for/inventors",
@@ -147,6 +162,8 @@ test("footer carries the full link set", async (t) => {
     assert.ok(footer.includes(`href="${href}"`), `footer missing ${href}`);
   }
   assert.match(footer, /Files we read/);
+  assert.match(footer, /Hardware by state/);
+  assert.match(footer, /href="\/states\/[a-z-]+"/, "footer links to state pages");
 });
 
 test("no page contains an em-dash (style rule)", async (t) => {
@@ -192,6 +209,16 @@ test("inquiry API rejects incomplete submissions and honeypot fills succeed sile
 test("ops is gated and hidden from search", async (t) => {
   if (skipUnbuilt(t)) return;
   assert.equal((await get("/ops/unknowns")).status, 401);
+});
+
+test("a researched state page has sources and a FAQ; a thin state is not published", async (t) => {
+  if (skipUnbuilt(t)) return;
+  const paths = (await sitemapPaths()).filter((p) => p.startsWith("/states/"));
+  const html = await (await get(paths[0])).text();
+  assert.match(html, /Sources/);
+  assert.match(html, /"@type":"FAQPage"/);
+  assert.match(html, /href="https?:\/\/[^"]+" rel="noopener noreferrer"/, "external source links");
+  assert.equal((await get("/states/wyoming")).status, 404);
 });
 
 test("unknown routes return the 404 page", async (t) => {

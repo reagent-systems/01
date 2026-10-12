@@ -28,3 +28,7 @@ Headless Chromium cannot decode H.264, so these show the poster frames. In a nor
 
 - `home-hero-1280.png`, `home-hero-hover-1280.png`, `home-technology-1280.png`
 - `home-hero-390.png`
+
+## Redesign (scroll story)
+
+The home page uses one stitched Mixkit video as a fixed background. Its playhead follows the page scroll. Frames: `redesign-hero-1280.png` (3D printing), `redesign-run-1280.png` (the pinned run over PCB placement), `redesign-calculator-1280.png` (the price calculator over the robot line). Headless Chromium cannot decode H.264, so these were captured with a WebM copy of the same video.

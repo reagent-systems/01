@@ -1,0 +1,39 @@
+{
+  "state": "South Carolina",
+  "slug": "south-carolina",
+  "abbr": "SC",
+  "researched": "2026-10-12",
+  "hardwareHubs": [],
+  "makerspaces": [],
+  "events": [],
+  "programs": [],
+  "specialties": [
+    {
+      "name": "Advanced manufacturing",
+      "note": "Listed by the state Department of Commerce as a key sector.",
+      "source": "https://www.sccommerce.com/industries"
+    },
+    {
+      "name": "Aerospace",
+      "note": "Listed by the state Department of Commerce as a key industry.",
+      "source": "https://www.sccommerce.com/industries"
+    },
+    {
+      "name": "Automotive and electric vehicles",
+      "note": "Both are listed as key industries by the state Department of Commerce.",
+      "source": "https://www.sccommerce.com/industries"
+    },
+    {
+      "name": "Advanced materials",
+      "note": "Listed with its own industry page by the state Department of Commerce.",
+      "source": "https://www.sccommerce.com/industries"
+    }
+  ],
+  "support": [
+    {
+      "name": "SCMEP (South Carolina Manufacturing Extension Partnership)",
+      "note": "NIST MEP center offering a no-cost competitiveness review, consulting and training.",
+      "url": "https://www.scmep.org"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "state": "Florida",
+  "slug": "florida",
+  "abbr": "FL",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Space Coast",
+      "note": "Aerospace, defense and space manufacturing concentrates along the Space Coast, with Lockheed Martin, Boeing, SpaceX and Raytheon.",
+      "source": "https://floridataxwatch.org/florida-manufacturing-a-highly-productive-and-integral-economic-driver/"
+    },
+    {
+      "city": "Tampa",
+      "note": "Tampa Hackerspace runs a well-equipped makerspace at 4931 W Nassau St.",
+      "source": "https://tampahackerspace.com/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Tampa Hackerspace",
+      "city": "Tampa",
+      "note": "Nonprofit makerspace with a ShopBot CNC, CNC plasma table, CO2 and fiber lasers, Prusa 3D printers and an electronics bench.",
+      "url": "https://tampahackerspace.com/"
+    },
+    {
+      "name": "Moonlighter FabLab",
+      "city": "Miami Beach",
+      "note": "Fab lab listing shows laser cutters, a 4 by 8 foot CNC mill and 3D printers, but current operating status was not confirmed.",
+      "url": "https://fablabs.io/labs/moonlighter"
+    }
+  ],
+  "events": [
+    {
+      "name": "Maker Faire Orlando",
+      "city": "Orlando",
+      "cadence": "annual",
+      "month": "November",
+      "note": "The event site lists November 7 and 8, 2026 at the Central Florida Fairgrounds and shows 2025 imagery.",
+      "url": "https://makerfaireorlando.com"
+    }
+  ],
+  "programs": [
+    {
+      "name": "UCF Business Incubation Program",
+      "city": "Orlando",
+      "note": "Offers startup launch and growth support, mentorship and workspace, with no hardware-specific equipment stated on its site.",
+      "url": "https://www.incubator.ucf.edu"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Aerospace, defense and space",
+      "note": "This is the core of the state's manufacturing sector, concentrated along the Space Coast.",
+      "source": "https://floridataxwatch.org/florida-manufacturing-a-highly-productive-and-integral-economic-driver/"
+    },
+    {
+      "name": "Medical devices and pharmaceuticals",
+      "note": "Named as a major manufacturing subsector by Florida TaxWatch.",
+      "source": "https://floridataxwatch.org/florida-manufacturing-a-highly-productive-and-integral-economic-driver/"
+    },
+    {
+      "name": "Food and beverage",
+      "note": "Named as a major manufacturing subsector by Florida TaxWatch.",
+      "source": "https://floridataxwatch.org/florida-manufacturing-a-highly-productive-and-integral-economic-driver/"
+    },
+    {
+      "name": "Recreational boats",
+      "note": "Named as a manufacturing product group by Florida TaxWatch.",
+      "source": "https://floridataxwatch.org/florida-manufacturing-a-highly-productive-and-integral-economic-driver/"
+    }
+  ],
+  "support": [
+    {
+      "name": "FloridaMakes",
+      "note": "Florida's NIST MEP center in Orlando, offering technology acceleration, supply chain, cybersecurity and workforce services.",
+      "url": "https://www.floridamakes.com/how-we-help"
+    }
+  ]
+}

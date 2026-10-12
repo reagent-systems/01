@@ -1,0 +1,28 @@
+{
+  "state": "Alabama",
+  "slug": "alabama",
+  "abbr": "AL",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "Huntsville", "note": "NASA's Marshall Space Flight Center is in Huntsville, which anchors the area's aerospace and defense hardware work.", "source": "https://www.madeinalabama.com/sectors/aerospace-aviation/" },
+    { "city": "Mobile", "note": "Airbus's only U.S. manufacturing facility is in Mobile and produces A320 Family and A220 jets.", "source": "https://www.madeinalabama.com/sectors/aerospace-aviation/" }
+  ],
+  "makerspaces": [
+    { "name": "Makers Local 256", "city": "Huntsville", "note": "Nonprofit makerspace in the Five Points area with laser cutters, 3D printers, soldering stations and woodworking tools.", "url": "https://256.makerslocal.org/about-us/" },
+    { "name": "Bulldog Makerspace FabLab", "city": "Huntsville", "note": "Alabama A&M University lab listing 3D printing, CNC milling, circuit production, laser and vinyl cutting.", "url": "https://fablabs.io/labs/bulldogmakerspacefablab" },
+    { "name": "Huntsville-Madison County Public Library Makerspace Studios", "city": "Huntsville", "note": "Library studios with 3D printers, and a desktop CNC at some branches.", "url": "https://blog.hmcpl.org/node/408" }
+  ],
+  "events": [],
+  "programs": [
+    { "name": "gBETA Huntsville (gener8tor)", "city": "Huntsville", "note": "Free seven-week no-equity accelerator for early-stage companies, not specific to hardware.", "url": "https://gener8tor.com/investment-accelerators/huntsville" },
+    { "name": "Auburn University New Venture Accelerator", "city": "Auburn", "note": "Auburn Research Park program that gives startups space and helps faculty commercialize research.", "url": "https://businessalabama.com/new-venture-accelerator-helping-to-create-successes-at-auburn/" }
+  ],
+  "specialties": [
+    { "name": "Aerospace and defense", "note": "The state reports 300+ aerospace companies, with Lockheed Martin and Dynetics developing hypersonic missiles.", "source": "https://www.madeinalabama.com/sectors/aerospace-aviation/" },
+    { "name": "Automotive", "note": "Mercedes-Benz, Honda, Hyundai, Toyota and Mazda operate large facilities and the sector employs over 40,000 workers.", "source": "https://www.businessfacilities.com/2025/06/alabama-expands-future-industries/" },
+    { "name": "Shipbuilding", "note": "Mobile County shipyards such as Master Boat Builders are expanding fabrication capacity.", "source": "https://www.businessfacilities.com/2025/06/alabama-expands-future-industries/" }
+  ],
+  "support": [
+    { "name": "Alabama Technology Network (ATN)", "note": "Alabama's NIST MEP center, part of the Alabama Community College System, offering technical assistance, lean and quality methods, and training to manufacturers.", "url": "https://www.atn.org/" }
+  ]
+}

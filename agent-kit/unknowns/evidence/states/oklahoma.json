@@ -1,0 +1,18 @@
+{
+  "state": "Oklahoma",
+  "slug": "oklahoma",
+  "abbr": "OK",
+  "researched": "2026-10-12",
+  "hardwareHubs": [],
+  "makerspaces": [],
+  "events": [],
+  "programs": [],
+  "specialties": [],
+  "support": [
+    {
+      "name": "Oklahoma Manufacturing Alliance",
+      "note": "Tulsa-based NIST MEP center offering assessments, engineering, supply chain and workforce services.",
+      "url": "https://www.okalliance.com/"
+    }
+  ]
+}

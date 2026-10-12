@@ -1,0 +1,75 @@
+{
+  "state": "Mississippi",
+  "slug": "mississippi",
+  "abbr": "MS",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Starkville",
+      "note": "Mississippi State University runs The Factory maker space with CNC, laser cutter and 3D printers.",
+      "source": "https://ecenter.msstate.edu/programs/the-factory-msus-maker-space/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "The Factory (MSU Maker Space)",
+      "city": "Starkville",
+      "note": "Lists an X-Carve CNC mill, laser cutter, metal and wood tools, electronics tools and Stratasys 3D printers on the university campus.",
+      "url": "https://ecenter.msstate.edu/programs/the-factory-msus-maker-space/"
+    },
+    {
+      "name": "Jackson County FabLab",
+      "city": "Vancleave",
+      "note": "Lists laser engravers, 3D printers, vinyl cutters and wood routers, with a mobile unit that visits schools.",
+      "url": "https://www.wlox.com/story/37731815/jackson-county-fablab-opens-its-doors/"
+    },
+    {
+      "name": "IDEAlab",
+      "city": "Oxford",
+      "note": "University of Mississippi library makerspace listing a 3D printer and Arduino and Raspberry Pi electronics kits.",
+      "url": "https://libraries.olemiss.edu/idealab/?p=117"
+    }
+  ],
+  "events": [
+    {
+      "name": "Maker Faire Meridian",
+      "city": "Meridian",
+      "cadence": "annual",
+      "month": "April",
+      "note": "The Mississippi Industrial Heritage Museum runs it; the most recent edition confirmed was the 7th in 2022.",
+      "url": "https://meridian.makerfaire.com/meridian-maker-faire"
+    }
+  ],
+  "programs": [
+    {
+      "name": "Mississippi State University Entrepreneurship Center",
+      "city": "Starkville",
+      "note": "Runs The Factory maker space with the Bagley College of Engineering.",
+      "url": "https://ecenter.msstate.edu/programs/the-factory-msus-maker-space/"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Automotive",
+      "note": "An industry article ties supplier growth to the Toyota Blue Springs and Nissan Canton plants.",
+      "source": "https://digital.tradeandindustrydev.com/articles/aerospace-and-automotive-shine-in-mississippi"
+    },
+    {
+      "name": "Polymers and plastics",
+      "note": "An industry article says the state promoted plastics and polymers as a target cluster, supported by the Mississippi Polymer Institute at the University of Southern Mississippi.",
+      "source": "https://www.tradeandindustrydev.com/region/mississippi/mississippi-innovating-growth-across-industry-589"
+    },
+    {
+      "name": "Aerospace and space testing",
+      "note": "An industry article describes NASA Stennis Space Center as the largest rocket engine test complex in the US.",
+      "source": "https://www.tradeandindustrydev.com/region/mississippi/mississippi-innovating-growth-across-industry-589"
+    }
+  ],
+  "support": [
+    {
+      "name": "Mississippi Business Alliance (MSBA-MEP)",
+      "note": "NIST MEP center offering workforce training and facility planning help to Mississippi manufacturers.",
+      "url": "https://www.msba.com/"
+    }
+  ]
+}

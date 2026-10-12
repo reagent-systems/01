@@ -1,0 +1,46 @@
+{
+  "state": "Washington",
+  "slug": "washington",
+  "abbr": "WA",
+  "researched": "2026-10-12",
+  "hardwareHubs": [],
+  "makerspaces": [],
+  "events": [],
+  "programs": [
+    {
+      "name": "CoMotion Labs, University of Washington",
+      "city": "Seattle",
+      "note": "A multi-industry incubation environment for early-stage startups with a focus on UW spinoffs, with no hardware-specific equipment described on the page.",
+      "url": "https://comotion.uw.edu/"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Aerospace",
+      "note": "The state commerce department lists aircraft and drone manufacturing and the global aerospace supply chain as a key sector.",
+      "source": "https://www.commerce.wa.gov/growing-the-economy/key-sectors/"
+    },
+    {
+      "name": "Maritime",
+      "note": "The state commerce department lists the marine industry as a key sector.",
+      "source": "https://www.commerce.wa.gov/growing-the-economy/key-sectors/"
+    },
+    {
+      "name": "Clean technology",
+      "note": "The state commerce department lists clean technology as a key sector focused on turning ideas into sellable products.",
+      "source": "https://www.commerce.wa.gov/growing-the-economy/key-sectors/"
+    },
+    {
+      "name": "Forest products",
+      "note": "The state ranks wood and paper manufacturing as its third largest manufacturing sector.",
+      "source": "https://www.commerce.wa.gov/growing-the-economy/key-sectors/"
+    }
+  ],
+  "support": [
+    {
+      "name": "Impact Washington",
+      "note": "The NIST MEP affiliate in Washington, based in Everett, offering lean, quality, automation, new product introduction and workforce support.",
+      "url": "https://www.impactwashington.org/"
+    }
+  ]
+}

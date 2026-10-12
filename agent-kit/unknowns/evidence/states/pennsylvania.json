@@ -1,0 +1,66 @@
+{
+  "state": "Pennsylvania",
+  "slug": "pennsylvania",
+  "abbr": "PA",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Pittsburgh",
+      "note": "Home to Protohaven, the ARM Institute and Catalyst Connection.",
+      "source": "https://www.arminstitute.org"
+    },
+    {
+      "city": "Philadelphia",
+      "note": "NextFab operates a large membership makerspace in North Philadelphia.",
+      "source": "https://www.nextfab.com"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Protohaven",
+      "city": "Pittsburgh",
+      "note": "Lists a CNC plasma cutter, CNC wood router, laser cutting, 3D printing and an electronics bench.",
+      "url": "https://www.protohaven.org"
+    },
+    {
+      "name": "NextFab",
+      "city": "Philadelphia",
+      "note": "Lists 3D printing, laser cutting, electronics, metalworking and woodworking departments.",
+      "url": "https://www.nextfab.com"
+    }
+  ],
+  "events": [],
+  "programs": [
+    {
+      "name": "ARM Institute",
+      "city": "Pittsburgh",
+      "note": "Manufacturing USA institute funding robotics and AI projects for manufacturing, with a 500 plus member consortium.",
+      "url": "https://www.arminstitute.org"
+    },
+    {
+      "name": "Ben Franklin Technology Partners",
+      "city": "Statewide",
+      "note": "Offers early-stage investment, business and technical guidance and mentor introductions through four regional partners.",
+      "url": "https://www.benfranklin.org"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Robotics and manufacturing automation",
+      "note": "The ARM Institute is based at Mill 19 in Pittsburgh and aims to speed robotics adoption in manufacturing.",
+      "source": "https://www.arminstitute.org"
+    }
+  ],
+  "support": [
+    {
+      "name": "Catalyst Connection",
+      "note": "Pittsburgh nonprofit and part of the Pennsylvania MEP, serving small manufacturers in 12 counties of southwestern Pennsylvania.",
+      "url": "https://www.catalystconnection.org/"
+    },
+    {
+      "name": "Pennsylvania MEP network",
+      "note": "NIST lists Catalyst Connection, NWIRC, NEPIRC and IMC as centers serving the state.",
+      "url": "https://www.nist.gov/states/mep/Pennsylvania"
+    }
+  ]
+}

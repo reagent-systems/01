@@ -1,0 +1,85 @@
+{
+  "state": "New Mexico",
+  "slug": "new-mexico",
+  "abbr": "NM",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Albuquerque",
+      "note": "Home to Quelab and the FUSE Makerspace, with the statewide NM MEP also based in the city.",
+      "source": "https://quelab.net/about"
+    },
+    {
+      "city": "Santa Fe",
+      "note": "MAKE Santa Fe is a community makerspace with CNC, laser and 3D printing equipment.",
+      "source": "https://makesantafe.org"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Quelab",
+      "city": "Albuquerque",
+      "note": "Lists laser cutters, a CNC wood router, a CNC plasma cutter, a 3D printer lab and a machine shop.",
+      "url": "https://quelab.net/about"
+    },
+    {
+      "name": "FUSE Makerspace",
+      "city": "Albuquerque",
+      "note": "Run with Central New Mexico Community College and lists CNC, laser, 3D printing and metalworking.",
+      "url": "https://www.cnm.edu/locations/fuse-makerspace"
+    },
+    {
+      "name": "MAKE Santa Fe",
+      "city": "Santa Fe",
+      "note": "Lists CNC routers, a CNC plasma cutter, laser cutters, 3D printers and an electronics station.",
+      "url": "https://makesantafe.org"
+    },
+    {
+      "name": "Cruces Creatives",
+      "city": "Las Cruces",
+      "note": "Volunteer-run space listed with a woodshop, CNC machines, a milling machine and 3D printers.",
+      "url": "https://fablabs.io/labs/crucescreatives"
+    }
+  ],
+  "events": [
+    {
+      "name": "Albuquerque Mini Maker Faire",
+      "city": "Albuquerque",
+      "cadence": "annual",
+      "note": "Run by New Mexico New Makers, with editions reported from 2013 onward.",
+      "url": "https://sharenm.org/new-mexico-new-makers/albuquerque-mini-maker-faire"
+    }
+  ],
+  "programs": [
+    {
+      "name": "Scale Up New Mexico (NMSU Arrowhead Center)",
+      "city": "Las Cruces",
+      "note": "Offers TechSprint accelerators, SBIR/STTR support and IP training for technology startups.",
+      "url": "https://arrowheadcenter.nmsu.edu/program/scale-up-new-mexico/"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Optics and photonics",
+      "note": "A 2014 state study counted 96 photonics firms producing about 8 percent of state manufacturing revenue.",
+      "source": "https://edd.newmexico.gov/wp-content/uploads/2021/06/NM_Photonics_Study_Final_Report_December_2014.pdf"
+    },
+    {
+      "name": "Space, aerospace and defense",
+      "note": "A state chamber foundation report names it a key sector projected to be the fastest growing over the next decade.",
+      "source": "https://www.abqjournal.com/business/new-report-lays-out-new-mexicos-bid-to-build-a-high-tech-economy/3052165"
+    },
+    {
+      "name": "Quantum and advanced computing",
+      "note": "The same report says the sector contributed about 6.5 billion dollars to the state economy in 2025.",
+      "source": "https://www.abqjournal.com/business/new-report-lays-out-new-mexicos-bid-to-build-a-high-tech-economy/3052165"
+    }
+  ],
+  "support": [
+    {
+      "name": "New Mexico MEP",
+      "note": "NIST MEP center in Albuquerque offering help with process improvement, product development and supply chain.",
+      "url": "https://www.newmexicomep.org"
+    }
+  ]
+}

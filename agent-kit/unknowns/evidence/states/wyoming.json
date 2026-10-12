@@ -1,0 +1,18 @@
+{
+  "state": "Wyoming",
+  "slug": "wyoming",
+  "abbr": "WY",
+  "researched": "2026-10-12",
+  "hardwareHubs": [],
+  "makerspaces": [],
+  "events": [],
+  "programs": [],
+  "specialties": [],
+  "support": [
+    {
+      "name": "Manufacturing Works",
+      "note": "Laramie-based NIST MEP center partnered with the University of Wyoming and Wyoming Business Council, offering prototyping, advanced manufacturing, supply chain and workforce services.",
+      "url": "https://www.manufacturing-works.com/"
+    }
+  ]
+}

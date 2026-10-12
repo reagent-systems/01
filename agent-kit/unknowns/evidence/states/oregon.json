@@ -1,0 +1,31 @@
+{
+  "state": "Oregon",
+  "slug": "oregon",
+  "abbr": "OR",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Portland",
+      "note": "Built Oregon and the Oregon Manufacturing Extension Partnership are both based in Portland.",
+      "source": "https://www.builtoregon.com"
+    }
+  ],
+  "makerspaces": [],
+  "events": [],
+  "programs": [
+    {
+      "name": "Built Oregon",
+      "city": "Portland",
+      "note": "Accelerator and retail programs for Oregon consumer product founders.",
+      "url": "https://www.builtoregon.com"
+    }
+  ],
+  "specialties": [],
+  "support": [
+    {
+      "name": "OMEP (Oregon Manufacturing Extension Partnership)",
+      "note": "NIST MEP center with consulting in operations, advanced technology and workforce, and a no-cost assessment.",
+      "url": "https://www.omep.org"
+    }
+  ]
+}

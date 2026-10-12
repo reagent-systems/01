@@ -1,0 +1,59 @@
+{
+  "state": "Michigan",
+  "slug": "michigan",
+  "abbr": "MI",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Ann Arbor",
+      "note": "Maker Works runs shops with CNC machines and laser cutters in Ann Arbor.",
+      "source": "https://www.maker-works.com"
+    },
+    {
+      "city": "Southfield",
+      "note": "Centrepolis Accelerator at Lawrence Technological University serves physical product developers and manufacturers.",
+      "source": "https://www.ltu.edu/ltu-state-announce-2m-for-2025-make-it-in-michigan-mobility-prototyping-grants/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Maker Works",
+      "city": "Ann Arbor",
+      "note": "Lists CNC machines including a metal mill, laser cutters, and tools for wood, metal, textiles, plastic, jewelry and electronics.",
+      "url": "https://www.maker-works.com"
+    }
+  ],
+  "events": [],
+  "programs": [
+    {
+      "name": "Centrepolis Accelerator",
+      "city": "Southfield",
+      "note": "Lawrence Technological University program offering product design, engineering and prototyping help, co-working space and mentors to physical product developers.",
+      "url": "https://www.ltu.edu/ltu-state-announce-2m-for-2025-make-it-in-michigan-mobility-prototyping-grants/"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Automotive and mobility",
+      "note": "An industry article describes Michigan moving from its auto base toward EV, battery and mobility work, with the American Center for Mobility as an autonomous vehicle test site.",
+      "source": "https://www.expansionsolutionsmagazine.com/michigans-reinvention-from-automotive-capital-to-advanced-manufacturing-powerhouse/"
+    },
+    {
+      "name": "Aerospace",
+      "note": "The state business site says Michigan is home to more than 900 aerospace-related companies.",
+      "source": "https://www.michiganbusiness.org/pure-aerospace"
+    },
+    {
+      "name": "Defense",
+      "note": "An industry article says Michigan has made targeted investments in defense and uncrewed systems.",
+      "source": "https://www.expansionsolutionsmagazine.com/mission-ready-infrastructure-powers-defense-growth-in-michigan/"
+    }
+  ],
+  "support": [
+    {
+      "name": "Michigan Manufacturing Technology Center (MMTC)",
+      "note": "NIST MEP center offering consulting in operational excellence, cybersecurity, Industry 4.0 and skill development to Michigan manufacturers.",
+      "url": "https://www.the-center.org/"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "state": "Nevada",
+  "slug": "nevada",
+  "abbr": "NV",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Reno",
+      "note": "The University of Nevada, Reno Innevation Center houses a makerspace with CNC machines and 3D printing.",
+      "source": "https://www.unr.edu/innevation/makerspace"
+    },
+    {
+      "city": "Las Vegas",
+      "note": "UNLV runs a Digital Fabrication Lab with laser cutting, 3D printing and CNC cutting.",
+      "source": "https://digitalfabricationlab.sites.unlv.edu/location/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Makerspace at the UNR Innevation Center",
+      "city": "Reno",
+      "note": "Lists CNC machines, a manual mill and lathe, 3D printing and an embroidery machine.",
+      "url": "https://www.unr.edu/innevation/makerspace"
+    },
+    {
+      "name": "UNLV Digital Fabrication Lab",
+      "city": "Las Vegas",
+      "note": "A search listing shows a CNC router, laser cutter and Bambu Lab 3D printers.",
+      "url": "https://digitalfabricationlab.sites.unlv.edu/location/"
+    }
+  ],
+  "events": [],
+  "programs": [
+    {
+      "name": "Innevation Center",
+      "city": "Reno",
+      "note": "University of Nevada, Reno center whose makerspace serves members, students and the community with a prototyping machine shop and 3D printing.",
+      "url": "https://www.unr.edu/innevation/makerspace"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Advanced manufacturing",
+      "note": "The state's economic development office lists advanced manufacturing as a target industry with e-mobility, clean technologies and aerospace and defense sub-sectors.",
+      "source": "https://goed.nv.gov/target-industries"
+    },
+    {
+      "name": "Tahoe-Reno Industrial Center",
+      "note": "The governor names the center as home to Tesla, Panasonic and Redwood Materials investments.",
+      "source": "https://businessfacilities.com/governor-joe-lombardo-nevada-is-expanding-economic-reach"
+    }
+  ],
+  "support": [
+    {
+      "name": "Manufacture Nevada",
+      "note": "NIST MEP center for Nevada, listed by NIST under this name.",
+      "url": "https://manufacturenevada.com"
+    }
+  ]
+}

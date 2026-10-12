@@ -1,0 +1,18 @@
+{
+  "state": "Kentucky",
+  "slug": "kentucky",
+  "abbr": "KY",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "Louisville", "note": "FirstBuild runs a makerspace and a microfactory in Louisville and works with GE Appliances on home products.", "source": "https://firstbuild.com" }
+  ],
+  "makerspaces": [
+    { "name": "FirstBuild Makerspace", "city": "Louisville", "note": "Members can reserve tools and take classes in 3D printing, laser cutting, CAD and soldering.", "url": "https://firstbuild.com" }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [],
+  "support": [
+    { "name": "Kentucky Manufacturing Extension Partnership (KMEP)", "note": "University of Louisville hosts the state's MEP center, announced in December 2022, to help manufacturers raise productivity and enter new markets.", "url": "https://news.louisville.edu/news/uofl-awarded-13-million-launch-statewide-manufacturing-resource-center" }
+  ]
+}

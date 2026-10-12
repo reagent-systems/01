@@ -1,0 +1,37 @@
+{
+  "state": "Delaware",
+  "slug": "delaware",
+  "abbr": "DE",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Newark",
+      "note": "Home to the University of Delaware MakerGym and the DEMEP center at Delaware Tech's Stanton Campus.",
+      "source": "https://www.udel.edu/udaily/2019/december/makergym-makerspace-launched-innovation-tools/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "UD MakerGym",
+      "city": "Newark",
+      "note": "University of Delaware space with 3D printers, laser cutters, a water jet, a CNC router and mill and a woodshop, open to UD students, faculty and staff.",
+      "url": "https://www.udel.edu/udaily/2019/december/makergym-makerspace-launched-innovation-tools/"
+    }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [
+    {
+      "name": "Chemicals, pharmaceuticals and technology",
+      "note": "Employers include DuPont de Nemours, AstraZeneca, Syngenta and Agilent Technologies.",
+      "source": "https://en.wikipedia.org/wiki/Economy_of_Delaware"
+    }
+  ],
+  "support": [
+    {
+      "name": "Delaware Manufacturing Extension Partnership (DEMEP)",
+      "note": "Delaware's NIST MEP center, run on behalf of Delaware Technical Community College, offering lean, quality, statistical analysis, growth and energy help.",
+      "url": "https://www.demep.org/"
+    }
+  ]
+}

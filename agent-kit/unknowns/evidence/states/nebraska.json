@@ -1,0 +1,64 @@
+{
+  "state": "Nebraska",
+  "slug": "nebraska",
+  "abbr": "NE",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Lincoln",
+      "note": "Nebraska Innovation Studio on Nebraska Innovation Campus and MakeShift Lincoln both offer laser cutters and CNC routers.",
+      "source": "https://research.unl.edu/blog/nebraska-innovation-studio-celebrating-marked-growth/"
+    },
+    {
+      "city": "Omaha",
+      "note": "Metro Community College's Prototype Design Lab lists 3D printers, laser cutters, CNC machines and welders.",
+      "source": "https://nlc.nebraska.gov/libraries/maker/orgShow.asp?orgID=120"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Nebraska Innovation Studio",
+      "city": "Lincoln",
+      "note": "Lists lasers, 3D printers, a CNC router, wood shop and metal-working shop at 2021 Transformation Drive.",
+      "url": "https://research.unl.edu/blog/nebraska-innovation-studio-celebrating-marked-growth/"
+    },
+    {
+      "name": "MakeShift Lincoln",
+      "city": "Lincoln",
+      "note": "Lists a 100 W laser cutter, CNC routers, 3D printers, MIG welders and an oscilloscope.",
+      "url": "https://makeshiftlincoln.org/"
+    },
+    {
+      "name": "Metro Community College Prototype Design Lab",
+      "city": "Omaha",
+      "note": "Lists 3D printers, laser cutters, CNC routers, a CNC plasma table and welders.",
+      "url": "https://nlc.nebraska.gov/libraries/maker/orgShow.asp?orgID=120"
+    }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [
+    {
+      "name": "Food manufacturing",
+      "note": "The state labor department reports food manufacturing is the largest manufacturing subsector, with 41,254 jobs in Q1 2024.",
+      "source": "https://dol.nebraska.gov/webdocs/Resources/Trends/Fall 2024/Trends October - Fall 2024.pdf"
+    },
+    {
+      "name": "Center-pivot irrigation equipment",
+      "note": "The state economic development department says Nebraska is a global center-pivot manufacturing leader, led by Lindsay, Reinke, T-L Irrigation and Valmont.",
+      "source": "https://opportunity.nebraska.gov/ded-salutes-nebraskas-makers-and-builders-during-manufacturing-month"
+    },
+    {
+      "name": "Machinery and agricultural equipment",
+      "note": "A University of Nebraska-Lincoln report says machine manufacturing, including agricultural machinery, is 11% of state manufacturing employment.",
+      "source": "https://digitalcommons.unl.edu/bbrpub/47"
+    }
+  ],
+  "support": [
+    {
+      "name": "Nebraska Manufacturing Extension Partnership (Nebraska MEP)",
+      "note": "NIST MEP center at the University of Nebraska-Lincoln serving Nebraska manufacturers.",
+      "url": "https://nemep.unl.edu/"
+    }
+  ]
+}

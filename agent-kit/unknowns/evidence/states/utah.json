@@ -1,0 +1,66 @@
+{
+  "state": "Utah",
+  "slug": "utah",
+  "abbr": "UT",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Salt Lake City",
+      "note": "Lassonde Studios at the University of Utah has a 20,000 square foot prototyping space, and Make Salt Lake and a state STEM makerspace operate in the metro area.",
+      "source": "https://lassonde.utah.edu/?p=17444"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Make Salt Lake",
+      "city": "Salt Lake City",
+      "note": "Nonprofit community makerspace whose site lists CNC machines, laser cutters, 3D printers and electronics equipment.",
+      "url": "https://www.makesaltlake.org"
+    },
+    {
+      "name": "Utah STEM Action Center Innovation Hub",
+      "city": "South Salt Lake",
+      "note": "Makerspace with Bambu 3D printers, a Shapeoko CNC router, a Tormach CNC mill and an Epilog laser, part of the U-MAKE network.",
+      "url": "https://stem.utah.gov/hub"
+    },
+    {
+      "name": "Utah Tech University Makerspace",
+      "city": "St. George",
+      "note": "Nearly 8,000 square feet with three CO2 lasers, CNC routers, 3D printers and a soldering station, open after free training.",
+      "url": "https://innovation.utahtech.edu/makerspace"
+    }
+  ],
+  "events": [],
+  "programs": [
+    {
+      "name": "Lassonde Studios and Company Launch, University of Utah",
+      "city": "Salt Lake City",
+      "note": "Startups-in-residence get office space, prototyping tool access and mentorship at the Lassonde Studios building.",
+      "url": "https://lassonde.utah.edu/?p=17444"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Aerospace and defense",
+      "note": "Utah names aerospace and defense as one of its seven strategic clusters, with Boeing announcing an 875,000 square foot expansion.",
+      "source": "https://www.tradeandindustrydev.com/region/utah/utah%E2%80%99s-cluster-strategy-weaves-quality-collaborati-8325"
+    },
+    {
+      "name": "Outdoor products",
+      "note": "The outdoor products and recreation cluster includes makers of skis, snowboards, climbing equipment and composite bicycle rims.",
+      "source": "https://www.tradeandindustrydev.com/region/utah/utah%E2%80%99s-cluster-strategy-weaves-quality-collaborati-8325"
+    },
+    {
+      "name": "Advanced composites",
+      "note": "A University of Utah document describes a 50 year history of an advanced composites cluster serving outdoor sports and medical devices.",
+      "source": "https://www.sci.utah.edu/~nathang/uammi/uammi-tri-cropped.pdf"
+    }
+  ],
+  "support": [
+    {
+      "name": "University of Utah Manufacturing Extension Partnership (UUMEP) Center",
+      "note": "The NIST MEP center for Utah, offering training and consulting to reduce costs and improve productivity, through the Utah-MEP Alliance.",
+      "url": "https://utah-mep.org/"
+    }
+  ]
+}

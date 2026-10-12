@@ -1,0 +1,26 @@
+{
+  "state": "Indiana",
+  "slug": "indiana",
+  "abbr": "IN",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "Warsaw", "note": "Trade press describes Warsaw as an orthopedic device manufacturing center with firms such as Zimmer Biomet and DePuy Synthes.", "source": "https://www.mddionline.com/orthopedic/indianas-medical-device-mecca-has-good-bones" },
+    { "city": "Elkhart", "note": "Elkhart County is reported to build about 80 percent of U.S. recreational vehicles.", "source": "https://www.assemblymag.com/blogs/14-assembly-blog/post/86224-polar-opposites-in-the-hoosier-state" }
+  ],
+  "makerspaces": [
+    { "name": "Bloominglabs", "city": "Bloomington", "note": "Community space at 1840 S. Walnut Street whose site lists woodworking, electronics, welding, sewing and 3D printing.", "url": "https://bloominglabs.org" },
+    { "name": "Think It Make It Lab", "city": "Indianapolis", "note": "IU Indianapolis lab with Trotec laser engravers, a CNC router and a plasma cutter for university students and faculty.", "url": "https://herron.indianapolis.iu.edu/about/facilities/lab.html" },
+    { "name": "4-H INDY Studio", "city": "Indianapolis", "note": "Fairgrounds makerspace with 3D printers and a Glowforge laser cutter, aimed at youth and family programs.", "url": "https://extension.purdue.edu/county/marion/4-h/indystudio.html" }
+  ],
+  "events": [],
+  "programs": [
+    { "name": "Purdue Foundry", "city": "West Lafayette", "note": "Purdue Research Foundation hub that supports Purdue-affiliated startups, including past hardware ventures such as Rabbit Tractors.", "url": "https://www.purdue.edu/newsroom/releases/2019/Q2/four-startups-advance-through-investments-totaling-80,000-from-elevate-purdue-foundry-fund.html" }
+  ],
+  "specialties": [
+    { "name": "Orthopedic and medical devices", "note": "Warsaw is described as the orthopedic capital of the world, with medical device work across northeast Indiana.", "source": "https://www.mddionline.com/orthopedic/indianas-medical-device-mecca-has-good-bones" },
+    { "name": "Recreational vehicles", "note": "Elkhart County is reported to produce more than 80 percent of U.S. recreational vehicles.", "source": "https://www.assemblymag.com/blogs/14-assembly-blog/post/86224-polar-opposites-in-the-hoosier-state" }
+  ],
+  "support": [
+    { "name": "Purdue Manufacturing Extension Partnership (Purdue MEP)", "note": "Indiana's MEP center offers lean, quality, cybersecurity and innovation help to manufacturers, though a 2025 op-ed expected its federal funding to end.", "url": "https://mep.purdue.edu/about-us/about-mep" }
+  ]
+}

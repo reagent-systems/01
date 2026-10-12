@@ -1,0 +1,29 @@
+{
+  "state": "Arizona",
+  "slug": "arizona",
+  "abbr": "AZ",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "Tucson", "note": "Known as Optics Valley, with about 13,000 Raytheon employees and roughly 200 supplier companies in southern Arizona.", "source": "https://www.designnews.com/electronics/why-not-southern-arizona-for-tech-" },
+    { "city": "Chandler", "note": "Part of the Phoenix-area semiconductor corridor where Intel, TSMC and ON Semiconductor have invested.", "source": "https://inbusinessphx.com/?p=186282" },
+    { "city": "Phoenix", "note": "Home to Phoenix Forge, a 22,500 square foot public makerspace downtown.", "source": "https://entrepreneurship.asu.edu/spaces/asu-membership-phoenix-forge-makerspace/" }
+  ],
+  "makerspaces": [
+    { "name": "Phoenix Forge", "city": "Phoenix", "note": "GateWay Community College makerspace with wood and metal shops, laser cutters, 3D printers and electronics benches.", "url": "https://www.maricopa.edu/community/phoenix-forge" },
+    { "name": "HeatSync Labs", "city": "Mesa", "note": "Member-run nonprofit hackerspace with 3D printers, laser cutters, and wood and metal tools.", "url": "https://www.heatsynclabs.org/about" },
+    { "name": "Xerocraft", "city": "Tucson", "note": "Makerspace with a metal shop, wood shop, 3D printing station and electronics section.", "url": "https://xerocraft.org" }
+  ],
+  "events": [],
+  "programs": [
+    { "name": "ASU Venture Devils", "city": "Tempe", "note": "Mentors and funds ASU-affiliated founders, with coworking at 1951 @ SkySong in Scottsdale.", "url": "https://entrepreneurship.asu.edu/blog/2018/12/17/venture-devils-program-helps-asu-affiliated-startups-soar" },
+    { "name": "ASU IDEAlab", "city": "Mesa", "note": "Polytechnic School prototyping lab listing a laser cutter and vinyl cutter.", "url": "https://idealab.asu.edu/lab-info" }
+  ],
+  "specialties": [
+    { "name": "Aerospace and defense", "note": "The Arizona Commerce Authority maintains an aerospace and defense industry program.", "source": "https://www.azcommerce.com/industries/aerospace-defense" },
+    { "name": "Semiconductors", "note": "Intel, TSMC and ON Semiconductor have invested billions in Arizona operations.", "source": "https://inbusinessphx.com/?p=186282" },
+    { "name": "Optics and photonics", "note": "The Tucson area is called Optics Valley and the Arizona Technology Council tracks a list of about 40 optics companies.", "source": "https://www.designnews.com/electronics/why-not-southern-arizona-for-tech-" }
+  ],
+  "support": [
+    { "name": "Arizona Manufacturing Extension Partnership (Arizona Commerce Authority)", "note": "Arizona's NIST MEP center, offering lean operations, safety, ISO 9000 and supply chain help to manufacturers.", "url": "https://azcommerce.com/programs/rev-az/who-we-are" }
+  ]
+}

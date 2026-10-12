@@ -1,0 +1,25 @@
+{
+  "state": "Idaho",
+  "slug": "idaho",
+  "abbr": "ID",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "Boise", "note": "Micron is expanding its memory manufacturing campus in Boise, anchoring a semiconductor supplier base.", "source": "https://plantservices.com/industry-news/news/33013210/micron-begins-building-memory-manufacturing-fab-in-idaho" },
+    { "city": "Idaho Falls", "note": "The Idaho Innovation Center hosts the Factory 43 makerspace.", "source": "https://www.postregister.com/news/local/factory-43-1st-makerspace-in-southeastern-idaho-is-open/article_938d96e6-017f-11ee-803a-cf320a64b1a0.html" }
+  ],
+  "makerspaces": [
+    { "name": "Albertsons Library MakerLab", "city": "Boise", "note": "Boise State lab with an Epilog laser cutter, Nomad desktop CNC, resin printer, and Arduino and Raspberry Pi kits, open to Boise State students, staff and faculty only.", "url": "https://www.boisestate.edu/library-makerlab/albertsons-library-makerlab/use-the-makerlab/makerlab-equipment/" },
+    { "name": "Factory 43", "city": "Idaho Falls", "note": "Nonprofit community makerspace with a wood shop, machine shop, laser cutters and a 3D printer, per a 2023 opening report.", "url": "https://www.postregister.com/news/local/factory-43-1st-makerspace-in-southeastern-idaho-is-open/article_938d96e6-017f-11ee-803a-cf320a64b1a0.html" }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [
+    { "name": "Semiconductors", "note": "Idaho Commerce lists semiconductor as a key industry and Micron is building memory fabrication capacity in Boise.", "source": "https://commerce.idaho.gov/key-industries/" },
+    { "name": "Food processing", "note": "Idaho Commerce lists food processing as a key industry.", "source": "https://commerce.idaho.gov/key-industries/" },
+    { "name": "Aerospace", "note": "Idaho Commerce lists aerospace as a key industry.", "source": "https://commerce.idaho.gov/key-industries/" },
+    { "name": "Outdoor recreation products", "note": "Idaho Commerce lists outdoor recreation as a key industry.", "source": "https://commerce.idaho.gov/key-industries/" }
+  ],
+  "support": [
+    { "name": "TechHelp", "note": "Idaho manufacturing advisory organization with offices in Boise, Post Falls, Twin Falls and Pocatello, offering new product development help to inventors through its studio Blu program; its site does not itself state the MEP role.", "url": "https://www.techhelp.org" }
+  ]
+}

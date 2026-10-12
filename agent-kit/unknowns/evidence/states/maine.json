@@ -1,0 +1,19 @@
+{
+  "state": "Maine",
+  "slug": "maine",
+  "abbr": "ME",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "Portland", "note": "Factory 3 operates a shared wood, metal, textile and 3D printing workshop in Portland.", "source": "https://mainearts.maine.gov/directory/arts/detail/6687" }
+  ],
+  "makerspaces": [
+    { "name": "Factory 3", "city": "Portland", "note": "State arts directory lists a wood shop, a metal shop with welding, textile equipment, 3D printers and private studios at 105 St. James Street.", "url": "https://www.factory3.org" }
+  ],
+  "events": [],
+  "programs": [],
+  "specialties": [],
+  "support": [
+    { "name": "Maine Manufacturing Extension Partnership (Maine MEP)", "note": "NIST MEP center based in Augusta that reports 1,166 jobs created or retained in fiscal year 2024.", "url": "https://www.mainemep.org/" },
+    { "name": "Maine Technology Institute", "note": "Offers grants, loans, equity investments and federal R&D application support to Maine businesses and entrepreneurs.", "url": "https://www.mainetechnology.org" }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "state": "South Dakota",
+  "slug": "south-dakota",
+  "abbr": "SD",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Rapid City",
+      "note": "The Ascent Innovation campus near South Dakota Mines grew from a 2006 incubator and housed B9Creations, a 3D printer maker that started there in 2014.",
+      "source": "https://www.elevaterapidcity.com/news/2021/08/25/innovation/david-lust-accelerator-building-opens/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Black Hills State University Innovation Lab",
+      "city": "Spearfish",
+      "note": "Campus makerspace with Formlabs and Prusa 3D printers, a 50W CO2 laser cutter, 3D scanners, and Arduino and Raspberry Pi kits, with no CNC listed.",
+      "url": "https://libguides.bhsu.edu/innovation-lab/equipment"
+    }
+  ],
+  "events": [],
+  "programs": [
+    {
+      "name": "Ascent Innovation and David Lust Accelerator Building",
+      "city": "Rapid City",
+      "note": "Startup space of about 25,000 square feet with mentoring and access to School of Mines interns, though the source does not describe prototyping equipment.",
+      "url": "https://www.elevaterapidcity.com/news/2021/08/25/innovation/david-lust-accelerator-building-opens/"
+    },
+    {
+      "name": "South Dakota Mines entrepreneurship programs",
+      "city": "Rapid City",
+      "note": "Offers an Entrepreneur-in-Residence program, a business plan competition, and an annual angel investor conference for university innovators.",
+      "url": "https://www.sdsmt.edu/news/releases/building-the-entrepreneurial-ecosystem.html"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Medical goods and devices",
+      "note": "The state economic development office lists medical goods and devices among products South Dakota manufacturers ship worldwide.",
+      "source": "https://sdgoed.com/key-industries/manufacturing"
+    },
+    {
+      "name": "Electronic display boards",
+      "note": "The same state page lists electronic display boards as a South Dakota manufactured product.",
+      "source": "https://sdgoed.com/key-industries/manufacturing"
+    },
+    {
+      "name": "Polymer films",
+      "note": "The same state page lists polymer films as a South Dakota manufactured product.",
+      "source": "https://sdgoed.com/key-industries/manufacturing"
+    },
+    {
+      "name": "Food and machinery manufacturing",
+      "note": "State labor data reported food manufacturing with the largest share of manufacturing jobs, followed by machinery manufacturing.",
+      "source": "https://dlr.sd.gov/lmic/publications/general/manufacturing_trends_flyer_2025.pdf"
+    }
+  ],
+  "support": [
+    {
+      "name": "South Dakota Manufacturing and Technology Solutions (MTS)",
+      "note": "The state's NIST MEP center in Watertown, operated by Lake Area Technical College since January 2023, helping manufacturers cut costs, build workforce, and automate.",
+      "url": "https://www.sdmanufacturing.com/"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "state": "New York",
+  "slug": "new-york",
+  "abbr": "NY",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "New York City",
+      "note": "Newlab runs a hardware startup campus with technical labs and shops at the Brooklyn Navy Yard.",
+      "source": "https://newlab.com"
+    },
+    {
+      "city": "Rochester",
+      "note": "More than 100 optics and photonics companies in the Finger Lakes region were reported in 2014.",
+      "source": "https://www.rochester.edu/newscenter/nist-program-for-advanced-manufacturing-awards-grant-to-develop-national-roadmap-for-photonics"
+    },
+    {
+      "city": "Ithaca",
+      "note": "Cornell runs the Rev: Ithaca Startup Works hardware accelerators.",
+      "source": "https://crea.cornell.edu/project/napkin-to-prototype-hardware-accelerator/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Fat Cat Fab Lab",
+      "city": "New York City",
+      "note": "Volunteer-run space in the West Village listing 3D printing, laser cutting, wood and metal shops, electronics and CNC routing.",
+      "url": "https://fatcatfablab.org"
+    },
+    {
+      "name": "NYC Resistor",
+      "city": "Brooklyn",
+      "note": "Hacker collective space whose site documents a laser cutter.",
+      "url": "https://www.nycresistor.com"
+    },
+    {
+      "name": "Rochester Makerspace",
+      "city": "Rochester",
+      "note": "Lists a machine shop, 3D printers, CNC routers, a laser cutter and electronics equipment.",
+      "url": "https://rochester.makerfaire.com/maker/entry/73/"
+    }
+  ],
+  "events": [
+    {
+      "name": "Maker Faire Syracuse",
+      "city": "Syracuse",
+      "cadence": "annual",
+      "month": "May",
+      "note": "Fifth annual edition announced for 2026.",
+      "url": "https://syracuse.makerfaire.com/about/"
+    },
+    {
+      "name": "Maker Faire Long Island",
+      "city": "Stony Brook",
+      "cadence": "annual",
+      "month": "June",
+      "note": "Ninth annual edition announced for 2026 at Stony Brook University.",
+      "url": "https://scifisland.com/maker-faire-long-island-returns-to-stony-brook-university-this-june/"
+    }
+  ],
+  "programs": [
+    {
+      "name": "Newlab",
+      "city": "New York City",
+      "note": "Offers hardware startups technical labs, shops, workspaces and access to venture and non-dilutive capital.",
+      "url": "https://newlab.com"
+    },
+    {
+      "name": "Rev: Ithaca Startup Works Prototyping Hardware Accelerator",
+      "city": "Ithaca",
+      "note": "Summer program with Cornell Engineering that gives product teams a prototyping stipend of up to 2,000 dollars.",
+      "url": "https://crea.cornell.edu/project/napkin-to-prototype-hardware-accelerator/"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Optics and photonics",
+      "note": "The University of Rochester Institute of Optics was the first in the US and the region hosts over 100 optics firms.",
+      "source": "https://www.rochester.edu/newscenter/nist-program-for-advanced-manufacturing-awards-grant-to-develop-national-roadmap-for-photonics"
+    },
+    {
+      "name": "Integrated photonics manufacturing",
+      "note": "The AIM Photonics institute is a 600 million dollar public-private partnership based in the state.",
+      "source": "https://www.nny360.com/news/ny-wins-600-million-hub-for-photonics-research-development/article_0ce55915-6102-5d7b-9bfc-8b34d511118e.html"
+    },
+    {
+      "name": "Semiconductors",
+      "note": "GlobalFoundries moved its headquarters to Malta, where its Fab 8 chip plant operates.",
+      "source": "https://www.areadevelopment.com/newsitems/4-27-2021/globalfoundries-headquarters-malta-new-york.shtml"
+    }
+  ],
+  "support": [
+    {
+      "name": "NY MEP (statewide center FuzeHub plus ten regional centers)",
+      "note": "Run through Empire State Development, with FuzeHub as the statewide center offering assessments, CAD design and funding programs.",
+      "url": "https://newyorkmep.org/"
+    },
+    {
+      "name": "FuzeHub",
+      "note": "Statewide MEP network site listing manufacturing grants, a hardware prototyping workshop and an innovation fund.",
+      "url": "https://fuzehub.com"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "state": "Louisiana",
+  "slug": "louisiana",
+  "abbr": "LA",
+  "researched": "2026-10-12",
+  "hardwareHubs": [],
+  "makerspaces": [],
+  "events": [],
+  "programs": [],
+  "specialties": [],
+  "support": [
+    { "name": "Manufacturing Extension Partnership of Louisiana (MEP of LA)", "note": "NIST's state page names the Louisiana Community and Technical College System and South Louisiana Community College as hosts, and the center lists lean, supply chain and patent assistance services.", "url": "https://www.nist.gov/states/mep/Louisiana" }
+  ]
+}

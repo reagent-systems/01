@@ -1,0 +1,18 @@
+{
+  "state": "Iowa",
+  "slug": "iowa",
+  "abbr": "IA",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    { "city": "Ames", "note": "The Iowa State University Research Park offers startups short-term and long-term space and access to university programs.", "source": "https://www.isupark.org" }
+  ],
+  "makerspaces": [],
+  "events": [],
+  "programs": [
+    { "name": "Iowa State University Research Park", "city": "Ames", "note": "Describes itself as a launchpad for startups with flexible space options and access to Iowa State talent programs.", "url": "https://www.isupark.org" }
+  ],
+  "specialties": [],
+  "support": [
+    { "name": "CIRAS (Iowa State University, NIST MEP affiliate)", "note": "Search reports describe CIRAS as Iowa's MEP affiliate and say NIST stopped its MEP support in April 2025; current status is unconfirmed.", "url": "https://ciras.iastate.edu/our-network" }
+  ]
+}

@@ -9,13 +9,21 @@ export type FooterProps = {
   details?: { label: string; value: string; href?: string }[];
   cta?: FooterLink;
   columns: { title: string; links: FooterLink[] }[];
-  /** A dotted list under the columns. Items without an href render as plain text. */
-  list?: { title: string; href?: string; items: { label: string; href?: string }[] };
+  /** Dotted lists under the columns. Items without an href render as plain text. */
+  lists?: { title: string; href?: string; items: { label: string; href?: string }[] }[];
   legal: string;
   legalLinks: FooterLink[];
 };
 
-export function Footer({ legalName, details, cta, columns, list, legal, legalLinks }: FooterProps) {
+export function Footer({
+  legalName,
+  details,
+  cta,
+  columns,
+  lists,
+  legal,
+  legalLinks,
+}: FooterProps) {
   return (
     <footer className="footer">
       <div className="container">
@@ -59,8 +67,8 @@ export function Footer({ legalName, details, cta, columns, list, legal, legalLin
           ))}
         </div>
 
-        {list && (
-          <div className="footer-areas">
+        {lists?.map((list) => (
+          <div className="footer-areas" key={list.title}>
             <h2>{list.href ? <SmartLink href={list.href}>{list.title}</SmartLink> : list.title}</h2>
             <ul>
               {list.items.map((i) => (
@@ -70,7 +78,7 @@ export function Footer({ legalName, details, cta, columns, list, legal, legalLin
               ))}
             </ul>
           </div>
-        )}
+        ))}
 
         <div className="footer-bottom">
           <p style={{ margin: 0 }}>{legal}</p>

@@ -1,0 +1,18 @@
+{
+  "state": "West Virginia",
+  "slug": "west-virginia",
+  "abbr": "WV",
+  "researched": "2026-10-12",
+  "hardwareHubs": [],
+  "makerspaces": [],
+  "events": [],
+  "programs": [],
+  "specialties": [],
+  "support": [
+    {
+      "name": "West Virginia Manufacturing Extension Partnership (WVMEP)",
+      "note": "Listed by NIST as the state's MEP center, and its former website now redirects to a West Virginia University industrial extension site.",
+      "url": "https://www.nist.gov/mep/centers/quick-list"
+    }
+  ]
+}

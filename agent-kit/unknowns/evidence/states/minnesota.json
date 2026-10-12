@@ -1,0 +1,68 @@
+{
+  "state": "Minnesota",
+  "slug": "minnesota",
+  "abbr": "MN",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Minneapolis",
+      "note": "Twin Cities Maker operates a workshop for woodworking, metalworking and high-precision machining.",
+      "source": "https://tcmaker.org/"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Twin Cities Maker",
+      "city": "Minneapolis",
+      "note": "Describes a workshop with tools and equipment for woodworking, metalworking and high-precision machining.",
+      "url": "https://tcmaker.org/"
+    },
+    {
+      "name": "Nordeast Makers",
+      "city": "Minneapolis",
+      "note": "A trade article lists a CNC router, laser cutter and etcher, CNC mill and multiple 3D printers for members.",
+      "url": "https://www.woodworkingnetwork.com/events-contests/ywpweek-membership-based-woodshop-nordeast-makers"
+    },
+    {
+      "name": "Cannon Valley Makers",
+      "city": "Dundas",
+      "note": "A local news article lists CNC equipment, a plasma cutter and three 3D printers.",
+      "url": "https://www.southernminn.com/northfield_news/news/cannon-valley-makers-bring-makers-under-one-roof/article_9327f2bd-c1d5-501a-bcf8-488a2e9954e1.html"
+    }
+  ],
+  "events": [
+    {
+      "name": "Twin Cities Maker Fest",
+      "city": "Minneapolis",
+      "cadence": "annual",
+      "month": "September",
+      "note": "Free street fair of making, art and craft with a makers market and hands-on activities.",
+      "url": "https://www.mplsart.com/events/twin-cities-maker-fest"
+    }
+  ],
+  "programs": [],
+  "specialties": [
+    {
+      "name": "Medical devices",
+      "note": "The state agency ranks Minnesota 2nd in electromedical apparatus manufacturing and 4th in medical equipment and supplies manufacturing.",
+      "source": "https://mn.gov/deed/dobusiness/key-industries/advanced-manufacturing"
+    },
+    {
+      "name": "Medical device industry cluster",
+      "note": "A University of Minnesota study finds a concentration of medical device companies in the Twin Cities metro with many more dispersed across the state.",
+      "source": "https://tpec.umn.edu/research/industry-clusters-and-freight-infrastructure/MDIC/mapping"
+    },
+    {
+      "name": "Precision machining and fabricated metal",
+      "note": "The state agency names fabricated metal and machinery among the most robust clusters and ranks Minnesota 7th in precision turned products and 8th in machine shops.",
+      "source": "https://mn.gov/deed/dobusiness/key-industries/advanced-manufacturing"
+    }
+  ],
+  "support": [
+    {
+      "name": "Enterprise Minnesota",
+      "note": "NIST MEP center that consults with small and medium-sized manufacturers on growth and operations.",
+      "url": "https://www.enterpriseminnesota.org/"
+    }
+  ]
+}

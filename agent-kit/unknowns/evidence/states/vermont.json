@@ -1,0 +1,73 @@
+{
+  "state": "Vermont",
+  "slug": "vermont",
+  "abbr": "VT",
+  "researched": "2026-10-12",
+  "hardwareHubs": [
+    {
+      "city": "Springfield",
+      "note": "Once known as Precision Valley for its machine tool industry, and home to the Black River Innovation Campus.",
+      "source": "https://thinkvermont.com/sectors/manufacturing/"
+    },
+    {
+      "city": "Burlington",
+      "note": "Home to the Generator makerspace and to precision machining shops serving medical device and aerospace customers.",
+      "source": "https://www.generatorvt.com"
+    }
+  ],
+  "makerspaces": [
+    {
+      "name": "Generator",
+      "city": "Burlington",
+      "note": "Member makerspace at 40 Sears Lane whose site mentions a metal shop, general tools and tool certifications.",
+      "url": "https://www.generatorvt.com"
+    }
+  ],
+  "events": [
+    {
+      "name": "Vermont Tech Jam",
+      "city": "Burlington",
+      "cadence": "annual",
+      "month": "October",
+      "note": "Free tech career and innovation expo run by Seven Days since 2008, with its 2025 edition on October 25 at Hula.",
+      "url": "https://www.sevendaysvt.com/news/tech/30-ways-to-make-the-most-of-vermont-tech-jam-2025/"
+    }
+  ],
+  "programs": [
+    {
+      "name": "Black River Innovation Campus Actuator",
+      "city": "Springfield",
+      "note": "Startup program for technology, advanced manufacturing and advanced computing ventures, with a campus that hosts tenant companies.",
+      "url": "https://www.bricvt.org/?p=245"
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Precision machining",
+      "note": "The state lists precision machining among its manufacturing segments.",
+      "source": "https://thinkvermont.com/sectors/manufacturing/"
+    },
+    {
+      "name": "Plastics and composites",
+      "note": "The state lists plastics and composites among its manufacturing segments.",
+      "source": "https://thinkvermont.com/sectors/manufacturing/"
+    },
+    {
+      "name": "Semiconductors and complex electronics",
+      "note": "Vermont is the regional leader in job concentration for semiconductor and complex electronics.",
+      "source": "https://thinkvermont.com/sectors/manufacturing/"
+    },
+    {
+      "name": "Medical devices",
+      "note": "The state lists medical devices among its manufacturing segments.",
+      "source": "https://thinkvermont.com/sectors/manufacturing/"
+    }
+  ],
+  "support": [
+    {
+      "name": "Vermont Manufacturing Extension Center (VMEC)",
+      "note": "The NIST MEP representative in Vermont, based in Randolph Center, offering consulting, training and automation help.",
+      "url": "https://www.vmec.org"
+    }
+  ]
+}

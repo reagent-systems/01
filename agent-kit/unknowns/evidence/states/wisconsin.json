@@ -1,0 +1,18 @@
+{
+  "state": "Wisconsin",
+  "slug": "wisconsin",
+  "abbr": "WI",
+  "researched": "2026-10-12",
+  "hardwareHubs": [],
+  "makerspaces": [],
+  "events": [],
+  "programs": [],
+  "specialties": [],
+  "support": [
+    {
+      "name": "Wisconsin Manufacturing Outreach Center (WisMOC), UW-Stout",
+      "note": "Listed by NIST as the state's MEP center, offering lean, ISO, automation advising and product development help.",
+      "url": "https://www.uwstout.edu/moc"
+    }
+  ]
+}
