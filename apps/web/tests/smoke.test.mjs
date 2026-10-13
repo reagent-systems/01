@@ -133,9 +133,11 @@ test("home: the hook is the only h1, with scroll video and structured data", asy
   if (skipUnbuilt(t)) return;
   const html = await (await get("/")).text();
   assert.match(html, /<h1 class="hook"/);
-  assert.match(html, /Design it\./);
+  const h1 = html.match(/<h1 class="hook"[\s\S]*?<\/h1>/)?.[0] ?? "";
+  const lines = [...h1.matchAll(/<span>(?:<em>)?([^<]+)(?:<\/em>)?<\/span>/g)].map((m) => m[1]);
+  assert.deepEqual(lines, ["Design It", "Fund It", "Build It"]);
   assert.match(html, /class="scroll-video"/);
-  assert.match(html, /\/video\/story\.mp4/);
+  assert.match(html, /<canvas/, "frame-by-frame canvas");
   assert.match(html, /class="nav-trigger"/, "header dropdown triggers");
   assert.match(html, /"@type":"Organization"/);
   assert.match(html, /"@type":"FAQPage"/);

@@ -2328,9 +2328,9 @@
   field: KU
   domain: technology
   statement: >-
-    The scroll-scrubbed video, pinned scenes, and smooth scrolling were tested only in headless
-    Chromium. How do they behave on iOS Safari, low-end Android, and slow connections?
-  why_it_matters: A janky or heavy first page loses visitors. The video files total about 13 MB.
+    The scroll-scrubbed frame sequence, pinned scenes, and smooth scrolling were tested only in
+    headless Chromium. How do they behave on iOS Safari, low-end Android, and slow connections?
+  why_it_matters: A janky or heavy first page loses visitors. The frame sequence is 3.7 MB across 522 requests.
   severity: medium
   blocks_phase: 7
   confidence: 0.3

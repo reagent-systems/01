@@ -6,7 +6,7 @@ import {
   PinnedRun,
   PriceCalc,
   Reveal,
-  ScrollVideo,
+  ScrollSequence,
   SmartLink,
   WordReveal,
 } from "@01/ui";
@@ -97,24 +97,20 @@ export default function Home() {
   const stateList = researchedStates();
   return (
     <div className="has-scroll-video">
-      <ScrollVideo
-        src="/video/story.mp4"
-        srcSmall="/video/story-sm.mp4"
-        poster="/video/story.jpg"
-      />
+      <ScrollSequence base="/frames/story" count={522} poster="/video/story.jpg" />
       <JsonLd data={faqSchema(faqs)} />
 
       <HeroParallax>
         <h1 className="hook">
           <span className="hook-line">
-            <span>Design it.</span>
+            <span>Design It</span>
           </span>
           <span className="hook-line">
-            <span>Buyers fund it.</span>
+            <span>Fund It</span>
           </span>
           <span className="hook-line">
             <span>
-              Shops <em>build it.</em>
+              <em>Build It</em>
             </span>
           </span>
         </h1>
