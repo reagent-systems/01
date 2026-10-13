@@ -1941,3 +1941,103 @@ a:hover .arrow-link span,
   padding: var(--sp-2) 0;
   text-align: center;
 }
+
+/* Dashboards: one list, a few secondary facts. State is plain text, never a pill. */
+.dash {
+  padding-block: calc(var(--header-h) + var(--sp-7)) var(--section);
+}
+.dash-sample {
+  margin: var(--sp-2) 0 var(--sp-6);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+.dash-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+.dash-row {
+  display: grid;
+  align-items: center;
+  gap: var(--sp-4);
+  padding-block: var(--sp-4);
+  border-bottom: 1px solid var(--line);
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  text-align: left;
+}
+.dash-row .btn:not(.btn-yellow) {
+  color: var(--text);
+}
+.dash-row--buyer {
+  grid-template-columns: 3rem minmax(0, 2fr) 1fr 2fr 1fr auto;
+}
+.dash-row--designer {
+  grid-template-columns: 3rem minmax(0, 2fr) 1.4fr 2fr 1fr auto;
+}
+.dash-row--shop {
+  grid-template-columns: 3rem minmax(0, 2fr) 0.8fr 1fr 2fr 2fr auto;
+}
+.dash-name {
+  font-weight: 600;
+  color: var(--text);
+}
+.dash-thumb {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-1);
+  background: var(--bg-2);
+  font-weight: 700;
+  color: var(--accent);
+}
+.dash-count {
+  display: grid;
+  gap: var(--sp-2);
+}
+.dash-bar {
+  display: block;
+  height: 0.25rem;
+  border-radius: var(--r-pill);
+  background: var(--line);
+  overflow: hidden;
+}
+.dash-bar > span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+.dash-side {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-6) var(--sp-8);
+  margin: var(--sp-7) 0 0;
+}
+.dash-side dt {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+.dash-side dd {
+  margin: var(--sp-1) 0 0;
+  font-weight: 600;
+  color: var(--text);
+}
+.dash-new {
+  margin-top: var(--sp-6);
+}
+@media (max-width: 1080px) {
+  .dash-row {
+    grid-template-columns: 3rem minmax(0, 1fr) auto;
+  }
+  .dash-row > :nth-child(n + 3) {
+    grid-column: 2 / -1;
+    justify-self: start;
+  }
+}

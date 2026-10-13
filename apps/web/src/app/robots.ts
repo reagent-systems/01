@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { site } from "../lib/site";
 
-const hidden = ["/api/", "/ops/", "/search"];
+const hidden = ["/api/", "/ops/", "/search", "/dashboard/"];
 
 /** Everything public is open to every crawler, search or AI. Only the API, the operator page, and search results are not. */
 export default function robots(): MetadataRoute.Robots {

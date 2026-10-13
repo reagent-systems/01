@@ -13,6 +13,7 @@ behavior change. The weekly cycle (WEEKLY.md step 5) refreshes it.
 | GitHub intake: issue forms, labels, triage label, CI, nightly | 🚧 | Files committed. Labels sync and branch protection need `main` and a human (see below) |
 | Routines | 🚧 | Prompts in `ROUTINES.md`. No schedule created yet |
 | `apps/web` with `/ops/unknowns` | ✅ | Screenshot `unknowns/evidence/ops-unknowns.png`; page counts equal `pnpm unknowns:report` (test in `apps/web/src/lib/register-view.test.ts`) |
+| Dashboard previews `/dashboard/{buyer,designer,shop}` | 🟡 | Sample data only: no sign-in, no database, row actions not wired. Spec in `docs/DASHBOARDS.md`; row-state rules tested in `apps/web/src/lib/dashboards.test.ts` |
 | Vercel preview deploy of `apps/web` | ❌ | Blocked: the Vercel GitHub app has no access to `reagent-systems/01`. `create_git_project` failed with 400 |
 | Redesign: hook hero, mega header, scroll-scrubbed Mixkit video, pinned run, calculator, horizontal reel | ✅ | Frames saved in `agent-kit/launch/design-compare/`; smoke gate checks the home page. Not tested on a real phone (TEC-07) |
 | State guides: 27 of 50 published, 4 insight guides | 🚧 | 27 states pass the three-entry bar; 23 wait for more research (MKT-07) |
