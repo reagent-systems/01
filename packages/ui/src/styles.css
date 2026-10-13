@@ -2496,3 +2496,90 @@ a:hover .arrow-link span,
     fill: var(--accent);
   }
 }
+
+/* Onboarding: one question per screen. */
+.onb {
+  padding-block: calc(var(--header-h) + var(--sp-7)) var(--section);
+}
+.onb-body {
+  max-width: 62rem;
+}
+.onb-back {
+  display: inline-flex;
+  gap: var(--sp-2);
+  margin: 0 0 var(--sp-6);
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  cursor: pointer;
+}
+.onb-back:hover,
+.onb-back:focus-visible {
+  color: var(--text);
+}
+.onb-step {
+  margin: 0 0 var(--sp-2);
+  font-weight: 600;
+  color: var(--muted);
+}
+.onb-help {
+  margin: var(--sp-2) 0 var(--sp-6);
+  color: var(--muted);
+}
+.onb-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-4);
+}
+.onb-card {
+  display: grid;
+  gap: var(--sp-2);
+  align-content: start;
+  min-height: 9rem;
+  padding: var(--sp-5);
+  border: 1px solid var(--line);
+  border-radius: var(--r-2);
+  background: var(--bg-2);
+  font: inherit;
+  text-align: left;
+  color: var(--muted);
+  cursor: pointer;
+  transition:
+    border-color 0.2s var(--ease),
+    background 0.2s var(--ease);
+}
+.onb-card strong {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  color: var(--text);
+}
+.onb-card:hover,
+.onb-card:focus-visible {
+  border-color: var(--line-strong);
+  background: var(--bg-3);
+}
+.onb-card.is-on {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.onb-next {
+  margin-top: var(--sp-6);
+}
+.onb-next:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.onb-form {
+  max-width: 34rem;
+}
+@media (max-width: 760px) {
+  .onb-options {
+    grid-template-columns: 1fr;
+  }
+  .onb-card {
+    min-height: 0;
+  }
+}

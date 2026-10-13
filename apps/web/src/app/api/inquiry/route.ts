@@ -42,7 +42,7 @@ export async function POST(req: Request) {
   const token = process.env.GITHUB_ISSUES_TOKEN;
   if (!token) return NextResponse.json({ ok: false, configured: false }, { status: 503 });
 
-  const kind = body.kind === "start" ? "start" : "contact";
+  const kind = body.kind === "start" || body.kind === "welcome" ? body.kind : "contact";
   const rows = Object.entries(data)
     .map(([k, v]) => `**${k}:** ${v.replace(/\r?\n/g, "\n> ")}`)
     .join("\n\n");

@@ -97,12 +97,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           menus={menus}
           utility={utilityNav}
           secondary={{ href: "/for/manufacturers", label: "Join as a shop" }}
-          primary={{ href: "/start", label: "Start a design" }}
+          primary={{ href: "/welcome", label: "Start a design" }}
         />
         <main id="main">{children}</main>
         <Footer
           legalName={site.legalName}
-          cta={{ href: "/start", label: "Start a design" }}
+          cta={{ href: "/welcome", label: "Start a design" }}
           columns={[
             {
               title: "General",

@@ -69,6 +69,7 @@ test("sitemap lists every content route", async (t) => {
     "/platforms",
     "/designs",
     "/compliance",
+    "/welcome",
     "/start",
     "/contact",
     "/terms",

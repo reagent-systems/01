@@ -255,7 +255,7 @@ export default function Home() {
           ))}
         </ul>
         <div className="hero-cta">
-          <SmartLink href="/start" className="btn btn-yellow">
+          <SmartLink href="/welcome" className="btn btn-yellow">
             Start a design
           </SmartLink>
           <SmartLink href="/how-it-works" className="btn">

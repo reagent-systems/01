@@ -19,6 +19,12 @@ export function allPages(): PageEntry[] {
     },
     {
       group: "Start",
+      url: "/welcome",
+      title: "Get started",
+      description: "Answer a few questions and join as a designer, buyer, or shop.",
+    },
+    {
+      group: "Start",
       url: "/start",
       title: "Start a design",
       description: "Tell us about your design or your shop.",

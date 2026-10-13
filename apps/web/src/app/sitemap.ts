@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     entry("/", 1, "weekly"),
     entry("/how-it-works", 0.9),
+    entry("/welcome", 0.9),
     entry("/start", 0.9),
     entry("/processes", 0.9, "weekly"),
     entry("/for", 0.8),
