@@ -13,7 +13,7 @@ type Props = {
   children?: ReactNode | undefined;
 };
 
-/** Hero for inner pages: full-bleed video when given, otherwise a technical grid backdrop. */
+/** Hero for inner pages: full-bleed video when given, otherwise a plain dark backdrop. */
 export function PageHero({ eyebrow, title, lead, crumbs, baseUrl, video, short, children }: Props) {
   return (
     <section className={`page-hero${short ? " short" : ""}${video ? "" : " page-hero-plain"}`}>
@@ -25,7 +25,6 @@ export function PageHero({ eyebrow, title, lead, crumbs, baseUrl, video, short, 
           <div className="media-shade" />
         </>
       ) : (
-        <div className="grid-lines" aria-hidden="true" />
       )}
       <div className="container page-hero-inner">
         {crumbs && baseUrl && <Breadcrumbs items={crumbs} baseUrl={baseUrl} />}
