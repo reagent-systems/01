@@ -1,3 +1,5 @@
+import { StepIcon } from "./StepIcon";
+
 /** A chain of stages. Nodes inside one stage run in parallel; stages run in order. */
 export function ChainGraph({
   stages,
@@ -15,7 +17,8 @@ export function ChainGraph({
           <ul className="chain-nodes">
             {nodes.map((n) => (
               <li className="chain-node" key={n} style={{ ["--s" as string]: s }}>
-                {n}
+                <StepIcon name={n} />
+                <span>{n}</span>
               </li>
             ))}
           </ul>

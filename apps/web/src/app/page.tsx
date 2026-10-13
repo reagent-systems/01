@@ -153,7 +153,7 @@ const steps: Step[] = [
           stages={[
             ["PCB fabrication", "Case"],
             ["PCB assembly"],
-            ["Final assembly"],
+            ["Final assembly and test"],
             ["Pack and ship"],
           ]}
         />

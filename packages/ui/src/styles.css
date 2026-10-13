@@ -1346,10 +1346,11 @@ a:hover .arrow-link span,
   min-width: 11rem;
 }
 .chain-stage:not(:last-child)::after {
-  content: "→";
-  padding: 0 var(--sp-4);
-  font-size: var(--fs-h3);
-  color: var(--accent);
+  content: "";
+  flex: none;
+  width: var(--sp-6);
+  height: 2px;
+  background: var(--accent);
 }
 .chain-nodes {
   display: grid;
@@ -1357,7 +1358,10 @@ a:hover .arrow-link span,
   width: 100%;
 }
 .chain-node {
-  padding: var(--sp-4);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-3) var(--sp-4);
   border: 1px solid var(--line-strong);
   border-radius: var(--r-1);
   background: var(--bg-2);
@@ -1381,8 +1385,7 @@ a:hover .arrow-link span,
   4%,
   12% {
     border-color: var(--accent);
-    background: var(--accent);
-    color: #000;
+    box-shadow: 0 0 0 1px var(--accent);
   }
 }
 @media (max-width: 760px) {
@@ -1394,9 +1397,9 @@ a:hover .arrow-link span,
     align-items: stretch;
   }
   .chain-stage:not(:last-child)::after {
-    content: "↓";
-    padding: var(--sp-3) 0;
-    text-align: center;
+    align-self: center;
+    width: 2px;
+    height: var(--sp-6);
   }
 }
 
@@ -1927,9 +1930,9 @@ a:hover .arrow-link span,
   min-width: 0;
 }
 .visual .chain-stage:not(:last-child)::after {
-  content: "↓";
-  padding: var(--sp-2) 0;
-  text-align: center;
+  align-self: center;
+  width: 2px;
+  height: var(--sp-6);
 }
 
 /* Dashboards: one list, a few secondary facts. State is plain text, never a pill. */
@@ -2029,5 +2032,454 @@ a:hover .arrow-link span,
   .dash-row > :nth-child(n + 3) {
     grid-column: 2 / -1;
     justify-self: start;
+  }
+}
+
+/* Chain step icons: animated line icons, one grid, one stroke weight. */
+.si {
+  --amber: #e0a800;
+  display: block;
+  flex: none;
+  width: 3.25rem;
+  height: auto;
+  overflow: visible;
+}
+.si * {
+  transform-box: fill-box;
+}
+.si-s {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.si-f {
+  fill: var(--accent);
+}
+.si-a {
+  fill: var(--amber);
+  stroke: #000;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+.si-w {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* 1 PCB fabrication: traces draw, pads pop, a drill punches a hole */
+.si-tr {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: si-draw 5s infinite;
+}
+.si-tr2 {
+  animation-delay: 0.25s;
+}
+.si-tr3 {
+  animation-delay: 0.5s;
+}
+@keyframes si-draw {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  40%,
+  85% {
+    stroke-dashoffset: 0;
+  }
+  95%,
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+.si-pad {
+  transform-origin: center;
+  animation: si-pop 5s infinite;
+}
+@keyframes si-pop {
+  0%,
+  38% {
+    transform: scale(0.001);
+  }
+  46%,
+  85% {
+    transform: scale(1);
+  }
+  95%,
+  100% {
+    transform: scale(0.001);
+  }
+}
+.si-bit {
+  animation: si-drill 5s infinite;
+}
+@keyframes si-drill {
+  0%,
+  55% {
+    transform: translateY(-26px);
+    opacity: 0;
+  }
+  58% {
+    opacity: 1;
+  }
+  68% {
+    transform: translateY(0);
+  }
+  76% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  84%,
+  100% {
+    transform: translateY(-26px);
+    opacity: 0;
+  }
+}
+.si-hole {
+  animation: si-hole 5s infinite;
+  transform-origin: center;
+}
+@keyframes si-hole {
+  0%,
+  66% {
+    transform: scale(0.001);
+  }
+  72%,
+  85% {
+    transform: scale(1);
+  }
+  95%,
+  100% {
+    transform: scale(0.001);
+  }
+}
+
+/* 2 Case: layers print up, nozzle climbs */
+.si-layer {
+  transform-origin: center;
+  animation: si-layer 5s infinite both;
+  animation-delay: calc(var(--i) * 0.3s);
+}
+@keyframes si-layer {
+  0% {
+    opacity: 0;
+    transform: scaleX(0.4);
+  }
+  4% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  92%,
+  100% {
+    opacity: 0;
+  }
+}
+.si-noz {
+  animation: si-climb 5s infinite;
+}
+@keyframes si-climb {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: steps(6, jump-end);
+  }
+  36% {
+    transform: translateY(-36px);
+  }
+  80% {
+    transform: translateY(-36px);
+  }
+  92%,
+  100% {
+    transform: translateY(0);
+  }
+}
+.si-sweep {
+  animation: si-sweep 0.5s ease-in-out infinite alternate;
+}
+@keyframes si-sweep {
+  from {
+    transform: translateX(-9px);
+  }
+  to {
+    transform: translateX(9px);
+  }
+}
+
+/* 3 PCB assembly: parts drop onto the board and solder */
+.si-part {
+  animation: si-drop 5s infinite both;
+  animation-delay: calc(var(--i) * 0.35s);
+}
+@keyframes si-drop {
+  0% {
+    transform: translateY(-34px);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  14% {
+    transform: translateY(0);
+  }
+  17% {
+    transform: translateY(-4px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  92%,
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+.si-spark {
+  transform-origin: center;
+  animation: si-spark 5s infinite;
+  animation-delay: calc(var(--i) * 0.35s);
+}
+@keyframes si-spark {
+  0%,
+  20% {
+    transform: scale(0.001);
+    opacity: 0;
+  }
+  24% {
+    transform: scale(1.6);
+    opacity: 1;
+  }
+  32%,
+  100% {
+    transform: scale(0.001);
+    opacity: 0;
+  }
+}
+
+/* 4 Final assembly and test: board slides in, screen lights, check badge */
+.si-slide {
+  animation: si-slide 5s infinite;
+}
+@keyframes si-slide {
+  0% {
+    transform: translateX(-58px);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  34%,
+  88% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  96%,
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+.si-screen {
+  animation: si-lit 5s infinite;
+}
+@keyframes si-lit {
+  0%,
+  38% {
+    fill: #1a1a1a;
+  }
+  44%,
+  88% {
+    fill: var(--accent);
+  }
+  96%,
+  100% {
+    fill: #1a1a1a;
+  }
+}
+.si-badge {
+  transform-origin: center;
+  animation: si-badge 5s infinite;
+}
+@keyframes si-badge {
+  0%,
+  50% {
+    transform: scale(0.001);
+  }
+  58% {
+    transform: scale(1.15);
+  }
+  62%,
+  88% {
+    transform: scale(1);
+  }
+  96%,
+  100% {
+    transform: scale(0.001);
+  }
+}
+.si-ck {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: si-ck 5s infinite;
+}
+@keyframes si-ck {
+  0%,
+  58% {
+    stroke-dashoffset: 1;
+  }
+  68%,
+  88% {
+    stroke-dashoffset: 0;
+  }
+  96%,
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+/* 5 Pack and ship: item drops in, lid closes, box jumps, confetti */
+.si-pack {
+  transform-origin: 48px 82px;
+  animation: si-jump 5s infinite;
+}
+@keyframes si-jump {
+  0%,
+  44% {
+    transform: none;
+  }
+  48% {
+    transform: scale(1.06, 0.9);
+  }
+  56% {
+    transform: translateY(-30px) scale(0.96, 1.05);
+  }
+  66% {
+    transform: translateY(-36px) rotate(360deg);
+  }
+  76% {
+    transform: translateY(0) rotate(360deg) scale(1.08, 0.88);
+  }
+  82% {
+    transform: rotate(360deg);
+  }
+  88% {
+    transform: translateY(-7px) rotate(360deg);
+  }
+  93%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.si-item {
+  animation: si-item 5s infinite;
+}
+@keyframes si-item {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  16%,
+  100% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+.si-flapL {
+  transform-origin: 24px 48px;
+  animation: si-flapL 5s infinite;
+}
+.si-flapR {
+  transform-origin: 72px 48px;
+  animation: si-flapR 5s infinite;
+}
+@keyframes si-flapL {
+  0%,
+  24% {
+    transform: rotate(-120deg);
+  }
+  38%,
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes si-flapR {
+  0%,
+  24% {
+    transform: rotate(120deg);
+  }
+  38%,
+  100% {
+    transform: rotate(0);
+  }
+}
+.si-tape {
+  transform-origin: center;
+  animation: si-tape 5s infinite;
+}
+@keyframes si-tape {
+  0%,
+  38% {
+    transform: scaleX(0.001);
+  }
+  44%,
+  100% {
+    transform: scaleX(1);
+  }
+}
+.si-conf {
+  transform-origin: center;
+  opacity: 0;
+  animation: si-conf 5s infinite;
+}
+@keyframes si-conf {
+  0%,
+  60% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.4);
+  }
+  64% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 1;
+    transform: translate(var(--dx), var(--dy)) rotate(200deg) scale(1);
+  }
+  94%,
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx), calc(var(--dy) + 14px)) rotate(260deg) scale(0.8);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .si * {
+    animation: none !important;
+  }
+  .si-tr {
+    stroke-dashoffset: 0;
+  }
+  .si-ck {
+    stroke-dashoffset: 0;
+  }
+  .si-noz {
+    transform: translateY(-36px);
+  }
+  .si-bit,
+  .si-conf {
+    opacity: 0;
+  }
+  .si-screen {
+    fill: var(--accent);
   }
 }
