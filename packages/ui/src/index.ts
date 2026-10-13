@@ -3,7 +3,7 @@ export { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 export { CtaBand } from "./CtaBand";
 export { Footer, type FooterProps } from "./Footer";
 export { Header, type NavMenu } from "./Header";
-export { Hero, type HeroPanel } from "./Hero";
+export { HeaderSearch, scoreEntry } from "./HeaderSearch";
 export { JsonLd } from "./JsonLd";
 export { Logo, LogoMark } from "./Logo";
 export { PageHero } from "./PageHero";

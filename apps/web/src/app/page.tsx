@@ -1,18 +1,17 @@
 import {
   CtaBand,
   HeroParallax,
-  HorizontalReel,
   JsonLd,
-  PinnedRun,
   PriceCalc,
   Reveal,
   ScrollSequence,
   SmartLink,
   WordReveal,
 } from "@01/ui";
+import type { ReactNode } from "react";
+import { ChainGraph } from "../components/ChainGraph";
 import { audiences } from "../lib/audiences";
 import { faqs } from "../lib/faqs";
-import { insights } from "../lib/insights";
 import { processes } from "../lib/processes";
 import { faqSchema, pageMetadata } from "../lib/seo";
 import { researchedStates } from "../lib/state-data";
@@ -20,7 +19,7 @@ import { researchedStates } from "../lib/state-data";
 export const metadata = pageMetadata({
   title: "Design Hardware Without Capital",
   description:
-    "Publish a hardware design, let buyers join a waitlist with a saved card, and start every shop in the chain with one button. Custom designs, any process, no capital up front.",
+    "Upload a hardware design and open a waitlist. The price falls as buyers join, and one button starts every shop in the chain. Custom designs, any process, nothing up front.",
   path: "/",
 });
 
@@ -30,66 +29,195 @@ const Check = () => (
   </svg>
 );
 
-const ticks = ["Designers pay nothing up front", "Buyers pay only at trigger", "Any custom design"];
+const ticks = [
+  "You pay nothing up front",
+  "Buyers are charged when the run starts",
+  "Works for any custom design",
+];
 
 const proof = [
-  { k: "01", v: "Charged only at trigger" },
-  { k: "02", v: "A serial code on every part" },
-  { k: "03", v: "Faults paid by the shop that made them" },
-  { k: "04", v: "Any design, any process" },
+  { k: "01", v: "Buyers are charged only when the run starts" },
+  { k: "02", v: "Every part gets a serial code" },
+  { k: "03", v: "The shop that made a bad part pays for it" },
+  { k: "04", v: "Custom designs, not a fixed catalog" },
 ];
 
-const steps = [
-  {
-    title: "Upload your design",
-    body: "Send STEP, STL, Gerber, and BOM files. 01 reads every part, picks a process for each, and shows you a price curve.",
-  },
-  {
-    title: "Buyers join the waitlist",
-    body: "People save a card and pay nothing. The price falls at every tier as the count rises, and the page always shows the next break.",
-  },
-  {
-    title: "One button builds it",
-    body: "At the target count you press start. Every shop gets its order at once, buyers are charged, and every part is traced to your buyer.",
-  },
-];
+type Step = {
+  id: string;
+  title: string;
+  body: string;
+  href: string;
+  link: string;
+  visual: ReactNode;
+};
 
-const resources = [
+const Visual = ({
+  title,
+  children,
+  note,
+}: {
+  title: string;
+  children: ReactNode;
+  note?: string;
+}) => (
+  <div className="visual">
+    <p className="visual-title">{title}</p>
+    {children}
+    {note && <p className="visual-note">{note}</p>}
+  </div>
+);
+
+const steps: Step[] = [
   {
-    href: "/how-it-works",
-    k: "Platform",
-    t: "How it works",
-    b: "The seven steps from upload to a unit on a desk.",
+    id: "step-1",
+    title: "You upload the design",
+    body: "Send STEP, STL, DXF, Gerber, and BOM files. The geometry service reads each part, and an agent proposes a process and a material for it. You review the list and fix whatever looks wrong.",
+    href: "/how-it-works#publish",
+    link: "What we read from a file",
+    visual: (
+      <Visual
+        title="Parts tree"
+        note="Example for a small desk device. You edit the tree before anything is quoted."
+      >
+        <ul className="rows">
+          <li>
+            <b>Case</b>
+            <span>3D printing, then injection molding</span>
+          </li>
+          <li>
+            <b>Circuit board</b>
+            <span>PCB fabrication, then PCB assembly</span>
+          </li>
+          <li>
+            <b>Screws and cable</b>
+            <span>Bought parts, kitted at assembly</span>
+          </li>
+        </ul>
+      </Visual>
+    ),
   },
   {
-    href: "/insights",
-    k: "Insights",
-    t: "Guides",
-    b: "Molding vs printing, DFM, group buys, and boards.",
+    id: "step-2",
+    title: "You get a price range",
+    body: "Each part is priced from its geometry, process, and quantity. Early numbers are ranges. Once the waitlist reaches a set share of its target, shops quote for real and the ranges narrow to prices.",
+    href: "/how-it-works#price",
+    link: "How estimates become quotes",
+    visual: (
+      <Visual title="Unit estimate" note="Example numbers. Real prices come from shop quotes.">
+        <ul className="rows">
+          <li>
+            <b>Case, printed</b>
+            <span>$14 to $19</span>
+          </li>
+          <li>
+            <b>Board, assembled</b>
+            <span>$31 to $42</span>
+          </li>
+          <li>
+            <b>Screws and cable</b>
+            <span>$4 to $6</span>
+          </li>
+          <li className="total">
+            <b>Total</b>
+            <span>$49 to $67</span>
+          </li>
+        </ul>
+      </Visual>
+    ),
   },
   {
-    href: "/states",
-    k: "Insights",
-    t: "Hardware by state",
-    b: "Makerspaces, events, programs, and specialties in each state.",
-  },
-  {
-    href: "/compliance",
-    k: "Platform",
-    t: "Compliance",
-    b: "FCC, batteries, and export control, before you publish.",
-  },
-  {
+    id: "step-3",
+    title: "Buyers join, and the price falls",
+    body: "A buyer saves a card and pays nothing. The page shows the current price, the next price break, and how many more people it takes. Past a certain count a part can move from printing to molding, which is why the price drops in steps.",
     href: "/designs",
-    k: "Designs",
-    t: "Join a waitlist",
-    b: "See a live design and how its price curve works.",
+    link: "See a design page",
+    visual: (
+      <div className="visual">
+        <PriceCalc />
+      </div>
+    ),
   },
   {
-    href: "/for/manufacturers",
-    k: "Shops",
-    t: "Join as a shop",
-    b: "Declare your processes and get matched to funded orders.",
+    id: "step-4",
+    title: "You press one button",
+    body: "When the count is high enough, the run starts. Every shop confirms, buyers are charged, and each shop receives its purchase order in the same moment.",
+    href: "/how-it-works#run",
+    link: "What happens at trigger",
+    visual: (
+      <Visual title="The chain" note="Shops in one column work in parallel. Columns run in order.">
+        <div className="press">
+          <span>Start run</span>
+        </div>
+        <ChainGraph
+          animated
+          stages={[
+            ["PCB fabrication", "Case"],
+            ["PCB assembly"],
+            ["Final assembly"],
+            ["Pack and ship"],
+          ]}
+        />
+      </Visual>
+    ),
+  },
+  {
+    id: "step-5",
+    title: "Every part is scanned",
+    body: "Each part gets a serial code, and shop staff scan it at every step with a phone. If a part arrives bad, the scan shows who made it. After an operator confirms the fault, that shop pays for the reship.",
+    href: "/how-it-works#trace",
+    link: "How faults are handled",
+    visual: (
+      <Visual title="Scan log" note="Example trace for one unit.">
+        <span className="serial">01-0042-0317</span>
+        <ul className="log">
+          <li>
+            <i>✓</i>
+            PCB fabrication<span>Scanned</span>
+          </li>
+          <li>
+            <i>✓</i>
+            PCB assembly<span>Scanned</span>
+          </li>
+          <li>
+            <i>✓</i>
+            Final assembly and test<span>Passed</span>
+          </li>
+          <li className="pending">
+            <i />
+            Pack and ship<span>Next</span>
+          </li>
+        </ul>
+      </Visual>
+    ),
+  },
+  {
+    id: "step-6",
+    title: "It lands on a desk",
+    body: "The last shop packs each unit and ships it. Every buyer gets one tracking page that covers the whole trip, from raw stock to the front door.",
+    href: "/how-it-works#ship",
+    link: "Shipping and tracking",
+    visual: (
+      <Visual title="Tracking" note="Example for one buyer.">
+        <ul className="log">
+          <li>
+            <i>✓</i>
+            Packed<span>Done</span>
+          </li>
+          <li>
+            <i>✓</i>
+            Handed to the carrier<span>Done</span>
+          </li>
+          <li>
+            <i>✓</i>
+            In transit<span>Done</span>
+          </li>
+          <li className="pending">
+            <i />
+            Delivered<span>Next</span>
+          </li>
+        </ul>
+      </Visual>
+    ),
   },
 ];
 
@@ -115,8 +243,8 @@ export default function Home() {
           </span>
         </h1>
         <p className="hook-sub">
-          Publish a hardware design. People join a waitlist, and the price drops as more join. At
-          the target count, one button sends the order to every shop in the chain.
+          Upload a hardware design and open a waitlist. The price falls as people join. When the
+          count is high enough, you press one button and every shop starts at once.
         </p>
         <ul className="ticks">
           {ticks.map((t) => (
@@ -134,128 +262,113 @@ export default function Home() {
             See how it works
           </SmartLink>
         </div>
-        <p className="hero-micro">No factory contacts. No seed round.</p>
         <span className="scroll-cue" aria-hidden="true" />
       </HeroParallax>
 
-      <div className="proof" aria-label="What to expect">
-        {proof.map((p) => (
-          <div key={p.k}>
-            <b>{p.k}</b>
-            {p.v}
-          </div>
-        ))}
-      </div>
+      <section className="section-tight" aria-label="At a glance">
+        <div className="container proof">
+          {proof.map((p) => (
+            <div key={p.k}>
+              <b>{p.k}</b>
+              {p.v}
+            </div>
+          ))}
+        </div>
+      </section>
 
       <section id="mission" className="statement" aria-label="Why 01 exists">
-        <div className="statement-wrap">
-          <WordReveal text="Hardware is hard to fund. Tooling, minimums, and a chain of shops that never talk. 01 turns that chain into one order." />
+        <div className="container">
+          <WordReveal text="Most hardware ideas stall at the tooling quote. Shops want minimums and money up front, and none of them talk to each other. 01 puts the whole chain behind a single order." />
         </div>
       </section>
 
-      <section id="start" className="section section-yellow" aria-labelledby="start-title">
-        <div className="container steps3">
-          <div className="steps3-head">
-            <p className="eyebrow">How it works</p>
-            <h2 id="start-title" className="h2" style={{ fontSize: "clamp(2.4rem, 6vw, 5rem)" }}>
-              Start with no capital
+      <section id="how" className="section-yellow" aria-labelledby="how-title">
+        <div className="container two-col">
+          <div>
+            <p className="eyebrow">How a run works</p>
+            <h2 id="how-title" className="h2">
+              Six steps from file to doorstep
             </h2>
-            <p className="lead">
-              Three steps take a design from your screen to a buyer’s desk. You never hold inventory
-              and you never pay for tooling up front.
-            </p>
-            <SmartLink href="/how-it-works" className="btn btn-solid">
-              The full flow
-            </SmartLink>
           </div>
           <div>
-            {steps.map((s, i) => (
-              <Reveal key={s.title} className="step3" delay={i * 90}>
-                <span className="step3-n">{i + 1}</span>
-                <div>
-                  <h3>{s.title}</h3>
-                  <p>{s.body}</p>
-                </div>
-              </Reveal>
-            ))}
+            <p className="lead">
+              Each step below is a short stop. Skim them in order, or open the full write-up.
+            </p>
+            <SmartLink href="/how-it-works" className="btn btn-solid">
+              Read the full flow
+            </SmartLink>
           </div>
         </div>
       </section>
 
-      <PinnedRun />
+      {steps.map((s, i) => (
+        <section
+          key={s.id}
+          id={s.id}
+          className={`step-section${i % 2 ? " step-section--flip" : ""}`}
+          aria-labelledby={`${s.id}-title`}
+        >
+          <div className="container step-grid">
+            <Reveal className="step-copy">
+              <span className="step-num">{String(i + 1).padStart(2, "0")}</span>
+              <h2 id={`${s.id}-title`} className="h2">
+                {s.title}
+              </h2>
+              <p className="lead">{s.body}</p>
+              <SmartLink href={s.href} className="arrow-link">
+                {s.link} <span aria-hidden="true">→</span>
+              </SmartLink>
+            </Reveal>
+            <Reveal delay={120}>{s.visual}</Reveal>
+          </div>
+        </section>
+      ))}
 
-      <section id="price" className="section" aria-labelledby="calc-title">
+      <section className="section" aria-labelledby="proc-title">
         <div className="container">
           <div className="section-head">
             <Reveal>
-              <p className="eyebrow">The price curve</p>
-              <h2 id="calc-title" className="h2">
-                Watch the price fall
+              <p className="eyebrow">Processes</p>
+              <h2 id="proc-title" className="h2">
+                Eleven processes, one catalog
               </h2>
             </Reveal>
             <Reveal delay={100}>
-              <p className="lead" style={{ margin: 0 }}>
-                Slide the waitlist count. Every price break lowers the unit price, and at a high
-                tier the case moves from printing to molding.
+              <p className="lead">
+                Every shop lists the processes it runs and the limits it holds. Parts go to the
+                shops whose limits fit.
               </p>
             </Reveal>
           </div>
-          <Reveal>
-            <PriceCalc />
-          </Reveal>
+        </div>
+        <div className="rail" role="list" aria-label="Processes">
+          {processes.map((p, i) => (
+            <SmartLink key={p.slug} href={`/processes/${p.slug}`} className="card" role="listitem">
+              <span className="card-kicker">
+                {String(i + 1).padStart(2, "0")} · {p.kind}
+              </span>
+              <h3 className="h3">{p.title}</h3>
+              <p>{p.summary}</p>
+              <span className="arrow-link">
+                Learn more <span aria-hidden="true">→</span>
+              </span>
+            </SmartLink>
+          ))}
         </div>
       </section>
 
-      <section className="section-tight bordered-top" aria-labelledby="proc-title">
-        <div className="container">
-          <Reveal>
-            <p className="eyebrow">Processes</p>
-            <h2 id="proc-title" className="h2">
-              Every part finds a process
-            </h2>
-            <p className="lead">
-              Machining, molding, printing, boards, finishing, and assembly. Each shop declares what
-              it runs, and parts match to shops by process and limits.
-            </p>
-          </Reveal>
-        </div>
-      </section>
-      <HorizontalReel>
-        {processes.map((p, i) => (
-          <SmartLink key={p.slug} href={`/processes/${p.slug}`} className="reel-card">
-            <span className="card-kicker">
-              {String(i + 1).padStart(2, "0")} · {p.kind}
-            </span>
-            <h3 className="h3">{p.title}</h3>
-            <p>{p.summary}</p>
-            <span className="arrow-link">
-              Learn more <span aria-hidden="true">→</span>
-            </span>
-          </SmartLink>
-        ))}
-        <SmartLink href="/processes" className="reel-card">
-          <span className="card-kicker">All</span>
-          <h3 className="h3">See every process</h3>
-          <p>The full catalog, with what each one is best at.</p>
-          <span className="arrow-link">
-            All processes <span aria-hidden="true">→</span>
-          </span>
-        </SmartLink>
-      </HorizontalReel>
-
-      <section className="section bordered-top" aria-labelledby="who-title">
+      <section className="section" aria-labelledby="who-title">
         <div className="container">
           <div className="section-head">
             <Reveal>
-              <p className="eyebrow">Who it’s for</p>
+              <p className="eyebrow">Who uses 01</p>
               <h2 id="who-title" className="h2">
-                One answer, for eight kinds of people
+                Made for people without a factory
               </h2>
             </Reveal>
             <Reveal delay={100}>
-              <p className="lead" style={{ margin: 0 }}>
-                I want to design hardware, but I do not have the capital. Pick the page that sounds
-                like you.
+              <p className="lead">
+                If you have a design and no capital, one of these pages is about you.
               </p>
             </Reveal>
           </div>
@@ -275,19 +388,19 @@ export default function Home() {
       </section>
 
       {stateList.length > 0 && (
-        <section className="section-tight bordered-top" aria-labelledby="states-title">
+        <section className="section" aria-labelledby="states-title">
           <div className="container two-col">
             <Reveal>
               <p className="eyebrow">Insights</p>
               <h2 id="states-title" className="h2">
-                Hardware, state by state
+                Where to build near you
               </h2>
               <p className="lead">
-                Where to prototype, which events to go to, and which programs back small
-                manufacturers in your state, with a source for every line.
+                We research makerspaces, events, university programs, and manufacturing support in
+                each state, and link the source for every entry.
               </p>
               <SmartLink href="/states" className="btn">
-                All states
+                Browse all states
               </SmartLink>
             </Reveal>
             <Reveal delay={100}>
@@ -305,44 +418,12 @@ export default function Home() {
         </section>
       )}
 
-      <section className="section bordered-top" aria-labelledby="res-title">
-        <div className="container">
-          <Reveal>
-            <p className="eyebrow">Resources</p>
-            <h2 id="res-title" className="h2">
-              Everything you need to go from idea to unit
-            </h2>
-          </Reveal>
-          <div className="res-grid" style={{ marginTop: "3rem" }}>
-            {resources.map((r) => (
-              <SmartLink href={r.href} className="card" key={r.href}>
-                <span className="card-kicker">{r.k}</span>
-                <h3 className="h3">{r.t}</h3>
-                <p>{r.b}</p>
-                <span className="arrow-link">
-                  Open <span aria-hidden="true">→</span>
-                </span>
-              </SmartLink>
-            ))}
-          </div>
-          <p style={{ marginTop: "2rem", color: "var(--dim)", fontSize: "0.85rem" }}>
-            Latest guide:{" "}
-            <SmartLink
-              href={`/insights/${insights[0]?.slug}`}
-              style={{ textDecoration: "underline" }}
-            >
-              {insights[0]?.title}
-            </SmartLink>
-          </p>
-        </div>
-      </section>
-
-      <section id="faq" className="section bordered-top" aria-labelledby="faq-title">
+      <section id="faq" className="section" aria-labelledby="faq-title">
         <div className="container two-col">
           <div>
             <p className="eyebrow">FAQ</p>
             <h2 id="faq-title" className="h2">
-              Questions people ask
+              Common questions
             </h2>
           </div>
           <div>
@@ -357,8 +438,8 @@ export default function Home() {
       </section>
 
       <CtaBand
-        title="Ready to build without capital?"
-        body="Publish a design. Let the waitlist fund the run."
+        title="Have a design?"
+        body="Upload it and open a waitlist."
         primary={{ href: "/start", label: "Start a design" }}
         secondary={{ href: "/contact", label: "Contact" }}
       />

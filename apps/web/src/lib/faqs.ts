@@ -1,12 +1,18 @@
 export const faqs = [
   {
     q: "When is my card charged?",
-    a: "At trigger. A saved card holds no funds, and nothing is authorized before then.",
+    a: "When the run starts. A saved card holds no money, and nothing is authorized before then.",
   },
-  { q: "Can I leave the waitlist?", a: "Yes. Leave at any time before trigger and pay nothing." },
-  { q: "What if the ship date slips?", a: "You get a notice and the option of a refund." },
+  {
+    q: "Can I leave the waitlist?",
+    a: "Yes. Leave any time before the run starts and you pay nothing.",
+  },
+  {
+    q: "What happens if the ship date slips?",
+    a: "You are told as soon as it moves, and you can ask for a refund.",
+  },
   {
     q: "What can I design?",
-    a: "Any design. A custom upload is the main path. Standard enclosures and footprints are shortcuts, never requirements.",
+    a: "Anything a shop in the network can make. You upload your own design. A standard case or footprint can speed up quoting, but you never have to use one.",
   },
 ];

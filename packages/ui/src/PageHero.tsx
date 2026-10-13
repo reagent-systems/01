@@ -27,17 +27,11 @@ export function PageHero({ eyebrow, title, lead, crumbs, baseUrl, video, short, 
       ) : (
         <div className="grid-lines" aria-hidden="true" />
       )}
-      <div className="media-content">
+      <div className="container page-hero-inner">
         {crumbs && baseUrl && <Breadcrumbs items={crumbs} baseUrl={baseUrl} />}
         {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-        <h1 className="display" style={{ maxWidth: "18ch" }}>
-          {title}
-        </h1>
-        {lead && (
-          <p className="lead" style={{ marginTop: "1.5rem", marginBottom: children ? "2rem" : 0 }}>
-            {lead}
-          </p>
-        )}
+        <h1 className="display">{title}</h1>
+        {lead && <p className="lead">{lead}</p>}
         {children}
       </div>
     </section>

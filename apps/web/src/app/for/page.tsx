@@ -17,8 +17,8 @@ export default function ForPage() {
         crumbs={[{ name: "Who it’s for", path: "/for" }]}
         baseUrl={site.url}
         eyebrow="Who it’s for"
-        title="I Want to Design Hardware. I Have No Capital."
-        lead="One answer, for eight kinds of people. Publish a design, let buyers fund the run, and let the shops build it."
+        title="Who 01 Is For"
+        lead="Eight kinds of people use 01. Publish a design, let buyers fund the run, and let the shops build it."
         video="guarantee"
       />
       <section className="section">

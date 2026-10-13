@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 import { audiences } from "../lib/audiences";
 import { processes } from "../lib/processes";
 import { organizationSchema, websiteSchema } from "../lib/seo";
-import { fileTypes, menus, site } from "../lib/site";
+import { fileTypes, menus, site, utilityNav } from "../lib/site";
 import { researchedStates } from "../lib/state-data";
 
 const barlow = Barlow({
@@ -78,6 +78,15 @@ const half = Math.ceil(processes.length / 2);
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={barlow.variable}>
+      <head>
+        <noscript>
+          <style>
+            {
+              ".reveal{opacity:1!important;transform:none!important}.hook-line>span,.hook-sub,.ticks,.hero-cta{animation:none!important}.word{opacity:1!important}"
+            }
+          </style>
+        </noscript>
+      </head>
       <body>
         <a href="#main" className="skip-link">
           Skip to content
@@ -86,6 +95,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <SmoothScroll />
         <Header
           menus={menus}
+          utility={utilityNav}
           secondary={{ href: "/for/manufacturers", label: "Join as a shop" }}
           primary={{ href: "/start", label: "Start a design" }}
         />
@@ -137,7 +147,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             link("Privacy", "/privacy"),
             link("Designer agreement", "/designer-agreement"),
             link("Supplier agreement", "/supplier-agreement"),
-            link("Sitemap", "/sitemap.xml"),
+            link("Site map", "/site-map"),
+            link("Sitemap (XML)", "/sitemap.xml"),
           ]}
         />
       </body>

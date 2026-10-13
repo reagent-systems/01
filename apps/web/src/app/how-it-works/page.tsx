@@ -71,7 +71,7 @@ export default function HowItWorksPage() {
         baseUrl={site.url}
         eyebrow="How it works"
         title="One Button Starts Every Shop"
-        lead="Printify standardizes the product. 01 standardizes the process. Any custom design breaks into parts, every part into processes, and every process into shops that run it."
+        lead="Any custom design breaks into parts, every part into processes, and every process into shops that run it."
         video="technology"
       >
         <SmartLink href="/start" className="btn btn-solid">
@@ -83,7 +83,7 @@ export default function HowItWorksPage() {
         <div className="container">
           <Reveal>
             <p className="eyebrow">The chain</p>
-            <h2 className="h2">A graph of shops, started at once</h2>
+            <h2 className="h2">Every shop starts together</h2>
             <p className="lead">
               Nodes inside a stage run in parallel. Stages run in order. One assembler can join
               parts from many nodes, and a sequential chain can pass a part from node to node.
@@ -181,7 +181,7 @@ export default function HowItWorksPage() {
       </section>
 
       <CtaBand
-        title="Ready to build without capital?"
+        title="Have a design?"
         body="Publish a design. Let the waitlist fund the run."
         primary={{ href: "/start", label: "Start a design" }}
         secondary={{ href: "/for", label: "Who it’s for" }}

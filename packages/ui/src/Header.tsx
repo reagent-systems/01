@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { HeaderSearch } from "./HeaderSearch";
 import { Logo } from "./Logo";
 import { SmartLink } from "./SmartLink";
 
@@ -20,20 +21,23 @@ const Caret = () => (
 
 export function Header({
   menus,
+  utility = [],
   secondary,
   primary,
 }: {
   menus: NavMenu[];
+  /** Quiet links on the right of the second row. */
+  utility?: NavLink[];
   secondary?: NavLink;
   primary?: NavLink;
 }) {
   const [open, setOpen] = useState(false); // mobile drawer
   const [menu, setMenu] = useState<string | null>(null); // desktop dropdown
-  const [solid, setSolid] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const bar = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    const onScroll = () => setSolid(window.scrollY > 24);
+    const onScroll = () => setScrolled(window.scrollY > 48);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -67,75 +71,88 @@ export function Header({
     <>
       <header
         ref={bar}
-        className={`header header-mega${solid || menu ? " is-solid" : ""}`}
+        className={`header${scrolled ? " is-solid is-compact" : ""}${menu ? " is-open-menu" : ""}`}
         onMouseLeave={() => setMenu(null)}
       >
-        <Logo />
-        <nav className="nav" aria-label="Primary">
-          {menus.map((m) =>
-            m.groups ? (
-              <div className="nav-item" key={m.label} onMouseEnter={() => setMenu(m.label)}>
-                <button
-                  type="button"
-                  className="nav-trigger"
-                  aria-expanded={menu === m.label}
-                  aria-controls={`mega-${m.label}`}
-                  onClick={() => setMenu((c) => (c === m.label ? null : m.label))}
-                >
-                  {m.label} <Caret />
-                </button>
-                <div
-                  id={`mega-${m.label}`}
-                  className={`mega${menu === m.label ? " is-open" : ""}`}
-                  hidden={menu !== m.label}
-                >
-                  <div className="mega-inner">
-                    {m.groups.map((g) => (
-                      <div className="mega-col" key={g.title ?? g.items[0]?.href}>
-                        {g.title && <p className="mega-title">{g.title}</p>}
-                        <ul>
-                          {g.items.map((l) => (
-                            <li key={l.href}>
-                              <SmartLink href={l.href} onClick={close}>
-                                <b>{l.label}</b>
-                                {l.desc && <span>{l.desc}</span>}
-                              </SmartLink>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
+        <div className="header-inner header-top">
+          <Logo />
+          <HeaderSearch />
+          <div className="header-actions">
+            {secondary && (
+              <SmartLink href={secondary.href} className="header-quote">
+                {secondary.label}
+              </SmartLink>
+            )}
+            {primary && (
+              <SmartLink href={primary.href} className="header-cta">
+                {primary.label}
+              </SmartLink>
+            )}
+            <button
+              type="button"
+              className="burger"
+              aria-label={open ? "Close menu" : "Open menu"}
+              aria-expanded={open}
+              aria-controls="site-drawer"
+              onClick={() => setOpen((o) => !o)}
+            >
+              <span />
+            </button>
+          </div>
+        </div>
+
+        <div className="header-inner header-nav">
+          <nav className="nav" aria-label="Primary">
+            {menus.map((m) =>
+              m.groups ? (
+                <div className="nav-item" key={m.label} onMouseEnter={() => setMenu(m.label)}>
+                  <button
+                    type="button"
+                    className="nav-trigger"
+                    aria-expanded={menu === m.label}
+                    aria-controls={`mega-${m.label}`}
+                    onClick={() => setMenu((c) => (c === m.label ? null : m.label))}
+                  >
+                    {m.label} <Caret />
+                  </button>
+                  <div
+                    id={`mega-${m.label}`}
+                    className={`mega${menu === m.label ? " is-open" : ""}`}
+                    hidden={menu !== m.label}
+                  >
+                    <div className="mega-inner">
+                      {m.groups.map((g) => (
+                        <div className="mega-col" key={g.title ?? g.items[0]?.href}>
+                          {g.title && <p className="mega-title">{g.title}</p>}
+                          <ul>
+                            {g.items.map((l) => (
+                              <li key={l.href}>
+                                <SmartLink href={l.href} onClick={close}>
+                                  <b>{l.label}</b>
+                                  {l.desc && <span>{l.desc}</span>}
+                                </SmartLink>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ) : (
-              <SmartLink key={m.label} href={m.href ?? "/"} className="nav-link">
-                {m.label}
+              ) : (
+                <SmartLink key={m.label} href={m.href ?? "/"} className="nav-link">
+                  {m.label}
+                </SmartLink>
+              ),
+            )}
+          </nav>
+          <nav className="header-links" aria-label="Company">
+            {utility.map((l) => (
+              <SmartLink key={l.href} href={l.href}>
+                {l.label}
               </SmartLink>
-            ),
-          )}
-        </nav>
-        <div className="header-actions">
-          {secondary && (
-            <SmartLink href={secondary.href} className="header-quote header-secondary">
-              {secondary.label}
-            </SmartLink>
-          )}
-          {primary && (
-            <SmartLink href={primary.href} className="header-cta">
-              {primary.label}
-            </SmartLink>
-          )}
-          <button
-            type="button"
-            className="burger"
-            aria-label={open ? "Close menu" : "Open menu"}
-            aria-expanded={open}
-            aria-controls="site-drawer"
-            onClick={() => setOpen((o) => !o)}
-          >
-            <span />
-          </button>
+            ))}
+          </nav>
         </div>
       </header>
 
@@ -150,6 +167,7 @@ export function Header({
         aria-hidden={!open}
         inert={!open}
       >
+        <HeaderSearch />
         <nav aria-label="Menu">
           {menus.map((m) => (
             <div className="drawer-group" key={m.label}>
@@ -181,15 +199,28 @@ export function Header({
               )}
             </div>
           ))}
+          <div className="drawer-group">
+            <p className="drawer-title">Company</p>
+            <ul>
+              {utility.map((l) => (
+                <li key={l.href}>
+                  <SmartLink href={l.href} onClick={close}>
+                    {l.label}
+                    <span aria-hidden="true">→</span>
+                  </SmartLink>
+                </li>
+              ))}
+            </ul>
+          </div>
         </nav>
         <div className="drawer-foot">
           {secondary && (
-            <SmartLink href={secondary.href} onClick={close}>
+            <SmartLink href={secondary.href} className="btn" onClick={close}>
               {secondary.label}
             </SmartLink>
           )}
           {primary && (
-            <SmartLink href={primary.href} className="btn btn-solid" onClick={close}>
+            <SmartLink href={primary.href} className="btn btn-yellow" onClick={close}>
               {primary.label}
             </SmartLink>
           )}

@@ -19,15 +19,9 @@ describe("tokens match styles.css", () => {
     expect(rootVar("accent-soft")).toBe(tokens.color.accentSoft);
   });
 
-  it("keeps the hero tints in sync", () => {
-    expect(css).toContain(`--tint: ${tokens.color.tint.a};`);
-    expect(css).toContain(`--tint: ${tokens.color.tint.b};`);
-    expect(css).toContain(`--tint: ${tokens.color.tint.c};`);
-  });
-
   it("keeps layout and motion in sync", () => {
     expect(rootVar("gutter")).toBe(tokens.space.gutter);
-    expect(rootVar("max")).toBe(tokens.layout.max);
+    expect(rootVar("container")).toBe(tokens.layout.container);
     expect(rootVar("header-h")).toBe(tokens.layout.headerHeight);
     expect(rootVar("ease")).toBe(tokens.motion.ease);
   });

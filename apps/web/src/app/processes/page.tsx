@@ -24,7 +24,7 @@ export default function ProcessesPage() {
         crumbs={[{ name: "Processes", path: "/processes" }]}
         baseUrl={site.url}
         eyebrow="Processes"
-        title="Standardize the Process, Not the Product"
+        title="Every Part Maps to a Process"
         lead="Every shop declares the processes it runs, with limits. Every part of every design maps to one. That is how any custom design finds the right shops."
         video="mission"
       />

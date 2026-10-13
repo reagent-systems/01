@@ -17,8 +17,8 @@ export default function PlatformsPage() {
         crumbs={[{ name: "Platforms", path: "/platforms" }]}
         baseUrl={site.url}
         eyebrow="Platforms"
-        title="Shortcuts, Not Requirements"
-        lead="A base platform is a standard case or footprint that is already quoted and routed. A custom design never needs one."
+        title="Base Platforms"
+        lead="A base platform is a standard case or footprint that is already quoted and routed. Custom designs do not need one."
         short
       />
       <section className="section">

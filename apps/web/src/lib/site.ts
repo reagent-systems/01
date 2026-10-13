@@ -142,6 +142,10 @@ export const menus: NavMenu[] = [
   { label: "Designs", href: "/designs" },
 ];
 
-export const drawerNav: NavLink[] = menus.map((m) => ({ label: m.label, href: m.href ?? "/" }));
+export const utilityNav: NavLink[] = [
+  { label: "Platforms", href: "/platforms" },
+  { label: "Compliance", href: "/compliance" },
+  { label: "Contact", href: "/contact" },
+];
 
 export const fileTypes = ["STEP", "STL", "DXF", "PDF drawings", "KiCad", "Gerber", "BOM (CSV)"];

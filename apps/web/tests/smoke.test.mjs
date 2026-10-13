@@ -186,6 +186,21 @@ test("robots.txt points at the sitemap and hides ops and api", async (t) => {
   assert.match(txt, /Disallow: \/api\//);
 });
 
+test("bot-facing files exist: search index, llms.txt, RSS, site map", async (t) => {
+  if (skipUnbuilt(t)) return;
+  const idx = await (await get("/search-index.json")).json();
+  assert.ok(Array.isArray(idx) && idx.length > 60);
+  const llms = await get("/llms.txt");
+  assert.equal(llms.status, 200);
+  assert.match(await llms.text(), /01/);
+  const feed = await get("/feed.xml");
+  assert.equal(feed.status, 200);
+  assert.match(await feed.text(), /<rss/);
+  const map = await get("/site-map");
+  assert.equal(map.status, 200);
+  assert.match(await map.text(), /<h1/);
+});
+
 test("security headers are set", async (t) => {
   if (skipUnbuilt(t)) return;
   const res = await get("/");
@@ -227,5 +242,5 @@ test("unknown routes return the 404 page", async (t) => {
   if (skipUnbuilt(t)) return;
   const res = await get("/no-such-page");
   assert.equal(res.status, 404);
-  assert.match(await res.text(), /didn.t pass inspection/);
+  assert.match(await res.text(), /Page not found/);
 });

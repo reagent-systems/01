@@ -17,7 +17,7 @@ export default function InsightsPage() {
         crumbs={[{ name: "Insights", path: "/insights" }]}
         baseUrl={site.url}
         eyebrow="Insights"
-        title="Plain Guides for Hardware Inventors"
+        title="Guides for Hardware Inventors"
         lead="What each process costs, where it fits, and what can go wrong, in words you can act on."
         short
       />
@@ -46,7 +46,7 @@ export default function InsightsPage() {
         </div>
       </section>
       <CtaBand
-        title="Ready to build without capital?"
+        title="Have a design?"
         body="Publish a design. Let the waitlist fund the run."
         primary={{ href: "/start", label: "Start a design" }}
         secondary={{ href: "/how-it-works", label: "How it works" }}

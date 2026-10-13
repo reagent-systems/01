@@ -36,7 +36,7 @@ export default function CompliancePage() {
         baseUrl={site.url}
         eyebrow="Compliance"
         title="Know What a Design Needs Before It Ships"
-        lead="Compliance flags are part of the product, not a note at the bottom. Each one shows up before publish."
+        lead="Each compliance flag shows before publish."
         short
       />
       <section className="section">

@@ -32,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/states", 0.8, "weekly"),
     entry("/compliance", 0.6),
     entry("/contact", 0.6),
+    entry("/site-map", 0.4),
     ...processes.map((p) => entry(`/processes/${p.slug}`, 0.8)),
     ...audiences.map((a) => entry(`/for/${a.slug}`, 0.8)),
     ...insights.map((i) => entry(`/insights/${i.slug}`, 0.7)),

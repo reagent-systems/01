@@ -4,8 +4,8 @@ export default function NotFound() {
   return (
     <PageHero
       eyebrow="404 · Out of tolerance"
-      title="This page didn’t pass inspection."
-      lead="The page you’re looking for has moved or doesn’t exist."
+      title="Page not found."
+      lead="That address has moved or does not exist."
     >
       <div className="btn-row">
         <SmartLink href="/" className="btn btn-solid">

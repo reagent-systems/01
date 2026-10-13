@@ -124,10 +124,29 @@ export function ScrollSequence({
     resize();
     window.addEventListener("resize", resize);
     gsap.ticker.add(render);
-    for (let w = 0; w < 6; w++) void worker();
+
+    // Start fetching frames when the browser is idle, and never on a data-saver connection.
+    const saver = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection
+      ?.saveData;
+    const start = () => {
+      for (let w = 0; w < 6; w++) void worker();
+    };
+    const idle = (
+      window as Window & {
+        requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number;
+      }
+    ).requestIdleCallback;
+    const handle = saver
+      ? 0
+      : idle
+        ? idle(start, { timeout: 1500 })
+        : window.setTimeout(start, 600);
+    // The first frame still loads, so the poster upgrades to a canvas right away.
+    void load(0);
 
     return () => {
       cancelled = true;
+      if (!idle && handle) window.clearTimeout(handle);
       window.removeEventListener("resize", resize);
       gsap.ticker.remove(render);
     };

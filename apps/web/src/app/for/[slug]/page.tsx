@@ -62,7 +62,9 @@ export default async function AudiencePage({ params }: Params) {
         <div className="container two-col">
           <Reveal>
             <p className="eyebrow">The problem</p>
-            <h2 className="h2">{a.shop ? "Quotes that never close" : "Capital is the wall"}</h2>
+            <h2 className="h2">
+              {a.shop ? "Quotes that stall" : "Hardware costs too much to start"}
+            </h2>
             <p className="lead">{a.problem}</p>
           </Reveal>
           <Reveal delay={100}>
@@ -183,7 +185,7 @@ export default async function AudiencePage({ params }: Params) {
       </section>
 
       <CtaBand
-        title={a.shop ? "Ready to join the network?" : "Ready to build without capital?"}
+        title={a.shop ? "Ready to join the network?" : "Have a design?"}
         body={
           a.shop
             ? "Tell us which processes you run and the limits you hold."
