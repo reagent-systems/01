@@ -17,14 +17,13 @@ type Props = {
 export function PageHero({ eyebrow, title, lead, crumbs, baseUrl, video, short, children }: Props) {
   return (
     <section className={`page-hero${short ? " short" : ""}${video ? "" : " page-hero-plain"}`}>
-      {video ? (
+      {video && (
         <>
           <div className="media-bg">
             <BgVideo name={video} priority />
           </div>
           <div className="media-shade" />
         </>
-      ) : (
       )}
       <div className="container page-hero-inner">
         {crumbs && baseUrl && <Breadcrumbs items={crumbs} baseUrl={baseUrl} />}
