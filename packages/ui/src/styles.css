@@ -1354,8 +1354,21 @@ a:hover .arrow-link span,
 }
 .chain-nodes {
   display: grid;
-  gap: var(--sp-3);
   width: 100%;
+}
+/* Boxes in the same stage are joined by a line too. */
+.chain-node + .chain-node {
+  position: relative;
+  margin-top: var(--sp-6);
+}
+.chain-node + .chain-node::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 1px);
+  bottom: 100%;
+  width: 2px;
+  height: var(--sp-6);
+  background: var(--accent);
 }
 .chain-node {
   display: flex;
